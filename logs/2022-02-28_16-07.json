@@ -1,0 +1,75 @@
+{
+    "session-start-time": "2022-02-28 16:07:50.595029-08:00",
+    "session-end-time": "2022-02-28 16:19:31.783059-08:00",
+    "session-duration": "0:11:41.188030 / 701.18803 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "hello",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-02-28 16:09:41.027084"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "How are you?",
+            "spoken-feedback": false,
+            "time": "2022-02-28 16:09:41.059099"
+        },
+        {
+            "speaker": "USER",
+            "text": "I'm good, how are you?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-02-28 16:09:52.946502"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Doing well.",
+            "spoken-feedback": false,
+            "time": "2022-02-28 16:09:52.979275"
+        },
+        {
+            "speaker": "USER",
+            "text": "that's good",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-02-28 16:09:58.567214"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "How are you?",
+            "spoken-feedback": false,
+            "time": "2022-02-28 16:09:58.598855"
+        },
+        {
+            "speaker": "USER",
+            "text": "what are you doing?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-02-28 16:10:16.201268"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Watching Law & Order and I popped a burrito in the microwave.",
+            "spoken-feedback": false,
+            "time": "2022-02-28 16:10:16.232920"
+        }
+    ]
+}

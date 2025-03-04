@@ -1,0 +1,336 @@
+want to take an input, the determine its request/goal as well as extract the pertinent information from it
+
+    would require some method of classification, named entity extraction, and just the extraction of normal nouns
+
+    to take a sentence like, "Would you open google.com on my laptop, please?" could be easy
+    check for the key word "open" to determine the intent: open a website
+    then extract what follows the keyword: "google.com"
+    then check for extra parameters, then extract them: "on my laptop"/"my laptop"/"laptop"
+
+    could be complicated if the input isn't as specific: "open Google"/"go to the Google website"
+    this might require a list of common terms and their corresponding "full forms"(a look up table of sorts)
+    so in this case, "Google" would turn into "www.google.com" or something similar
+
+    could just use the same classification method as I'm already using
+    I could write code that extracts all nouns(beit a named entity or not), then classifies them based on their possible role in the intent
+
+    so an input, "turn on the coffee maker at 8 a.m. tomorrow" would be labeled with its intent and values, {"intent": "smarthouse", "goal": "change_state", "appliance": "coffee maker", "state": "on",  "time": "08:00"}
+
+
+still need to generate more training data for some of them, to make their amounts equal so that one category isn't over-represented in the data
+
+
+use word_tokenize to separate punctuation from words?
+    this might allow the vectorizer to find/know more words? possibly leading to more accurate predictions/labels
+    tried it, didn't seem to improve anything
+    and on top of that, looking at the resulting vectors it didn't seem like anything was actually different?
+
+
+I should make a "lookup table" for apps and websites
+    essentially a dictionary that can be referenced to find the file name for a common name(a similar thing for websites)
+
+    {
+        "paint.exe": [
+            "paint",
+            "ms paint",
+            "mspaint"
+        ],
+        "discord.exe": [
+            "discord"
+        ],
+        "spotify.exe": [
+            "spotify"
+        ],
+        "vscode.exe": [
+            "visual studio code",
+            "vscode",
+            "vs code"
+        ],
+        "chrome.exe": [
+            "chrome",
+            "google chrome"
+        ]
+    }
+
+    this would make it easier to produce the right name for things
+    and it could have more than just the names of the files, but their absolute paths, which would make things even easier to run them
+
+    fN = ""(filename)
+    for p in fileRef:
+        if p in input:
+            fN = p
+            break
+        else:
+            for cN in fileRef[p]:
+                if cN in input:
+                    fN = p
+                    break
+            else:
+                continue
+            break
+
+    after a small tests, the basic concept works
+
+    DONE
+
+
+could add music and lyrics functions to it
+    use the tube thing and the lyrics scraper
+    DONE
+
+
+i should add a random number thing to it
+    it could have random number, dice, and maybe some other things
+    it should allow the user to specify a range for the number and maybe even specify an amount of numbers to generate
+    DONE
+
+
+i should work out how to repeat requests
+    essentially if I were to say "flip a coin please" receive an output
+    then say "another coin" or "another coin please", it should be classified the same as the previous time
+    and it should probably have the same values as specified in the previous input
+
+    that means i would have to save the last classification
+    and if the current input is classified as a "repeat"
+    use the previous classification
+    the intent function would need another input variable for the dictionary of the previous classification
+    DONE?
+
+
+i could use nltk to tokenize and POS tag the training data, then convert that directly to a string
+    perhaps perfoming that on the training data might allow it to "pick up on" POS and use that to better classify the input
+    DONE
+    though, something about it bothers me, idk why/what
+    maybe it feels like something might go wrong with it at some point, idk
+
+
+could try using a neural net for the classification?
+    for the input values it could just be the characters in the string, and the set amount would be the length of the longest string in the training data
+
+
+could add subintents for the time thing
+    "currentDate" and "currentTime" perhaps some others
+    DONE
+
+
+could make a lookup thing for common websites
+    DONE
+
+
+two part commands?
+    i was thinking i could use the last input thing for this
+    the thing is, that would allow me to get the intent of the last input, and I want to classify something as being two-part or not first
+
+    i guess I could make a sub-intent? "twoPart" or "noEnts"
+    it would label an input with it's normal label, as well as being the first part of the input
+    after the first input is labeled as the first part, it would be passed in along with the second part
+    it would take the main intent of the previous one, and pick out the second intent and accompanying information from the second
+
+        User: "Give me a random number."
+        Assistant: "A random number between which numbers?"
+        User: "between one and ten"
+        Assistant: "Here you go: 5"
+
+    there are a couple(small?) problems with this
+        first, the "twoPart" sub-intent would replace any possible sub-intent of the original input
+            one way I could fix this is by adding a third classifier, that puts the label on the input instead of using the sub-intent classifier
+            however, adding another classifier would mean that I'd have to make more training data(well, I would already have to do that)
+            
+            i could use a bunch of the training data for the intents/sub-intents for the onePart data
+            the twoPart data is the data I'd have to generate
+
+        second, it might require a change of the way some things are picked out of an input
+            in the example, if you gave "one and ten" instead of "between one and ten" for the second input, it might mess up in picking "one"
+            this is because I have it pick out the word after "between" for the first number
+
+            one way I could go at this is by changing the ways I pick out info
+            I could also add alternate methods for picking stuff out that would be used when the twoPart thing is present
+
+    I think I could use the last input thing
+        I would still have to classify the input with a new classifier
+            getting training data for the one-part commands would be easy, as I could just pick anything from the training data I already have
+            I would actually have to come up with stuff for the "second half" data
+
+        if the input is considered a "second-part" input the current input and the previous input could be combined
+            this could fix the potential problem with parsing the input for info
+
+            "give me a random number" + "between 5 and ten" --> "give me a random number between 5 and ten"
+
+            I guess we would then have to reclassify the new combined input? and then pick out information from it
+
+
+redid the checkInput thing for the smarthouse inputs to resolve some of the problems that occasionally came up
+    also, the old one used eval() which is bad, so I avoided that in the new one
+
+
+I want to redo the getGPE() function to make it better
+    perhaps incorporate some of the steps I use in the intent filter directly in it
+    maybe I could give it the same treatment I gave the nameExt() thing
+    REDONE
+    I didn't give it the nameExt() treatment, but it does work a lot better now
+
+
+perhaps, i should once again attempt to add more training data to even out the categories
+    weather 106
+    smarthouse 107
+    math 100
+    search 162
+    conversation 111
+    open_app 54
+    open_site 53
+    time 64
+    help 26
+    funfact 37
+    random 82
+    music 54
+    useLast 5
+
+    change_state 86
+    check_state 25
+    forecast 26
+    temperature 25
+    precipitation 27
+    humidity 26
+    randomNumber 26
+    dice 27
+    coinFlip 26
+    playMusic 28
+    lyrics 27
+    currentTime 23
+    timer 14
+    date 9
+    timeTil 17
+    None 389
+
+
+I could try to make "checkTimer" and "stopTimer" functions
+    for these I would have to have a way to check for the specified timer
+        if there is only one active timer, that is more than likely the one to return
+        but if there is more than one active timer, finding out the right one would be necessary
+    DONE
+    used timerIDs and check for a specified term in the timer message
+
+
+apparently there is a problem with using larger numbers for the random number
+    "give me three random numbers between -2147483648 and 2147483647" --> {'intent': 'random', 'subInt': 'randomNumber', 'low': None, 'high': None, 'rolls': 3, 'timing': None}
+    "give me three random numbers between -214 and 214" --> {'intent': 'random', 'subInt': 'randomNumber', 'low': None, 'high': None, 'rolls': 3, 'timing': None}
+    "give me three random numbers between -50 and 21" --> {'intent': 'random', 'subInt': 'randomNumber', 'low': -50, 'high': 21, 'rolls': 3, 'timing': None}
+    "give me three random numbers between -100 and 21" --> {'intent': 'random', 'subInt': 'randomNumber', 'low': None, 'high': 21, 'rolls': 3, 'timing': None}
+    "random number between -99 and 2" --> {'intent': 'random', 'secondary-intent': 'random-number', 'low': -99, 'high': 2, 'rolls': 1, 'timing': None}
+    FIXED?
+        i don't remember fixing this one, but... oh well
+
+
+the repeat command has some problems with the timing
+    the problem is that i set the timing at the end, and the timing of the previous classification is overwritten by that of the current one(i.e. None)
+
+    this could be fixed if i create some sort of check boolean that is true when it's a useLast input
+
+    i could also try a one-liner for setting the value if it hasn't already been set
+        DONE
+
+
+change some intent names?
+    to make things a bit more pythonic/readable/professional-looking i could change some of the intent and sub intent names(as well as their names themselves)
+        doing this would mean that I would have to change every single instance of the old names to their new names(wouldn't really be that difficult/tedious with ctrl+f)
+            train.json
+            intEntFilter.py
+            the current gui file
+
+            and the old gui if I wanted to be able to still use it for some reason
+
+    examples:
+        "subIntent" and "subInt" --> something like "sub-intent" or even "secondary-intent" - DONE
+
+        "open_app" --> "run-program" - DONE
+        "open_site" --> "open-website" or "open-url"
+        "conversation" --> "conversational" - DONE
+        "funfact" --> "give-fact" or "get-fact" or "fact-request"
+        "useLast" --> "use-last-input" - DONE
+
+        for sub-intents the name of the main intent that it goes with could be part of the name
+
+            "change_state" --> "smarthouse-change-state" - DONE
+            "check_state" --> "smarthouse-check-state" - DONE
+
+            "forecast" --> "weather-forecast" - DONE
+            "temperature" --> "weather-temperature" - DONE
+            "precipitation" --> "weather-precipitation" - DONE
+            "humidity" --> "weather-humidity" - DONE
+
+            "randomNumber" --> "random-number" - DONE
+            "dice" --> "random-dice" - DONE
+            "coinFlip" --> "random-coin" - DONE
+
+            "playMusic" --> "music-play-song" - DONE
+            "lyrics" --> "music-get-lyrics" - DONE
+
+            "currentTime" --> "time-get-current" - DONE
+            "startTimer" --> "time-start-timer" - DONE
+            "checkTimer" --> "time-check-timer" - DONE
+            "endTimer" --> "time-end-timer" - DONE
+            "date" --> "time-get-date" - DONE
+            "timeTil" --> "time-span" or "time-until" or "time-between-dates" - 
+
+
+settings/whatever commands
+    I've kinda wanted to add commands for changing settings or doing things with the program itself
+
+    intent would be something like "settings" or "assistant-settings"
+        would want it to be something that wouldn't be easily confused with system settings commands, for if I ever want to do that("system-settings")
+
+    "assistant-restart"
+    "assistant-hard-restart"
+    "assistant-shutdown"
+    "assistant-theme-change"
+    "assistant-theme-check"
+    "assistant-volume-change"
+    "assistant-volume-check"
+    "assistant-tts-on"
+    "assistant-tts-off"
+    "assistant-add-wake-word"
+    "assistant-remove-wake-word"
+    "assistant-list-wake-words"
+    "assistant-save-log-on"
+    "assistant-save-log-off"
+    "assistant-save-log-check"
+
+
+improve things like the search term/engine "parsing" using pattern matching?
+    I was thinking that there's probably a better way to pick out the search term than what I'm currently using
+
+    a thought I had was the idea that it would be convenient if I had a way to compare a template string to the input string and keep the difference; a sort of pattern matching
+        "search on {search_engine} {search_term}" <-=-> "search on google pizza recipes" ==> {"search_engine": google, "search_term": "pizza recipes"}
+
+        something like this would be really good
+        perhaps the new pattern matching thing that was added to python could be useful for this?
+
+        maybe re(gex) is a thing that would work too?
+            regex will probably work, I just need to learn how to use them properly
+
+        I used regex
+            I made a pattern that can pick out the specified search engine and the search term
+
+
+lookUp might be causing some problems with more complex urls; full urls like "https://www.instagram.com/domtomato/" becomes just "https://www.instagram.com"
+    "open https://www.instagram.com/domtomato/" --> {'intent': 'open_site', 'secondary-intent': None, 'common-name': 'https://www.instagram.com/domtomato/', 'website': 'https://www.instagram.com/', 'browser': None, 'timing': None}
+    
+    think I fixed it using regex, though I could also use regex to extract the url from the input
+        "open https://www.instagram.com/domtomato/" --> {'intent': 'open_site', 'secondary-intent': None, 'common-name': 'https://www.instagram.com/domtomato/', 'website': 'https://www.instagram.com/domtomato/', 'browser': None, 'timing': None}
+
+
+NER for location in the weather isn't perfect 
+    "what is the temp in Des moines" --> {'intent': 'weather', 'secondary-intent': 'weather-temperature', 'location': None, 'timing': None}
+    "what is the temp in des moines" --> {'intent': 'weather', 'secondary-intent': 'weather-temperature', 'location': None, 'timing': None}
+    "what is the temp in Des Moines" --> {'intent': 'weather', 'secondary-intent': 'weather-temperature', 'location': 'Des Moines', 'timing': None}
+    "what is the temp in des Moines" --> {'intent': 'weather', 'secondary-intent': 'weather-temperature', 'location': 'des Moines', 'timing': None}
+
+
+if i want to improve the math function, i should probably add secondary intents for the different kinds of math inputs
+    basic arithmetic: +,-,*,/ --> "what is 2 + 2", "subtract 3 from 5", and "twelve times two"
+    complex arithmetic: floor, remainder --> "how many times does eight go into sixty-four evenly", "what is the remainder of sixty-two divided by thirteen"
+    <>: exponents, radicals --> "what is the square root of 64", "what is 8 to the 9th"
+    calculus(?): derivatives, --> "what is the derivative of x squared"
+    geometry: area, perimeter, volume --> "what is the area of a triangle with a base of 12 and a height of 20", "area of a cirlce where the radius is 25", "volume of a sphere with a radius of fifteen", ""
+
+    i already made a function for the area of certain shapes. I could make one for perimeter and volume

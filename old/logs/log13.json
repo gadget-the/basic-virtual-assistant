@@ -1,0 +1,25 @@
+{
+    "sessionStartTime": "2021-12-17 12:03:12.433563",
+    "sessionEndTime": "2021-12-17 12:03:35.682168",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "open youtube in opera",
+            "intEnt": {
+                "intent": "open_site",
+                "subInt": null,
+                "commonName": "youtube",
+                "website": "https://www.youtube.com/",
+                "browser": "opera",
+                "timing": null
+            },
+            "time": "2021-12-17 12:03:20.502802"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Unable to open 'https://www.youtube.com/' in 'opera' due to 'could not locate runnable browser' Error. Opening in default browser.",
+            "tts": false,
+            "time": "2021-12-17 12:03:20.880954"
+        }
+    ]
+}

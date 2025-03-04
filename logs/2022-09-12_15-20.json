@@ -1,0 +1,54 @@
+{
+    "session-start-time": "2022-09-12 15:20:57.920465-07:00",
+    "session-end-time": "2022-09-12 15:23:05.845063-07:00",
+    "session-duration": "0:02:07.924598 / 127.924598 seconds",
+    "session-log": [
+        {
+            "speaker": "ASSISTANT",
+            "text": "You called?",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:21:23.390739"
+        },
+        {
+            "speaker": "USER",
+            "text": "how's the weather looking",
+            "intEnt": {
+                "intent": "weather",
+                "secondary-intent": null,
+                "location": null,
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-09-12 15:21:30.039616"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "It is 82\u00b0F and Mostly Sunny , with wind WSW 5 MPH and 58% humid in Los Angeles, California, United States.\nWeather information sourced from Weather.gov; Last Updated: 12 Sep 02:47 PM PDT",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:21:33.507867"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Yes?",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:22:24.505968"
+        },
+        {
+            "speaker": "USER",
+            "text": "adssdwsd",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-12 15:22:58.061438"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm unsure how to respond to that.",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:22:58.142584"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "sessionStartTime": "2021-12-17 11:56:49.548673",
+    "sessionEndTime": "2021-12-17 11:57:52.997691",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "open youtube in google chrome",
+            "intEnt": {
+                "intent": "open_site",
+                "subInt": null,
+                "commonName": "youtube",
+                "website": "https://www.youtube.com/",
+                "browser": "chrome",
+                "timing": null
+            },
+            "time": "2021-12-17 11:56:57.778412"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Unable to open 'https://www.youtube.com/' in 'chrome' due to ''BackgroundBrowser' object is not callable' Error. Opening in default browser.",
+            "tts": false,
+            "time": "2021-12-17 11:56:58.166876"
+        }
+    ]
+}

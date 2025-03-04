@@ -1,0 +1,23 @@
+{
+    "sessionStartTime": "2021-12-22 10:19:57.188056-08:00",
+    "sessionEndTime": "2021-12-22 10:20:13.722526-08:00",
+    "sessionDuration": "0:00:16.534470 / 16.53447 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "help",
+            "intEnt": {
+                "intent": "help",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-22 10:20:11.587264"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I have the following functions:\n \tweather\n\tsmarthouse\n\tmath\n\tsearch\n\tconversation\n\topen_app\n\topen_site\n\ttime\n\thelp\n\tfunfact\n\trandom\n\tmusic\n\tuseLast\nand subfunctions:\n\tchange_state\n\tcheck_state\n\tforecast\n\ttemperature\n\tprecipitation\n\thumidity\n\trandomNumber\n\tdice\n\tcoinFlip\n\tplayMusic\n\tlyrics\n\tcurrentTime\n\tstartTimer\n\tcheckTimer\n\tendTimer\n\tdate\n\ttimeTil\n\tNone\n",
+            "tts": false,
+            "time": "2021-12-22 10:20:11.604510"
+        }
+    ]
+}

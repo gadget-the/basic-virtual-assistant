@@ -1,0 +1,64 @@
+{
+    "sessionStartTime": "2022-01-11 11:46:17.858606-08:00",
+    "sessionEndTime": "2022-01-11 11:47:20.340349-08:00",
+    "sessionDuration": "0:01:02.481743 / 62.481743 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "open discord in 30 seconds",
+            "intEnt": {
+                "intent": "open_app",
+                "subInt": null,
+                "commonName": "discord",
+                "program": "C:\\Users\\mario\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe",
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 30
+                }
+            },
+            "time": "2022-01-11 11:46:29.194085"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Attempting to open 'discord' in 30 seconds. The ID for it is 'lX0J6xOY'.",
+            "tts": false,
+            "time": "2022-01-11 11:46:29.209803"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "time": "2022-01-11 11:46:59.071223"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is only one active timer. The time left is 1 seconds.",
+            "tts": false,
+            "time": "2022-01-11 11:46:59.086774"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Now opening: 'discord'.",
+            "tts": false,
+            "time": "2022-01-11 11:46:59.408938"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "<Popen: returncode: None args: ['C', ':', '\\\\', 'U', 's', 'e', 'r', 's', '\\\\...>",
+            "tts": false,
+            "time": "2022-01-11 11:46:59.408938"
+        }
+    ]
+}

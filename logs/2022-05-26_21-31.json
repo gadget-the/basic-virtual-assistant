@@ -1,0 +1,61 @@
+{
+    "session-start-time": "2022-05-26 21:31:21.600137-07:00",
+    "session-end-time": "2022-05-26 21:36:01.096020-07:00",
+    "session-duration": "0:04:39.495883 / 279.495883 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "how's the weather in Tempe",
+            "intEnt": {
+                "intent": "weather",
+                "secondary-intent": null,
+                "location": "Tempe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:31:36.779785"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Weather for Tempe(as of 26 May 08:51 PM MST):\n98\u00b0F Farenheit\nClear  skies\n wind W 8 MPH\nand 8% humidity\nWeather data from Weather.gov",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:31:38.867172"
+        },
+        {
+            "speaker": "USER",
+            "text": "how's the weather in Topeka",
+            "intEnt": {
+                "intent": "weather",
+                "secondary-intent": null,
+                "location": "Topeka",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:32:19.360181"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "It is 51\u00b0F and Areas Fog , with wind Calm and 92% humid in Topeka.\nWeather information sourced from Weather.gov; Last Updated: 26 May 10:53 pm CDT",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:32:20.499705"
+        },
+        {
+            "speaker": "USER",
+            "text": "how's the weather looking in Cairo",
+            "intEnt": {
+                "intent": "weather",
+                "secondary-intent": null,
+                "location": "Cairo",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:33:35.059911"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "It is 72\u00b0F and Mostly sunny, with wind None and None humid in Cairo.\nWeather data from Weather.gov accurate as of None.",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:33:37.103846"
+        }
+    ]
+}

@@ -1,0 +1,197 @@
+{
+    "session-start-time": "2022-05-30 21:00:58.902651-07:00",
+    "session-end-time": "2022-05-30 21:01:32.888828-07:00",
+    "session-duration": "0:00:33.986177 / 33.986177 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "what is omurice",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": null,
+                "term": "what is omurice",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 21:01:08.307763"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Using DuckDuckGo's Instant Answer API:\nOmurice or omu-rice is an example of y\u014dshoku consisting of an omelette made with fried rice and thin, fried scrambled eggs, usually topped with ketchup. It is a popular dish both commonly cooked at home and often found at western style diners in Japan. Children in particular enjoy omurice. It is often featured in Japan's version of a children's meal, okosama-ranchi.\nSourced from Wikipedia.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 21:01:08.577170"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is omurice",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": null,
+                "term": "what is omurice",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 21:01:15.157003"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Using DuckDuckGo's Instant Answer API:\t\nOmurice or omu-rice is an example of y\u014dshoku consisting of an omelette made with fried rice and thin, fried scrambled eggs, usually topped with ketchup. It is a popular dish both commonly cooked at home and often found at western style diners in Japan. Children in particular enjoy omurice. It is often featured in Japan's version of a children's meal, okosama-ranchi.\t\nSourced from Wikipedia.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 21:01:15.399603"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is omurice",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": null,
+                "term": "what is omurice",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 21:01:17.046655"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Using DuckDuckGo's Instant Answer API:\nOmurice or omu-rice is an example of y\u014dshoku consisting of an omelette made with fried rice and thin, fried scrambled eggs, usually topped with ketchup. It is a popular dish both commonly cooked at home and often found at western style diners in Japan. Children in particular enjoy omurice. It is often featured in Japan's version of a children's meal, okosama-ranchi.\nSourced from Wikipedia.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 21:01:17.311788"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is omurice",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": null,
+                "term": "what is omurice",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 21:01:18.043847"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Using DuckDuckGo's Instant Answer API:\nOmurice or omu-rice is an example of y\u014dshoku consisting of an omelette made with fried rice and thin, fried scrambled eggs, usually topped with ketchup. It is a popular dish both commonly cooked at home and often found at western style diners in Japan. Children in particular enjoy omurice. It is often featured in Japan's version of a children's meal, okosama-ranchi.\nSourced from Wikipedia.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 21:01:18.292925"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is omurice",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": null,
+                "term": "what is omurice",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 21:01:19.093474"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Results from the DuckDuckGo Instant Answer API:\nOmurice or omu-rice is an example of y\u014dshoku consisting of an omelette made with fried rice and thin, fried scrambled eggs, usually topped with ketchup. It is a popular dish both commonly cooked at home and often found at western style diners in Japan. Children in particular enjoy omurice. It is often featured in Japan's version of a children's meal, okosama-ranchi.\nSourced from Wikipedia.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 21:01:19.339114"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is omurice",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": null,
+                "term": "what is omurice",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 21:01:20.616139"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Results from the DuckDuckGo Instant Answer API:\nOmurice or omu-rice is an example of y\u014dshoku consisting of an omelette made with fried rice and thin, fried scrambled eggs, usually topped with ketchup. It is a popular dish both commonly cooked at home and often found at western style diners in Japan. Children in particular enjoy omurice. It is often featured in Japan's version of a children's meal, okosama-ranchi.\nSourced from Wikipedia.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 21:01:20.866486"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is omurice",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": null,
+                "term": "what is omurice",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 21:01:23.452595"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Using DuckDuckGo's Instant Answer API:\t\nOmurice or omu-rice is an example of y\u014dshoku consisting of an omelette made with fried rice and thin, fried scrambled eggs, usually topped with ketchup. It is a popular dish both commonly cooked at home and often found at western style diners in Japan. Children in particular enjoy omurice. It is often featured in Japan's version of a children's meal, okosama-ranchi.\t\nSourced from Wikipedia.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 21:01:23.722017"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is omurice",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": null,
+                "term": "what is omurice",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 21:01:24.925910"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Using DuckDuckGo's Instant Answer API:\nOmurice or omu-rice is an example of y\u014dshoku consisting of an omelette made with fried rice and thin, fried scrambled eggs, usually topped with ketchup. It is a popular dish both commonly cooked at home and often found at western style diners in Japan. Children in particular enjoy omurice. It is often featured in Japan's version of a children's meal, okosama-ranchi.\nSourced from Wikipedia.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 21:01:25.231252"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is omurice",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": null,
+                "term": "what is omurice",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 21:01:25.806055"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Results from the DuckDuckGo Instant Answer API:\nOmurice or omu-rice is an example of y\u014dshoku consisting of an omelette made with fried rice and thin, fried scrambled eggs, usually topped with ketchup. It is a popular dish both commonly cooked at home and often found at western style diners in Japan. Children in particular enjoy omurice. It is often featured in Japan's version of a children's meal, okosama-ranchi.\nSourced from Wikipedia.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 21:01:26.098189"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is omurice",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": null,
+                "term": "what is omurice",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 21:01:26.630856"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Using DuckDuckGo's Instant Answer API:\t\nOmurice or omu-rice is an example of y\u014dshoku consisting of an omelette made with fried rice and thin, fried scrambled eggs, usually topped with ketchup. It is a popular dish both commonly cooked at home and often found at western style diners in Japan. Children in particular enjoy omurice. It is often featured in Japan's version of a children's meal, okosama-ranchi.\t\nSourced from Wikipedia.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 21:01:26.896783"
+        }
+    ]
+}

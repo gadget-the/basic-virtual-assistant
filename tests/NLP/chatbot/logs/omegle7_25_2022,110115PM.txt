@@ -1,0 +1,7 @@
+You: Hi! How are you?
+Stranger: I'm doing good! How are you darling?
+You: I'm doing alright. Whatcha upto?
+Stranger: Just drinking and trying to relax while I put up laundry. You?
+You: Just chilling; taking a break from writing code and watching youtube
+Stranger: What language?
+You: Python

@@ -1,0 +1,147 @@
+I want to take a step back while working on the memory
+    i think it may be beneficial to look at each entry-type/entity that might go into the memory
+
+    i want to try making class versions for each type in order to help figure out what attributes/properties/whatever I want to store
+        as well as practice 
+
+
+EVENT
+    input example
+        "I went to Walmart yesterday."
+    
+    dictionary form
+        {
+            "type": "EVENT",
+            "time-of-occurrence": "",
+            "event-duration": "",
+            "involved": [],
+            "quotations": []
+        }
+
+PERSON
+    input example
+        "Sadie is my sister's friend."
+
+    dictionary form
+        {
+            "type": "PERSON",
+            "full-name": "",
+            "nicknames": [],
+            "age": 0,
+            "date-of-birth": "",
+            "likes": "",
+            "dislikes": "",
+            "appearance": [],
+            "traits": [],
+            "relationships": {
+                "ID": ["RELATION-TYPE"]
+            },
+            "quotations": []
+        }
+
+    Relation-Types(should all be nouns that describe some form of relationship between a person and another entity)
+        PERSON-PERSON
+            family
+                "cousin", "brother", "sister", "aunt", "mom", "mother", "father", "dad", "son", "daughter", "child", "parent", "grandfather", "grandmother", "grandpa", "grandma", "uncle", "sibling", "baby", "stepfather", "stepmother", "step-father", "step-mother", "stepdad", "stepmom", "step-dad", "step-mom", "father-in-law", "mother-in-law", "sister-in-law", "brother-in-law", "grandparent", "nephew", "niece", "grandchild", "grandson", "granddaughter", "son-in-law", "daughter-in-law", "half-brother", "half-sister", "half-sibling"
+            romance
+                "partner", "spouse", "boyfriend", "girlfriend", "significant other", "wife", "husband", "lover", "babe", "companion", "mate", "date"
+            school
+                ""
+            work
+                "coworker", "boss", "manager", "intern", "employee", "supervisor", "owner", "ceo", "head", "colleague", "foreman", "superintendent", "administrator", "worker", "forewoman", "foreperson", "director", "coordinator"
+            friend
+            acquaintance
+            pets
+                "puppy", "pet", "kitten", "dog", "cat", "gecko", "ferret", "lizard", "spider", "snake", "opposum", "raccoon"
+            
+        PERSON-ORGANIZATION
+            work
+                "EMPLOYER"
+            school
+                ""
+
+        PERSON-LOCATION
+            work
+                "JOBSITE", "WORKPLACE"
+            school
+                ""
+
+        PERSON-EVENT
+
+    appearance could either be a list of words/phrases used to describe the person, or it could be a dictionary of specific values("height": 128)
+        there is also the idea that it could be a combination of both, though i'm not completely sure how i would format that
+
+        for traits(describing their character/personality) a simple list makes the most sense
+
+        it would make sense to include a "quotations" like for events
+
+    how should pets be handled?
+        I think they should probably be a separate kind of entity
+
+LOCATION
+    input example
+        "I visited the Lincoln Memorial"
+
+    dictionary form
+        {
+            "type": "LOCATION",
+            "names": [],
+            "position-information": {},
+            "relations": {},
+            "quotations": []
+        }
+
+    location entries should include info about the where specifically it is(address? latitude and longitude), and related events, organizations, people, and other locations
+
+    how should nested locations/locations in other locations be handled?
+        maybe under relations as "PARENT-LOCATION" or "CHILD-LOCATION"
+
+ORGANIZATION
+    input example
+        "I applied for a position at Walmart."
+        
+    dictionary form
+        {
+            "type": "ORGANIZATION",
+            "names": [],
+            "organization-type": "",
+            "relations": {},
+            "quotations": []
+        }
+
+    organization-types?
+        BUSINESS
+
+OBJECT
+    input example
+        "I just bought a Honda Civic"
+
+    dictionary form
+        {
+            "type": "OBJECT",
+            "names": [],
+            "object-type": "",
+            "relations": {},
+            "properties": {},
+            "quotations": []
+        }
+
+    object-types
+        VEHICLE
+        TOOL
+        FOOD
+        CLOTHING
+        FURNITURE
+        TOY
+        ART
+        ELECTRONIC
+        MUSICAL
+        DIGITAL
+        MEDIA
+        MATERIALS
+        CONCEPTS
+        UKNOWN
+
+    store some attributes(/characteristics/properties/qualities) of it like color(at least, things that were said as assumed to be "non-standard")
+        color
+        weight

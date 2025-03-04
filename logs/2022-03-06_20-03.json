@@ -1,0 +1,26 @@
+{
+    "session-start-time": "2022-03-06 20:03:31.832288-08:00",
+    "session-end-time": "2022-03-06 20:06:37.514716-08:00",
+    "session-duration": "0:03:05.682428 / 185.682428 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "search pizza recipes on google",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": "google",
+                "term": "pizza recipes on google",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-06 20:03:46.224597"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on google: \"pizza recipes on google\".",
+            "spoken-feedback": false,
+            "time": "2022-03-06 20:03:47.045417"
+        }
+    ]
+}

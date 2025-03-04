@@ -1,0 +1,18 @@
+{
+    "session-start-time": "2022-07-16 21:43:51.774993-07:00",
+    "session-end-time": "2022-07-16 21:44:21.639249-07:00",
+    "session-duration": "0:00:29.864256 / 29.864256 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "perform full restart",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-hard-restart",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-16 21:44:21.639249"
+        }
+    ]
+}

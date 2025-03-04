@@ -1,0 +1,882 @@
+import enum
+from os import name
+from sklearn.svm import LinearSVC
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics import accuracy_score
+from nltk import word_tokenize, ne_chunk, pos_tag
+from nltk.tree import Tree
+import nltk, spacy, json, smarthouse, re#, pprint
+import mathParse
+
+training_inputs = []
+training_labels = []
+training_inputs2 = []
+training_labels2 = []
+
+with open('train.json', 'r') as fp:
+    trainData = json.load(fp)  # load up the training data from the json file
+
+# sort the data and labels for the main intent classifier
+for i in trainData["intent"]:
+    training_inputs.extend(trainData["intent"][i])
+    training_labels.extend([i] * len(trainData["intent"][i]))
+
+# sort the data and labels for the secondary intent classifier
+for i in trainData["subIntent"]:
+    training_inputs2.extend(trainData["subIntent"][i])
+    training_labels2.extend([i] * len(trainData["subIntent"][i]))
+
+training_inputs = [str(pos_tag(word_tokenize(i))) for i in training_inputs] # make the training data string versions of the part of speech tagged versions of the input
+training_inputs2 = [str(pos_tag(word_tokenize(i))) for i in training_inputs2]
+# print(training_inputs[30:35])
+
+test_inputs_start = [  # test inputs for the main intent classifier
+    "8 + 4",
+    "turn on the heater in the living room",
+    "what is the weather like in Redmond, Washington",
+    "what are you up to",
+    "open the garage",
+    "ten squared",
+    "what is the capital of Alaska",
+    "two plus two",
+    "what is 48 + 32",
+    "where is timbuktu?",
+    "how to change a tire",
+    "please open the garage door",
+    "weather in Palo Alto",
+    "places with the best weather",
+    "dim the lights in the living room",
+    "open steam",
+    "go to bing.com",
+    "what time is it?",
+    "is the light on in the garage",
+    "weather forecast for the next week",
+    "search for rash causes",
+    "what is 100 - 60?",
+    "twenty divided by 2",
+    "weather in Timbuktu for the next week",
+    "temperature in Palo Alto",
+    "how can you help me?",
+    "tell me a fact about the ocean",
+    "play some Michael Jackson",
+    "random number between fifty and one hundred",
+    "again",
+    "what is two plus two",
+    "what is 2 + 2?",
+    "search on yahoo facts about the brain",
+    "roll a 100 sided die",
+    "what are your functions?",
+    "do you know any music facts?"
+]
+
+test_inputs = [str(pos_tag(word_tokenize(m))) for m in test_inputs_start]# use POS tagging
+testing_labels = ['math', 'smarthouse', 'weather', 'conversation', 'smarthouse', 'math', 'search', 'math', 'math', 'search', 'search', 'smarthouse', 'weather', 'search', 'smarthouse', 'open_app', 'open_site', 'time', 'smarthouse', 'weather', 'search', 'math', 'math', 'weather', 'weather', 'help', 'funfact', 'music', 'random', 'useLast', 'math', 'math', 'search', 'random', 'help', 'funfact']
+
+# converts the text into a numerical representation through the use of the "bag of words" technique
+vectorizer = CountVectorizer()
+
+training_vectors = vectorizer.fit_transform(training_inputs)
+testing_vectors = vectorizer.transform(test_inputs)
+# convert the text data into a number form(?)
+training_vectors2 = vectorizer.fit_transform(training_inputs2)
+
+intentClassifier = LinearSVC()
+# fit the main intent classifer to its training data
+intentClassifier.fit(training_vectors, training_labels)
+
+subIntentClass = LinearSVC()
+# fit the secondary intent classifer to its training data
+subIntentClass.fit(training_vectors2, training_labels2)
+
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('maxent_ne_chunker')
+# nltk.download('words')
+
+def getGPE(text):
+    chunked = ne_chunk(pos_tag(word_tokenize(text)))
+    #prev = None
+    nameEnts = []
+    current = []
+
+    for subtree in chunked:
+        if type(subtree) == Tree and subtree.label() == 'GPE':
+            current.append(" ".join([t[0] for t in subtree.leaves()]))
+        elif current:
+            named_entity = " ".join(current)
+            if named_entity not in nameEnts:
+                nameEnts.append(named_entity)
+                current = []
+        else:
+            continue
+
+    return nameEnts
+    # code that used to be in the weather part of the intEntFilter, before I replaced this function
+    # if inp[-1] not in ["?", ".", "!"]:
+    #     inp = inp + "?"
+
+    # loc = None
+    # cc = getGPE(inp) # try to extract the location from the input(i might want to redo this, perhaps incorporate all of the following code/process)
+    # # print(inp, cc)
+
+    # if cc:
+    #     if len(cc) > 1: # adds a comma if the location has more than one word
+    #         loc = ", ".join(cc)
+    #     else:
+    #         loc = cc[0]
+    # else:  # if we weren't able to get the location from the original text we capitalize the first letter of everyword, then try again
+    #     # print([x[0].upper() + x[1:] for x in inp.lower().split(" ")])
+    #     inpLi = inp.lower().split(" ")
+    #     for i, l in enumerate(inpLi):
+    #         inpLi[i] = l.title()
+    #     newInp = " ".join(inpLi)
+
+    #     cc = getGPE(newInp)
+
+    #     if cc:
+    #         if cc[0].lower() == "weather":
+    #             cc.remove(cc[0])
+
+    #     if cc:
+    #         if len(cc) > 1:# if there is more than one word in the location, we combine them with ", "
+    #             loc = ", ".join(cc)
+    #         else:
+    #             loc = cc[0]
+
+def getGPE2(text, lst = False):
+    """ new attempt at making a function that extracts locations from the input """
+    if text[-1] not in ["?", ".", "!"]:
+        text += "?"
+
+    chunked = ne_chunk(pos_tag(word_tokenize(text)))
+    NER = spacy.load("en_core_web_sm")
+    tagged = NER(text)
+
+    nameEnts = []
+
+    # use spacy to check for 'GPE'-type named entities
+    for word in tagged.ents:
+        if str(word.label_) == 'GPE':
+            nameEnts.append(word.text)
+    
+    # use nltk to check for 'GPE'-type named entities
+    for subtree in chunked:
+        if type(subtree) == Tree and subtree.label() == 'GPE':
+            nameEnts.extend([t[0] for t in subtree.leaves()])
+
+    # more in-depth way of removing duplicates, while preserving the order of the list
+    nameEnts.reverse()
+    for i, x in enumerate(nameEnts):
+        m = list(nameEnts)
+        m.remove(x)
+        if any(x.lower() in word_tokenize(y.lower()) for y in m):
+            nameEnts[i] = ""
+    nameEnts.reverse()
+    nameEnts = [i for i in nameEnts if i]
+
+    if nameEnts:
+        if lst:
+            return nameEnts
+        else:
+            return ", ".join(nameEnts)
+    else:
+        return None
+
+def timExtr(inp = ""):
+    ''' outputs a dictionary of time related info based on the input '''
+    # inp = str(inp.lower)
+    inp = mathParse.parser(inp.lower())
+    words = word_tokenize(inp)
+    ofDay = ["am", "pm", "a.m", "p.m", "a.m.", "p.m.", "o'clock", "oclock"]
+    timeWords = ["yesterday", "today", "tomorrow", "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "next week", "this week"]
+    units = ["year", "month", "week", "day", "hour", "minute", "second"]
+    months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
+    timingSet = False
+    timing = {}
+
+    # check for a time of the day(i.e. "8 a.m", "5 o'clock")
+    for d in ofDay:
+        if d in inp:
+            for i, n in enumerate(words):
+                if d == n:
+                    timingSet = True
+                    timing['elapsed'] = False # specify that it is a time at which to do the thing
+                    if words[i - 1].isdigit():
+                        if "p" in d: # convert to 24-hour clock
+                            timing['oClock'] = int(words[i - 1]) + 12
+                        else:
+                            timing['oClock'] = int(words[i - 1])
+                    break
+
+    # if not timing['oClock']:
+    #     for i in words:
+    #         if ":" in i:
+    #             timing['oClock']
+
+    # check for a day/day range?(i.e. "tomorrow", "today", "next week")
+    for t in timeWords:
+        if t in inp:
+            for i, n in enumerate(words):
+                if t == n:
+                    timingSet = True
+                    timing['elapsed'] = False
+                    timing['time'] = t
+                    break
+
+    # check for specified date
+    # works for dates like 27 of December, 2018 and December 27th, 2018. need to make it work for 12/27/2018 and 27/12/2018
+    for m in months:
+        if m in inp:
+            for i, n in enumerate(words):
+                if m == n:
+                    timingSet = True
+                    timing['elapsed'] = False
+                    date = ""
+
+                    if words[i - 1].isdigit(): # if day is first: 1st 
+                        date += words[i - 1]
+                    elif words[i - 1] == "of":
+                        if words[i - 2][0].isdigit():
+                            date += words[i - 2] + " of "
+                        # elif words[i - 2] == "first":
+                        #     date += "1st"
+                        # elif words[i - 2] == "second":
+                        #     date += "2nd"
+                        # elif words[i - 2] == "third":
+                        #     date += "3rd"
+                        # elif words[i - 2] == "fifth":
+                        #     date += "5th"
+                        # else:
+                        #     p = mathParse.parser(words[i - 2].replace())
+
+                    date += m
+
+                    if i < len(words) - 1:
+                        if words[i + 1].isdigit():
+                            date += " " +words[i + 1]
+                        elif words[i + 1][0].isdigit():
+                            date +=" " + words[i + 1]
+
+                    if i < len(words) - 2:
+                        if words[i + 2].isdigit(): # might cause some false positives
+                            date += " " + words[i + 2]
+                        
+                    timing['date'] = date
+                    break
+    
+    # if timing is still not set, check for a specific time to pass
+    if not timing:
+        timing['elapsed'] = True # specify that it is an amount of time that must elapse before the thing is to happen
+        for u in units:
+            if u in inp:
+                for i, n in enumerate(words):
+                    if u in n:
+                        timingSet = True
+                        if words[i - 1].isdigit():
+                            timing[u + "s"] = int(words[i - 1])
+                        elif words[i - 1] == "an" or words[i - 1] == "a":
+                            timing[u + "s"] = 1
+                        else:
+                            timing[u + "s"] = 0
+            else:
+                timing[u + "s"] = 0
+            
+    # return timing
+    return timing if timingSet else None # probably not a good way to do this
+
+def intNEnt(inp = "", lastIn = {}): # function that labels an input with its intent and sub-intent, as well as its specified "values"
+    # inp = mathParse.parser(inp)
+    inpPOS = str(pos_tag(word_tokenize(inp)))# use POS tagging
+
+    vectorizer.fit(training_inputs)
+    # vectors = vectorizer.transform([inp])
+    vectors = vectorizer.transform([inpPOS])# use POS tagging
+
+    # predicts the main intent label
+    intent = intentClassifier.predict(vectors)[0]
+
+    vectorizer.fit(training_inputs2)
+    # subIntVectors = vectorizer.transform([inp])
+    subIntVectors = vectorizer.transform([inpPOS])# use POS tagging
+
+    # predicts the secondary intent label
+    subInt = subIntentClass.predict(subIntVectors)[0]
+
+    # makes the "None" label an actual None
+    subInt = None if subInt == 'None' else subInt
+
+    c = {"intent": intent, "subInt": subInt}
+
+    # inp = mathParse.parser(inp)
+
+    timing = None
+
+    if intent == "search":  # extract the search engine, if specified, and the searched term
+        engines = ["google", "bing", "yandex", "yahoo", "baidu"]
+        engin = None
+        # finds the specified engine, if a supported one is specified
+        [engin := e for e in engines if e in inp.lower()]
+        c["engine"] = engin
+        term = str(inp)
+
+        if engin: # if an engine is specified, remove the engine-specific delimiters
+            delim = [str(engin) + " search for ", str(engin) + " search ", "search " + str(engin) + " for ", "search " + str(engin) + " ", "search on " + str(engin) + " for ", "search on " + str(engin) + " ", " on " + str(engin), "search for ", "search ", str(engin) + " "]
+            for d in delim:
+                if d in inp.lower():
+                    term = inp.lower().replace(d, "")
+                    break
+        else: # if there is not specified engine, just remove the simpler delimiters
+            c["engine"] = None
+            delim = ["search for ", "search "]
+            for d in delim:
+                if d in inp.lower():
+                    term = inp.lower().replace(d, "")
+                    break
+
+        c["term"] = term
+            
+    elif intent == "funfact":
+        subj = None
+        # words = word_tokenize(inp.lower())
+        words = word_tokenize(re.sub(r'[^\w\s]', '', inp.lower())) # word level tokenized version of the input in lowercase with the punctuation stripped
+        for i, word in enumerate(words):
+            if "about" in words: # if the word "about" is in the words, check for it and take all the words that follow
+                if word == "about":
+                    subj = " ".join(words[i + 1:])
+                    break
+            else:
+                if word in ["fact", "facts"] and words[i - 1] not in ["random", "fun", "a"]: # if "about" isn't in the input, take the words that precede other delimiter words
+                    subj = " ".join(words[:i])
+                    break
+
+        c["subject"] = subj
+        
+    elif intent == "random":
+        rolls = 1
+
+        num = mathParse.parser(inp, op=False)
+        wL = nltk.word_tokenize(num)
+
+        if subInt == "randomNumber":
+            low = None
+            high = None
+
+            for i, n in enumerate(wL):
+                if n.isdigit() or n[0] == '-': # might want to do something different for checking negatives
+                # if any(l.isdigit() for l in n):
+                    if wL[i - 1] == "between":
+                        low = int(n)
+                    elif wL[i - 1] == "and":
+                        high = int(n)
+                    elif wL[i + 1] == "random":#might want to do something different for this
+                        rolls = int(n)
+
+            c['low'] = low
+            c['high'] = high
+
+        elif subInt == "dice":
+            sides = None
+
+            for i, n in enumerate(wL):
+                if n.isdigit():
+                    if wL[i + 1] == "sided" or wL[i + 1] == "side":
+                        sides = int(n)
+                    elif wL[i + 1] in ["dice", "die", "time", "times"]:
+                        rolls = int(n)
+                elif n == "once":
+                    rolls = 1
+                elif n == "twice":
+                    rolls = 2
+
+            c['sides'] = sides
+
+        elif subInt == "coinFlip":
+            for i, n in enumerate(wL):
+                if n.isdigit():
+                    if wL[i + 1] in ["coins", "coin", "time", "times"]:
+                        rolls = int(n)
+                elif n == "once":
+                    rolls = 1
+                elif n == "twice":
+                    rolls = 2
+
+        c['rolls'] = rolls
+
+    elif intent == "music":
+        term = None
+        if subInt == "playMusic":
+            for i in ["play some ", "put on some ", "play ", "put on "]:# check for(and remove) some delimiters
+                if i in inp.lower():
+                    # term = inp.replace(i, "")
+                    term = inp[inp.lower().index(i) + len(i):]
+                    break
+
+        elif subInt == "lyrics":
+            for i in ["lyrics of ", "lyrics to ", "lyrics for ", "words of ", "lyrics to ", "words for "]:# check for(and remove) some delimiters
+                if i in inp.lower():
+                    term = inp[inp.lower().index(i) + len(i):]
+                    break
+
+            if not term:# if term hasn't been set, try checking for(and removing) the possible 'end delimiter'
+                if " lyrics" in inp.lower():
+                    term = inp[:inp.lower().index(" lyrics")]
+
+        if not term:# and if term still hasn't been set, just set it to the input
+            term = inp
+
+        c["term"] = term
+
+    elif intent == "useLast":# use the classification of the last input "do that again"
+        if lastIn:
+            c = lastIn
+
+    else:#intents that might use the timing
+        # extract timing requirements
+        timing = timExtr(inp)
+
+        # extract the room, appliance, and state(and possibly value)
+        if intent == "smarthouse":
+            if inp[-1] == "?":
+                inp = inp[:-1]
+
+            room = ""
+            appliance = ""
+            state = ""
+            value = None
+
+            if subInt == "check_state":
+                # deta = smarthouse.checkInput(inp, True)
+                deta = smarthouse.checkInput2(inp, True)
+                if deta:
+                    room = deta[0]
+                    appliance = deta[1]
+                    state = deta[2]
+            elif subInt == "change_state":
+                # deta = smarthouse.checkInput(inp, False)
+                deta = smarthouse.checkInput2(inp, False)
+                # print(deta)
+                if deta:
+                    room = deta[0]
+                    appliance = deta[1]
+                    state = deta[2]
+                    value = deta[3]
+
+            c["room"] = room
+            c["appliance"] = appliance
+            c["state"] = state
+            c["value"] = value
+                
+        elif intent == "open_app": # extract the program name
+            app = None
+            commonName = None
+
+            for i in ["open ", "start up ", "start "]:
+                if i in inp.lower():
+                    if timing:
+                        if " at" in inp:
+                            commonName = inp[inp.lower().index(i) + len(i):inp.lower().index(" at")]
+                        elif " in" in inp:
+                            commonName = inp[inp.lower().index(i) + len(i):inp.lower().index(" in")]
+                    else:
+                        commonName = inp[inp.lower().index(i) + len(i):]
+                    break
+
+            app = lookUp(commonName)
+
+            c["commonName"] = commonName
+            c["program"] = app
+
+        elif intent == "open_site":  # extract the specified url and browser
+            site = None
+            brow = None
+            commonName = None
+
+            brws = ["firefox", "chrome", "opera"]
+
+            for i in brws: # check if one of the supported browsers has been mentioned. if so, set the browser to be used to that browser
+                if i in inp.lower():
+                    brow = i
+                    break
+            
+            for i in ["open ", "go to "]:
+                if i in inp.lower():
+                    if brow:
+                        commonName = inp[inp.lower().index(i) + len(i):inp.lower().index(" in")]
+                    else:
+                        commonName = inp[inp.lower().index(i) + len(i):]
+                    break
+
+            site = lookUp(inp.lower(), "site") # use the look up table to see if any of the websites in it are mentioned
+
+            if not site: # if the look up table didn't return anything, just use the common name for the website
+                site = commonName.replace("the ", "").replace(" website", "").replace(" site", "").replace(" webpage", "").lower().replace(" ", "")
+                if site:
+                    if "www" not in site:
+                        site = "www." + site
+
+                    if "http" not in site:
+                        site = "https://" + site
+
+                    if not any(i in site for i in [".com", ".net", ".gov", ".tv", ".org", ".xyz", ".ru", ".jp", ".eu"]):
+                        site += ".com/"
+                else: # if we cannot use the common name for the website for whatever reason, just output example.com(to avoid breaking something?)
+                    site = "http://www.example.com/"
+                
+            c["commonName"] = commonName
+            c["website"] = site
+            c["browser"] = brow
+
+        elif intent == "weather": # extract the location
+            loc = None
+            loc = getGPE2(inp)
+
+            c["location"] = loc
+
+        elif intent == "time":
+            if subInt == "timeTil" or subInt == "startTimer":
+                posUn = ["year", "month", "week", "day", "hour", "minute", "second"]
+                units = []
+
+                for i in posUn:
+                    if i in inp.lower():
+                        units.append(i + "s")
+
+                if subInt == "timeTil":
+                    units = units if units else ["seconds"]
+                elif subInt == "startTimer":
+                    message = ""
+                    units = units if units else ["seconds"]
+
+                    message = str(inp)
+                    words = word_tokenize(inp)
+                    for i, word in enumerate(words):
+                        if word in posUn or word[:-1] in posUn:
+                            message = message[message.index(word) + len(word) + 1:]
+
+                    c['message'] = message
+
+                c['units'] = units
+                
+            elif subInt == "date":
+                posUn = ['second', 'minute', 'hour', 'day', 'week', 'month', 'year']
+                units = []
+
+                for i in posUn:
+                    # if i in inp.lower():
+                    # if i in word_tokenize(inp.lower()):
+                    if any(i == x or i + "s" == x for x in word_tokenize(inp.lower())):
+                        units.append(i)
+
+                c['units'] = units
+
+            elif subInt == "checkTimer" or subInt == "endTimer":
+                term = ""
+                if "all" in inp.lower():
+                    term = "all"
+                else:
+                    words = word_tokenize(inp.lower())
+                    for i, n in enumerate(words):
+                        if n == "timer" or n == "timers":
+                            if i < len(words) - 1 and words[i + 1] == "for":
+                                term = inp[inp.lower().index("for ") + 4:]
+                            else:
+                                if "stop my " in inp.lower():
+                                    term = inp[inp.lower().index("stop my ") + 8:inp.lower().index(" timer")]
+                                elif "stop the " in inp.lower():
+                                    term = inp[inp.lower().index("stop the ") + 9:inp.lower().index(" timer")]
+                                elif "end the " in inp.lower():
+                                    term = inp[inp.lower().index("end the ") + 8:inp.lower().index(" timer")]
+                                elif "end my " in inp.lower():
+                                    term = inp[inp.lower().index("end my ") + 7:inp.lower().index(" timer")]
+                                elif "stop " in inp.lower():
+                                    term = inp[inp.lower().index("stop ") + 5:inp.lower().index(" timer")]
+                                elif "end" in inp.lower():
+                                    term = inp[inp.lower().index("end ") + 4:inp.lower().index(" timer")]
+                    
+                c['IDTerm'] = term
+
+    c["timing"] = timing if timing else None
+
+    return c
+
+def lookUp(n = "", t = "file"):
+    with open('lookUp.json', 'r') as fp:
+        fileRef = json.load(fp)
+
+    for p in fileRef[t]:
+        if p in n.lower():
+            return p
+        else:
+            for cN in fileRef[t][p]:
+                if cN in n.lower():
+                    return p
+
+    return None
+
+def trainDataCont():
+    for i in trainData["intent"]:
+        print(i, len(trainData["intent"][i]))
+    print("")
+    for i in trainData["subIntent"]:
+        print(i, len(trainData["subIntent"][i]))
+    print("")
+
+def showAccuracy(num = None):
+    testing_vectors = vectorizer.fit(training_inputs).transform(test_inputs)
+    predictions = intentClassifier.predict(testing_vectors)
+
+    testing_vectors = vectorizer.transform(test_inputs)
+
+    testing_vectors = vectorizer.fit(training_inputs2).transform(test_inputs)
+    predictions2 = subIntentClass.predict(testing_vectors)
+
+    # find out the accuracy of the main intent classifier
+    acc = accuracy_score(testing_labels, predictions)
+
+    if not num:
+        num = len(predictions)
+
+    # print information about the predictions and correct labels for the testing data(main intent)
+    for pred, pred2, inp, lbl in zip(predictions[:num], predictions2[:num], test_inputs_start[:num], testing_labels[:num]):
+        if pred != lbl:
+            m = "X"
+        else:
+            m = "O"
+        print(m, "-", inp, "\n\tIntent:", pred, "<->", lbl, "\n\tSub-Intent:", pred2)
+
+    # print out the accuracy of the main intent classifier
+    print("{:.2%} Accuracy".format(acc))
+
+if __name__ == "__main__":
+    trainDataCont()
+
+    showAccuracy(15)
+    # showAccuracy()
+
+    # print(lookUp("open mspaint", "file"))
+    # print(lookUp("open the youtube site", "site"))
+
+    # print(getGPE("how's the weather in Atlanta, Georgia"))
+    # print(getGPE("how's the weather in Palo Alto"))
+    # print(getGPE("how's the weather in San Marino, California, USA"))
+    # print(getGPE("how's the weather in San Marino, California, United States"))
+    # print(getGPE("how's the weather in Fukuoka, Japan"))
+    # print(getGPE("how's the weather in atlanta, georgia"))
+    # print(getGPE("how's the weather in palo alto"))
+    # print(getGPE("how's the weather in san marino, california, united states"))
+    # print(getGPE("how's the weather in fukuoka, japan"))
+
+    # print(getGPE2("how's the weather in Atlanta, Georgia"))
+    # print(getGPE2("how's the weather in Palo Alto"))
+    # print(getGPE2("how's the weather in San Marino, California, USA"))
+    # print(getGPE2("how's the weather in San Marino, California, United States"))
+    # print(getGPE2("how's the weather in Fukuoka, Japan"))
+    # print(getGPE2("how's the weather in atlanta, georgia"))
+    # print(getGPE2("how's the weather in palo alto"))
+    # print(getGPE2("how's the weather in san marino, california, united states"))
+    # print(getGPE2("how's the weather in fukuoka, japan"))
+
+    while True:
+        t = intNEnt(input("> "))
+        print(t)
+        # print(t, bool(t['timing']))
+        # pp = pprint.PrettyPrinter(indent=2, sort_dicts=False)
+        # pp.pprint(intNEnt(input("> ")))
+        # print(gpeGet(input("> ")))
+
+'''
+want to take an input, the determine its request/goal as well as extract the pertinent information from it
+
+    would require some method of classification, named entity extraction, and just the extraction of normal nouns
+
+    to take a sentence like, "Would you open google.com on my laptop, please?" could be easy
+    check for the key word "open" to determine the intent: open a website
+    then extract what follows the keyword: "google.com"
+    then check for extra parameters, then extract them: "on my laptop"/"my laptop"/"laptop"
+
+    could be complicated if the input isn't as specific: "open Google"/"go to the Google website"
+    this might require a list of common terms and their corresponding "full forms"(a look up table of sorts)
+    so in this case, "Google" would turn into "www.google.com" or something similar
+
+    could just use the same classification method as I'm already using
+    I could write code that extracts all nouns(beit a named entity or not), then classifies them based on their possible role in the intent
+
+    so an input, "turn on the coffee maker at 8 a.m. tomorrow" would be labeled with its intent and values, {"intent": "smarthouse", "goal": "change_state", "appliance": "coffee maker", "state": "on",  "time": "08:00"}
+
+
+still need to generate more training data for some of them, to make their amounts equal so that one category isn't over-represented in the data
+
+
+use word_tokenize to separate punctuation from words?
+    this might allow the vectorizer to find/know more words? possibly leading to more accurate predictions/labels
+    tried it, didn't seem to improve anything
+    and on top of that, looking at the resulting vectors it didn't seem like anything was actually different?
+
+
+I should make a "lookup table" for apps and websites
+    essentially a dictionary that can be referenced to find the file name for a common name(a similar thing for websites)
+
+    {
+        "paint.exe": [
+            "paint",
+            "ms paint",
+            "mspaint"
+        ],
+        "discord.exe": [
+            "discord"
+        ],
+        "spotify.exe": [
+            "spotify"
+        ],
+        "vscode.exe": [
+            "visual studio code",
+            "vscode",
+            "vs code"
+        ],
+        "chrome.exe": [
+            "chrome",
+            "google chrome"
+        ]
+    }
+
+    this would make it easier to produce the right name for things
+    and it could have more than just the names of the files, but their absolute paths, which would make things even easier to run them
+
+    fN = ""(filename)
+    for p in fileRef:
+        if p in input:
+            fN = p
+            break
+        else:
+            for cN in fileRef[p]:
+                if cN in input:
+                    fN = p
+                    break
+            else:
+                continue
+            break
+
+    after a small tests, the basic concept works
+
+
+could add music and lyrics functions to it
+    use the tube thing and the lyrics scraper
+    DONE
+
+
+i should add a random number thing to it
+    it could have random number, dice, and maybe some other things
+    it should allow the user to specify a range for the number and maybe even specify an amount of numbers to generate
+    DONE
+
+
+i should work out how to repeat requests
+    essentially if I were to say "flip a coin please" receive an output
+    then say "another coin" or "another coin please", it should be classified the same as the previous time
+    and it should probably have the same values as specified in the previous input
+
+    that means i would have to save the last classification
+    and if the current input is classified as a "repeat"
+    use the previous classification
+    the intent function would need another input variable for the dictionary of the previous classification
+    DONE?
+
+
+i could use nltk to tokenize and POS tag the training data, then convert that directly to a string
+    perhaps perfoming that on the training data might allow it to "pick up on" POS and use that to better classify the input
+    DONE
+    though, something about it bothers me, idk why/what
+    maybe it feels like something might go wrong with it at some point, idk
+
+
+could try using a neural net for the classification?
+    for the input values it could just be the characters in the string, and the set amount would be the length of the longest string in the training data
+
+
+could add subintents for the time thing
+    "currentDate" and "currentTime" perhaps some others
+    DONE
+
+
+could make a lookup thing for common websites
+    DONE
+
+
+two part commands?
+i was thinking i could use the last input thing for this
+the thing is, that would allow me to get the intent of the last input, and I want to classify something as being two-part or not first
+
+i guess I could make a sub-intent? "twoPart" or "noEnts"
+it would label an input with it's normal label, as well as being the first part of the input
+after the first input is labeled as the first part, it would be passed in along with the second part
+it would take the main intent of the previous one, and pick out the second intent and accompanying information from the second
+
+    User: "Give me a random number."
+    Assistant: "A random number between which numbers?"
+    User: "between one and ten"
+    Assistant: "Here you go: 5"
+
+there are a couple(small?) problems with this
+    first, the "twoPart" sub-intent would replace any possible sub-intent of the original input
+        one way I could fix this is by adding a third classifier, that puts the label on the input instead of using the sub-intent classifier
+        however, adding another classifier would mean that I'd have to make more training data
+        
+        i could use a bunch of the training data for the intents/sub-intents for the onePart data
+        the twoPart data is the data I'd have to generate
+
+    second, it might require a change of the way some things are picked out of an input
+        in the example, if you gave "one and ten" instead of "between one and ten" for the second input, it might mess up in picking "one"
+        this is because I have it pick out the word after "between" for the first number
+
+        one way I could go at this is by changing the ways I pick out info
+        I could also add alternate methods for picking stuff out that would be used when the twoPart thing is present
+
+
+redid the checkInput thing for the smarthouse inputs to resolve some of the problems that occasionally came up
+    also, the old one used eval() which is bad, so I avoided that in the new one
+
+
+I want to redo the getGPE() function to make it better
+    perhaps incorporate some of the steps I use in the intent filter directly in it
+    maybe I could give it the same treatment I gave the nameExt() thing
+    REDONE
+    I didn't give it the nameExt() treatment, but it does work a lot better now
+
+
+perhaps, i should once again attempt to add more training data to even out the categories
+    weather 106
+    smarthouse 107
+    math 100
+    search 162
+    conversation 111
+    open_app 54
+    open_site 53
+    time 64
+    help 26
+    funfact 37
+    random 82
+    music 54
+    useLast 5
+
+    change_state 86
+    check_state 25
+    forecast 26
+    temperature 25
+    precipitation 27
+    humidity 26
+    randomNumber 26
+    dice 27
+    coinFlip 26
+    playMusic 28
+    lyrics 27
+    currentTime 23
+    timer 14
+    date 9
+    timeTil 17
+    None 389
+
+I could try to make "checkTimer" and "stopTimer" functions
+    for these I would have to have a way to check for the specified timer
+        if there is only one active timer, that is more than likely the one to return
+        but if there is more than one active timer, finding out the right one would be necessary
+'''

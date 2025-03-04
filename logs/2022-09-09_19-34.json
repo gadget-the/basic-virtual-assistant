@@ -1,0 +1,93 @@
+{
+    "session-start-time": "2022-09-09 19:34:55.679310-07:00",
+    "session-end-time": "2022-09-09 19:35:49.305997-07:00",
+    "session-duration": "0:00:53.626687 / 53.626687 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "hi",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-09 19:35:10.042543"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hey!",
+            "spoken-feedback": false,
+            "time": "2022-09-09 19:35:10.137012"
+        },
+        {
+            "speaker": "USER",
+            "text": "how are you?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-09 19:35:15.623210"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm good, how are you?",
+            "spoken-feedback": false,
+            "time": "2022-09-09 19:35:15.670461"
+        },
+        {
+            "speaker": "USER",
+            "text": "i'm doing alright",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-09 19:35:23.938442"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "That sentence makes no sense to me.",
+            "spoken-feedback": false,
+            "time": "2022-09-09 19:35:24.001359"
+        },
+        {
+            "speaker": "USER",
+            "text": "i'm doing fine",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-09 19:35:29.925664"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Is it sunny outside?",
+            "spoken-feedback": false,
+            "time": "2022-09-09 19:35:29.972780"
+        },
+        {
+            "speaker": "USER",
+            "text": "no, it's raining",
+            "intEnt": {
+                "intent": "weather",
+                "secondary-intent": "weather-precipitation",
+                "location": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-09 19:35:40.003844"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You want to know the precipitation data for None.",
+            "spoken-feedback": false,
+            "time": "2022-09-09 19:35:40.014857"
+        }
+    ]
+}

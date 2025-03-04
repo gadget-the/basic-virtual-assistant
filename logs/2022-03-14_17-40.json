@@ -1,0 +1,24 @@
+{
+    "session-start-time": "2022-03-14 17:40:07.922460-07:00",
+    "session-end-time": "2022-03-14 17:47:53.008264-07:00",
+    "session-duration": "0:07:45.085804 / 465.085804 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "restart, please",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-restart",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-14 17:44:00.233103"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I don't understand the request.",
+            "spoken-feedback": false,
+            "time": "2022-03-14 17:44:00.240108"
+        }
+    ]
+}

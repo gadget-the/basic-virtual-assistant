@@ -1,0 +1,43 @@
+{
+    "session-start-time": "2022-03-06 18:12:54.843591-08:00",
+    "session-end-time": "2022-03-06 18:13:40.135523-08:00",
+    "session-duration": "0:00:45.291932 / 45.291932 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "start a five seconds timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "timer",
+                "units": [
+                    "seconds"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 5
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-03-06 18:13:06.457071"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 seconds. For a total of \"5\" seconds. The ID for it is \"PoZ4ROL2\".",
+            "spoken-feedback": false,
+            "time": "2022-03-06 18:13:06.457071"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "timer",
+            "spoken-feedback": false,
+            "time": "2022-03-06 18:13:11.501094"
+        }
+    ]
+}

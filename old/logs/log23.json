@@ -1,0 +1,124 @@
+{
+    "sessionStartTime": "2021-12-17 13:41:42.434595",
+    "sessionEndTime": "2021-12-17 13:43:35.915282",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "what is today's date?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [],
+                "timing": {
+                    "elapsed": false,
+                    "time": "today"
+                }
+            },
+            "time": "2021-12-17 13:41:43.890555"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Today is December 17, 2021, or 12/17/21.",
+            "tts": false,
+            "time": "2021-12-17 13:41:43.894562"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is tomorrow's date?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [],
+                "timing": {
+                    "elapsed": false,
+                    "time": "tomorrow"
+                }
+            },
+            "time": "2021-12-17 13:41:51.582470"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Tomorrow is December 18, 2021, or 12/18/21.",
+            "tts": false,
+            "time": "2021-12-17 13:41:51.583456"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is yesterday's date?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [],
+                "timing": {
+                    "elapsed": false,
+                    "time": "yesterday"
+                }
+            },
+            "time": "2021-12-17 13:42:02.276394"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Yesterday was December 16, 2021, or 12/16/21.",
+            "tts": false,
+            "time": "2021-12-17 13:42:02.278395"
+        },
+        {
+            "speaker": "USER",
+            "text": "what day of the week is it?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [
+                    "day",
+                    "week"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-17 13:43:02.731137"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Today is Friday.",
+            "tts": false,
+            "time": "2021-12-17 13:43:02.735126"
+        },
+        {
+            "speaker": "USER",
+            "text": "what day of the year is it?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [
+                    "day",
+                    "year"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-17 13:43:17.153651"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Today is the 17th day of the year.",
+            "tts": false,
+            "time": "2021-12-17 13:43:17.153651"
+        }
+    ]
+}

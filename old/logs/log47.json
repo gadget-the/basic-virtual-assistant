@@ -1,0 +1,22 @@
+{
+    "sessionStartTime": "2021-12-20 08:37:48.384700",
+    "sessionEndTime": "2021-12-20 08:37:59.329502",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-20 08:37:54.045954"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Come again?",
+            "tts": false,
+            "time": "2021-12-20 08:37:54.143905"
+        }
+    ]
+}

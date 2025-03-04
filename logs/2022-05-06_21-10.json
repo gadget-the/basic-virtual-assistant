@@ -1,0 +1,18 @@
+{
+    "session-start-time": "2022-05-06 21:10:49.319059-07:00",
+    "session-end-time": "2022-05-06 21:11:10.520300-07:00",
+    "session-duration": "0:00:21.201241 / 21.201241 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "do a simple restart",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-restart",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-06 21:11:10.520300"
+        }
+    ]
+}

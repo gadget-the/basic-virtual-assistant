@@ -1,0 +1,91 @@
+{
+    "sessionStartTime": "2021-12-17 12:53:50.657312",
+    "sessionEndTime": "2021-12-17 12:55:07.272483",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "what day of the week is it?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [
+                    "day",
+                    "week"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-17 12:53:57.657766"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You wanted the day of the week.",
+            "tts": false,
+            "time": "2021-12-17 12:53:57.659786"
+        },
+        {
+            "speaker": "USER",
+            "text": "what month is it?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [
+                    "month"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-17 12:54:08.039892"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "tts": false,
+            "time": "2021-12-17 12:54:08.040897"
+        },
+        {
+            "speaker": "USER",
+            "text": "what month is it?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [
+                    "month"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-17 12:54:31.954454"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "tts": false,
+            "time": "2021-12-17 12:54:31.954454"
+        }
+    ]
+}

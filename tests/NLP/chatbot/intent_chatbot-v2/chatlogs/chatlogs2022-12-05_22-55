@@ -1,0 +1,92 @@
+[
+    {
+        "speaker": "USER",
+        "text": "hi",
+        "significance": {
+            "text": "hi",
+            "entry-type": [
+                "UNKNOWN"
+            ],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "Hey!"
+    },
+    {
+        "speaker": "USER",
+        "text": "this is a test",
+        "significance": {
+            "text": "this is a test",
+            "entry-type": [
+                "OBJECT"
+            ],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "Why do you hate ?"
+    },
+    {
+        "speaker": "USER",
+        "text": "what is your name?",
+        "significance": {
+            "text": "what is your name?",
+            "entry-type": [
+                "PERSON"
+            ],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "Oliver Mott"
+    },
+    {
+        "speaker": "USER",
+        "text": "what's your name?",
+        "significance": {
+            "text": "what's your name?",
+            "entry-type": [
+                "PERSON"
+            ],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "My name is Olive."
+    },
+    {
+        "speaker": "USER",
+        "text": "i'm from Glasgow.",
+        "significance": {
+            "text": "i'm from Glasgow.",
+            "entry-type": [],
+            "entities": [
+                "Glasgow"
+            ]
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "That's cool! I've never been to Glasgow.."
+    },
+    {
+        "speaker": "USER",
+        "text": "bye",
+        "significance": {
+            "text": "bye",
+            "entry-type": [
+                "UNKNOWN"
+            ],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "I don't know what that means."
+    }
+]

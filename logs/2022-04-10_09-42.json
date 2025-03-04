@@ -1,0 +1,43 @@
+{
+    "session-start-time": "2022-04-10 09:42:21.678398-07:00",
+    "session-end-time": "2022-04-10 10:08:25.696099-07:00",
+    "session-duration": "0:26:04.017701 / 1564.017701 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "set the volume to 25%",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": 25,
+                "change-by-value": false,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-04-10 09:43:03.391068"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Setting the volume to 25.",
+            "spoken-feedback": false,
+            "time": "2022-04-10 09:43:03.395861"
+        },
+        {
+            "speaker": "USER",
+            "text": "turn the volume to 80%",
+            "intEnt": {
+                "intent": null,
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-04-10 09:43:16.005921"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I don't understand the request.",
+            "spoken-feedback": false,
+            "time": "2022-04-10 09:43:16.009911"
+        }
+    ]
+}

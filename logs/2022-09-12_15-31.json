@@ -1,0 +1,24 @@
+{
+    "session-start-time": "2022-09-12 15:31:44.064538-07:00",
+    "session-end-time": "2022-09-12 15:32:06.597731-07:00",
+    "session-duration": "0:00:22.533193 / 22.533193 seconds",
+    "session-log": [
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hello?",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:31:57.170228"
+        },
+        {
+            "speaker": "USER",
+            "text": "full restart",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-hard-restart",
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-09-12 15:32:02.882614"
+        }
+    ]
+}

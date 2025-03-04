@@ -1,0 +1,59 @@
+{
+    "sessionStartTime": "2022-01-11 11:36:42.798427-08:00",
+    "sessionEndTime": "2022-01-11 11:37:39.953992-08:00",
+    "sessionDuration": "0:00:57.155565 / 57.155565 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "open discord in one minute",
+            "intEnt": {
+                "intent": "open_app",
+                "subInt": null,
+                "commonName": "discord",
+                "program": "C:\\Users\\mario\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe",
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 1,
+                    "seconds": 0
+                }
+            },
+            "time": "2022-01-11 11:36:54.583283"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Attempting to open 'discord' in 1 minutes. The ID for it is 'OdgU5Lms'.",
+            "tts": false,
+            "time": "2022-01-11 11:36:54.585514"
+        },
+        {
+            "speaker": "USER",
+            "text": "open google chrome in one hour, two minutes, and thirteen seconds",
+            "intEnt": {
+                "intent": "math",
+                "subInt": null,
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 1,
+                    "minutes": 2,
+                    "seconds": 13
+                }
+            },
+            "time": "2022-01-11 11:37:23.141383"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "tts": false,
+            "time": "2022-01-11 11:37:23.147546"
+        }
+    ]
+}

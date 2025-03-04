@@ -1,0 +1,268 @@
+{
+    "file": {
+        "C:\\Windows\\System32\\mspaint.exe": [
+            "ms paint",
+            "mspaint",
+            "mspaint.exe",
+            "paint.exe",
+            "paint"
+        ],
+        "C:\\Program Files\\WindowsApps\\SpotifyAB.SpotifyMusic_1.172.439.0_x86__zpdnekdrzrea0\\Spotify.exe": [
+            "spotify.exe",
+            "spotify"
+        ],
+        "C:\\Users\\mario\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe": [
+            "visual studio code",
+            "vscode",
+            "vs code",
+            "vscode.exe",
+            "Code.exe"
+        ],
+        "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe": [
+            "chrome.exe",
+            "chrome"
+        ],
+        "C:\\Program Files\\Mozilla Firefox\\firefox.exe": [
+            "firefox.exe",
+            "firefox"
+        ],
+        "C:\\Program Files\\Sublime Text\\sublime_text.exe": [
+            "sublime_text.exe",
+            "sublime text"
+        ],
+        "C:\\Program Files\\Windows Media Player\\wmplayer.exe": [
+            "windows media player",
+            "wmplayer.exe"
+        ],
+        "C:\\Program Files\\obs-studio\\bin\\64bit\\obs64.exe": [
+            "obs64.exe",
+            "obs"
+        ],
+        "C:\\Program Files\\Internet Explorer\\iexplore.exe": [
+            "internet explorer",
+            "iexplore.exe"
+        ],
+        "C:\\Program Files (x86)\\Audacity\\audacity.exe": [
+            "audacity.exe",
+            "audacity"
+        ],
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe": [
+            "edge browser",
+            "microsoft edge",
+            "msedge.exe",
+            "edge"
+        ],
+        "C:\\Program Files\\Malwarebytes\\Anti-Malware\\mbam.exe": [
+            "malwarebytes",
+            "malware bytes",
+            "mbam.exe"
+        ],
+        "C:\\Program Files (x86)\\Steam\\steam.exe": [
+            "steam.exe",
+            "steampowered",
+            "steam"
+        ],
+        "C:\\windows\\system32\\Taskmgr.exe": [
+            "task manager",
+            "Taskmgr.exe"
+        ],
+        "C:\\windows\\System32\\control.exe": [
+            "control panel",
+            "control.exe"
+        ],
+        "C:\\Program Files (x86)\\Ubisoft\\Ubisoft Game Launcher\\UbisoftGameLauncher.exe": [
+            "ubisoft game launcher",
+            "UbisoftGameLauncher.exe"
+        ],
+        "C:\\Users\\mario\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe": [
+            "discord.exe",
+            "discord"
+        ],
+        "C:\\Windows\\explorer.exe": [
+            "file explorer",
+            "explorer.exe"
+        ],
+        "C:\\Windows\\System32\\notepad.exe": [
+            "notepad.exe",
+            "notepad"
+        ],
+        "C:\\Windows\\System32\\calc.exe": [
+            "calc.exe",
+            "calculator",
+            "calc"
+        ],
+        "C:\\Windows\\System32\\cmd.exe": [
+            "command prompt",
+            "cmd.exe"
+        ],
+        "C:\\Windows\\System32\\SnippingTool.exe": [
+            "snipping tool",
+            "snippingtool.exe",
+            "snip"
+        ],
+        "C:\\Program Files\\OpenShot Video Editor\\openshot-qt.exe": [
+            "openshot video editor",
+            "openshot.exe",
+            "openshot"
+        ],
+        "C:\\Users\\mario\\AppData\\Roaming\\Zoom\\bin\\Zoom.exe": [
+            "zoom.exe",
+            "zoom"
+        ]
+    },
+    "site": {
+        "https://www.youtube.com/": [
+            "youtube.com",
+            "youtube"
+        ],
+        "https://www.google.com/": [
+            "google.com",
+            "google"
+        ],
+        "https://www.amazon.com/": [
+            "amazon.com",
+            "amazon"
+        ],
+        "https://www.ebay.com/": [
+            "ebay.com",
+            "ebay"
+        ],
+        "https://www.baidu.com/": [
+            "baidu.com",
+            "baidu"
+        ],
+        "https://www.yahoo.com/": [
+            "yahoo.com",
+            "yahoo"
+        ],
+        "https://www.ecosia.org/": [
+            "ecosia.com",
+            "ecosia"
+        ],
+        "https://www.minecraft.net/en-us": [
+            "minecraft.net",
+            "minecraft.com",
+            "minecraft"
+        ],
+        "https://www.aliexpress.com/": [
+            "aliexpress.com",
+            "aliexpress"
+        ],
+        "https://www.twitch.tv/": [
+            "twitch.tv",
+            "twitch.net",
+            "twitch.com",
+            "twitch"
+        ],
+        "https://www.facebook.com/": [
+            "facebook.com",
+            "facebook"
+        ],
+        "https://www.wikipedia.org/": [
+            "wikipedia.org",
+            "wikipedia.com",
+            "wikipedia"
+        ],
+        "https://www.reddit.com/": [
+            "reddit.com",
+            "reddit"
+        ],
+        "https://www.netflix.com/": [
+            "netflix.com",
+            "netflix.net",
+            "netflix"
+        ],
+        "https://www.bing.com/": [
+            "bing.com",
+            "bing"
+        ],
+        "https://www.instagram.com/": [
+            "instagram.com",
+            "instagram"
+        ],
+        "https://yandex.com/": [
+            "yandex.com",
+            "yandex"
+        ],
+        "https://twitter.com/": [
+            "twitter.com",
+            "twitter"
+        ],
+        "https://discord.com/": [
+            "discord.com",
+            "discord"
+        ],
+        "https://github.com/": [
+            "github.com",
+            "github"
+        ],
+        "https://vimeo.com/": [
+            "vimeo.com",
+            "vimeo"
+        ],
+        "https://www.imdb.com/": [
+            "imdb.com",
+            "imdb"
+        ],
+        "https://www.dropbox.com/": [
+            "dropbox.com",
+            "dropbox"
+        ],
+        "https://mail.google.com/": [
+            "google mail",
+            "gmail.com",
+            "gmail"
+        ],
+        "https://drive.google.com/": [
+            "google drive",
+            "drive"
+        ],
+        "https://www.nasa.gov/": [
+            "nasa.gov",
+            "nasa.com",
+            "nasa.net",
+            "nasa"
+        ],
+        "https://translate.google.com/": [
+            "google translate"
+        ],
+        "https://www.tiktok.com/": [
+            "tiktok.com",
+            "tiktok"
+        ],
+        "https://www.webmd.com/": [
+            "webmd.com",
+            "webmd"
+        ],
+        "https://www.wikihow.com/": [
+            "wikihow.com",
+            "wikihow"
+        ],
+        "https://www.xbox.com/": [
+            "xbox.com",
+            "xbox"
+        ],
+        "https://www.spotify.com/us/": [
+            "spotifiy.com",
+            "spotify"
+        ],
+        "https://web.archive.org/": [
+            "wayback machine",
+            "way back machine",
+            "web.archive.org"
+        ],
+        "https://archive.org/": [
+            "internet archive",
+            "archive.org"
+        ],
+        "https://www.nhs.uk/": [
+            "nhs website",
+            "nhs"
+        ],
+        "https://store.steampowered.com/": [
+            "steam.exe",
+            "steampowered",
+            "steam"
+        ]
+    }
+}

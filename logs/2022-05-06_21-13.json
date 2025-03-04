@@ -1,0 +1,18 @@
+{
+    "session-start-time": "2022-05-06 21:13:00.357304-07:00",
+    "session-end-time": "2022-05-06 21:13:26.416799-07:00",
+    "session-duration": "0:00:26.059495 / 26.059495 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "do a deep restart",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-restart",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-06 21:13:26.416799"
+        }
+    ]
+}

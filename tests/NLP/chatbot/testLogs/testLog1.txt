@@ -1,0 +1,9 @@
+Player1: Hey!
+Player2: Oh, hey! What are you doing?
+Player1: Eh, not much. I was just taking a break from working on my english project.
+Player2: Oh, awesome. So, what are you playing?
+Player1: Oh, I don't have a lot of time, but I've been messing around on Portal.
+Player2: That's cool! I've never played it, I've just heard a lot about it.
+Player1: Oh,I love it. You know, it's a great challenge game. It takes a while to master, but once you do you can't stop.
+Player2: Cool. So, do you have any plans for later today?
+Player1: Eh, other than the english project? No.

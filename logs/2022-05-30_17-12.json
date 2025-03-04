@@ -1,0 +1,231 @@
+{
+    "session-start-time": "2022-05-30 17:12:18.291841-07:00",
+    "session-end-time": "2022-05-30 17:14:41.759417-07:00",
+    "session-duration": "0:02:23.467576 / 143.467576 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "what si the current volume?",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-check",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:12:46.639367"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Volume is set to 100%.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:12:46.655487"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is the volume set to?",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-check",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:12:52.593396"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The current volume is 100%.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:12:52.593396"
+        },
+        {
+            "speaker": "USER",
+            "text": "raise the volume by 5 percent",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": 5,
+                "change-by-value": true,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:13:23.552253"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Setting volume to max",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:13:23.567891"
+        },
+        {
+            "speaker": "USER",
+            "text": "lower the volume by 25%",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": -25,
+                "change-by-value": true,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:13:43.864386"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Volume is now set to 75.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:13:43.879997"
+        },
+        {
+            "speaker": "USER",
+            "text": "lower the volume by 25%",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": -25,
+                "change-by-value": true,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:13:50.530841"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Volume is now 50.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:13:50.530841"
+        },
+        {
+            "speaker": "USER",
+            "text": "lower the volume by 25%",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": -25,
+                "change-by-value": true,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:13:52.574407"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Changing volume by -25; it's now 25.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:13:52.590007"
+        },
+        {
+            "speaker": "USER",
+            "text": "lower the volume by 25%",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": -25,
+                "change-by-value": true,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:14:03.864580"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Volume has been set to zero percent",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:14:03.880205"
+        },
+        {
+            "speaker": "USER",
+            "text": "lower the volume by 25%",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": -25,
+                "change-by-value": true,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:14:05.122243"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Muting my volume",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:14:05.137855"
+        },
+        {
+            "speaker": "USER",
+            "text": "lower the volume by 25%",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": -25,
+                "change-by-value": true,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:14:06.569820"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Setting volume to zero",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:14:06.569820"
+        },
+        {
+            "speaker": "USER",
+            "text": "set volume to 65%",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": 65,
+                "change-by-value": false,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:14:21.322090"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The volume has been set to 65.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:14:21.337692"
+        },
+        {
+            "speaker": "USER",
+            "text": "set volume to 65%",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": 65,
+                "change-by-value": false,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:14:25.047422"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The volume is already set to 65.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:14:25.063033"
+        },
+        {
+            "speaker": "USER",
+            "text": "set volume to 65%",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": 65,
+                "change-by-value": false,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:14:27.187940"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "My volume was already set to 65.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:14:27.204575"
+        }
+    ]
+}

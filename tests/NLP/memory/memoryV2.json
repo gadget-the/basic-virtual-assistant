@@ -1,0 +1,68 @@
+[
+    {
+        "UUID": "SELF",
+        "type": "ASSISTANT",
+        "names": [],
+        "qualities": [],
+        "events": []
+    },
+    {
+        "UUID": "vd6sMhGh",
+        "type": "USER",
+        "names": [
+            "Erica",
+            "Rikki"
+        ],
+        "age": 26,
+        "likes": [
+            "puppies",
+            "people",
+            "wavy hair"
+        ],
+        "dislikes": [
+            "cats",
+            "asparagus"
+        ],
+        "relationships": {
+            "family": {
+                "sister": "Jessica",
+                "cousin": "Karl"
+            },
+            "romance": {},
+            "friend": {},
+            "work": {},
+            "pets": [
+                {
+                    "UUID": "HxUcswSf",
+                    "type": "DOG",
+                    "names": [],
+                    "age": 2,
+                    "breed": "PITBULL"
+                }
+            ]
+        },
+        "remember": [
+            "take out the trash",
+            "buy eggs, flour, and sugar next time I'm at the grocery store"
+        ]
+    },
+    {
+        "UUID": "",
+        "type": "PERSON",
+        "names": [],
+        "age": 0,
+        "likes": [],
+        "dislikes": [],
+        "appearance": [],
+        "qualities": [],
+        "relationships": {
+            "family": {},
+            "friend": {},
+            "romance": {},
+            "work": {},
+            "acquaintance": {},
+            "pets": []
+        },
+        "events": []
+    }
+]

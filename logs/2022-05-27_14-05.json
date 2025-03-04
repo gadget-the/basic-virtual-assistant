@@ -1,0 +1,44 @@
+{
+    "session-start-time": "2022-05-27 14:05:02.460852-07:00",
+    "session-end-time": "2022-05-27 14:06:16.571026-07:00",
+    "session-duration": "0:01:14.110174 / 74.110174 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "https://www.instagram.com/domtomato/",
+            "intEnt": {
+                "intent": null,
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-27 14:05:55.490164"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Failed due to: \"'NoneType' object has no attribute 'replace'\" error",
+            "spoken-feedback": false,
+            "time": "2022-05-27 14:05:55.494182"
+        },
+        {
+            "speaker": "USER",
+            "text": "please open https://www.instagram.com/domtomato/",
+            "intEnt": {
+                "intent": "open_site",
+                "secondary-intent": null,
+                "common-name": "https://www.instagram.com/domtomato/",
+                "website": "https://www.instagram.com/domtomato/",
+                "browser": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-27 14:06:01.339812"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: \"https://www.instagram.com/domtomato/\" using default browser.",
+            "spoken-feedback": false,
+            "time": "2022-05-27 14:06:01.525044"
+        }
+    ]
+}

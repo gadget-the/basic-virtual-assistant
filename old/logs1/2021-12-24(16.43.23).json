@@ -1,0 +1,13 @@
+{
+    "sessionStartTime": "2021-12-24 16:43:23.176292-08:00",
+    "sessionEndTime": "2021-12-24 16:43:39.640774-08:00",
+    "sessionDuration": "0:00:16.464482 / 16.464482 seconds",
+    "log": [
+        {
+            "speaker": "ASSISTANT",
+            "text": "Taking speech input...",
+            "tts": false,
+            "time": "2021-12-24 16:43:29.049948"
+        }
+    ]
+}

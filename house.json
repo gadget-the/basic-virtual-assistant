@@ -1,0 +1,74 @@
+{
+    "kitchen": {
+        "lights": {
+            "brightness": 0
+        },
+        "temp": 68,
+        "oven": {
+            "on": false,
+            "temp": 0
+        },
+        "coffee_maker": {
+            "on": false
+        },
+        "door": {
+            "open": false,
+            "locked": true
+        }
+    },
+    "master": {
+        "lights": {
+            "brightness": 0,
+            "color": [
+                255,
+                255,
+                255
+            ]
+        },
+        "temp": 68,
+        "tv": {
+            "on": false,
+            "volume": 43,
+            "input": "HDMI1"
+        }
+    },
+    "living": {
+        "lights": {
+            "brightness": 0,
+            "color": [
+                255,
+                255,
+                255
+            ]
+        },
+        "temp": 68,
+        "tv": {
+            "on": false,
+            "volume": 50,
+            "input": "HDMI2",
+            "brightness": 50
+        },
+        "stereo": {
+            "on": false,
+            "volume": 28
+        }
+    },
+    "garage": {
+        "lights": {
+            "brightness": 0
+        },
+        "temp": 68,
+        "door": {
+            "open": false
+        }
+    },
+    "mainhall": {
+        "lights": {
+            "brightness": 0
+        },
+        "door": {
+            "open": false,
+            "locked": true
+        }
+    }
+}

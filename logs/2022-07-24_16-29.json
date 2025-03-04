@@ -1,0 +1,24 @@
+{
+    "session-start-time": "2022-07-24 16:29:01.699434-07:00",
+    "session-end-time": "2022-07-24 16:30:17.258603-07:00",
+    "session-duration": "0:01:15.559169 / 75.559169 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "repeat that",
+            "intEnt": {
+                "intent": "repeat",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-24 16:29:32.226497"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "([{'speaker': 'USER', 'text': 'repeat that', 'intEnt': {'intent': 'repeat', 'secondary-intent': None, 'timing': None}, 'spoken-input': False, 'time': '2022-07-24 16:29:32.226497'}], 1)",
+            "spoken-feedback": true,
+            "time": "2022-07-24 16:29:32.226940"
+        }
+    ]
+}

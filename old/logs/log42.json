@@ -1,0 +1,24 @@
+{
+    "sessionStartTime": "2021-12-19 18:50:24.426118",
+    "sessionEndTime": "2021-12-19 18:50:49.732178",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "time left on grWTa5lw timer please",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": "grWTa5lw",
+                "timing": null
+            },
+            "time": "2021-12-19 18:50:43.117663"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There are no active timers.",
+            "tts": false,
+            "time": "2021-12-19 18:50:43.121920"
+        }
+    ]
+}

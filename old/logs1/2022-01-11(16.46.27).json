@@ -1,0 +1,64 @@
+{
+    "sessionStartTime": "2022-01-11 16:46:27.253130-08:00",
+    "sessionEndTime": "2022-01-11 16:48:33.282968-08:00",
+    "sessionDuration": "0:02:06.029838 / 126.029838 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "what is the date",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [],
+                "timing": null
+            },
+            "time": "2022-01-11 16:46:31.728196"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "tts": false,
+            "time": "2022-01-11 16:46:31.730061"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is todays date",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2022-01-11 16:46:38.185972"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is today's date",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [],
+                "timing": {
+                    "elapsed": false,
+                    "time": "today"
+                }
+            },
+            "time": "2022-01-11 16:46:48.190053"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Today is Tuesday, January 11, 2022, or 01/11/22.",
+            "tts": false,
+            "time": "2022-01-11 16:46:48.204477"
+        }
+    ]
+}

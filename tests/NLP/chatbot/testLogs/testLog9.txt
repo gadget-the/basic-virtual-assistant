@@ -1,0 +1,17 @@
+p1: Ayo!
+p2: Hey!
+p1: How are you?
+p2: I'm good.
+p1: That's good.
+p2: How are you?
+p1: About the same.
+p2: What've you been up to?
+p1: Just working on a little project.
+p2: oh? what's the project?
+p1: It's a little game called "Bag boy." It 's got a really funny premise.
+p2: what's it about?
+p1: It's a cute little game where you use a small bag to collect things you find around the world.
+p2: what do you do with all of the things you collect?
+p1: There are different levels where you collect different things and there are different animals that you can meet and get special gifts from after you've collected enough items.
+p2: cool!
+p1: 

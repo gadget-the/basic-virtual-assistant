@@ -1,0 +1,79 @@
+{
+    "sessionStartTime": "2021-12-24 16:43:55.197520-08:00",
+    "sessionEndTime": "2021-12-24 16:45:37.633927-08:00",
+    "sessionDuration": "0:01:42.436407 / 102.436407 seconds",
+    "log": [
+        {
+            "speaker": "ASSISTANT",
+            "text": "Taking speech input...",
+            "tts": false,
+            "time": "2021-12-24 16:43:59.672344"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Taking speech input...",
+            "tts": false,
+            "time": "2021-12-24 16:44:07.443160"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Taking speech input...",
+            "tts": false,
+            "time": "2021-12-24 16:44:16.741424"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Taking speech input...",
+            "tts": false,
+            "time": "2021-12-24 16:44:42.573190"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Taking speech input...",
+            "tts": false,
+            "time": "2021-12-24 16:44:54.271764"
+        },
+        {
+            "speaker": "USER",
+            "text": "search on Google cake recipes",
+            "intEnt": {
+                "intent": "search",
+                "subInt": null,
+                "engine": "google",
+                "term": "cake recipes",
+                "timing": null
+            },
+            "time": "2021-12-24 16:45:01.284631"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on google: cake recipes",
+            "tts": false,
+            "time": "2021-12-24 16:45:04.952989"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Taking speech input...",
+            "tts": true,
+            "time": "2021-12-24 16:45:19.772250"
+        },
+        {
+            "speaker": "USER",
+            "text": "how many satellites are currently in orbit",
+            "intEnt": {
+                "intent": "search",
+                "subInt": null,
+                "engine": null,
+                "term": "how many satellites are currently in orbit",
+                "timing": null
+            },
+            "time": "2021-12-24 16:45:27.115775"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on Google: how many satellites are currently in orbit",
+            "tts": true,
+            "time": "2021-12-24 16:45:29.465206"
+        }
+    ]
+}

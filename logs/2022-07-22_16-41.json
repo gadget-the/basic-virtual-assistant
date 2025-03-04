@@ -1,0 +1,266 @@
+{
+    "session-start-time": "2022-07-22 16:41:05.722253-07:00",
+    "session-end-time": "2022-07-22 16:49:48.041588-07:00",
+    "session-duration": "0:08:42.319335 / 522.319335 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "repeat it's pizza time",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "it's pizza time",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:41:13.354077"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "it's pizza time",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:41:13.354077"
+        },
+        {
+            "speaker": "USER",
+            "text": "please say ain't got no gas in it",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "ain't got no gas in it",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:41:29.701281"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "ain't got no gas in it",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:41:29.701281"
+        },
+        {
+            "speaker": "USER",
+            "text": "tell me food is ready",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:42:58.565621"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Can you restate that?",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:42:58.581248"
+        },
+        {
+            "speaker": "USER",
+            "text": "tell me \"food is ready\"",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:43:06.507207"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Would you mind restating that?",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:43:06.511668"
+        },
+        {
+            "speaker": "USER",
+            "text": "simon says \"food is ready\"",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "food is ready",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:43:31.858659"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "food is ready",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:43:31.874295"
+        },
+        {
+            "speaker": "USER",
+            "text": "full volume",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": 100,
+                "change-by-value": false,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:43:43.338272"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Setting the volume to 100.",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:43:43.338272"
+        },
+        {
+            "speaker": "USER",
+            "text": "thanks",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:43:49.069067"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "No problem.",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:43:49.162126"
+        },
+        {
+            "speaker": "USER",
+            "text": "open calculator",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "calculator",
+                "program": "C:\\Windows\\System32\\calc.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:43:56.503660"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: calculator.",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:43:56.531012"
+        },
+        {
+            "speaker": "USER",
+            "text": "open settings",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "settings",
+                "program": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:44:03.103145"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Failed to start \"settings\"; due to \"'NoneType' object is not iterable\" Error.",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:44:03.103145"
+        },
+        {
+            "speaker": "USER",
+            "text": "i like you",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:47:35.739850"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry, what?",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:47:35.786721"
+        },
+        {
+            "speaker": "USER",
+            "text": "which theme are you using?",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-theme-check",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:48:30.065731"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The visual theme you're currently using is called \"Greyscale\".",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:48:30.088402"
+        },
+        {
+            "speaker": "USER",
+            "text": "thank you",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:48:38.020186"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Anything else I can do for you?",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:48:38.083099"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is a cornucopia?",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "cornucopia",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:49:09.019426"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Unable to get a definition for \"cornucopia\".",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:49:09.552723"
+        },
+        {
+            "speaker": "USER",
+            "text": "stop",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:49:41.244620"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry?",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:49:41.291493"
+        },
+        {
+            "speaker": "USER",
+            "text": "shutdown",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-shutdown",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:49:48.041588"
+        }
+    ]
+}

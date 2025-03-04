@@ -1,0 +1,25 @@
+{
+    "session-start-time": "2022-06-07 14:19:36.602695-07:00",
+    "session-end-time": "2022-06-07 14:19:57.249302-07:00",
+    "session-duration": "0:00:20.646607 / 20.646607 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "what is the temp",
+            "intEnt": {
+                "intent": "weather",
+                "secondary-intent": "weather-temperature",
+                "location": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-06-07 14:19:44.571622"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Temperature is 74\u00b0F in Los Angeles, California, United States.\nWeather information sourced from Weather.gov; Last Updated: 07 Jun 12:47 PM PDT.",
+            "spoken-feedback": false,
+            "time": "2022-06-07 14:19:47.865652"
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "sessionStartTime": "2022-01-09 11:31:48.770084-08:00",
+    "sessionEndTime": "2022-01-09 11:33:19.994702-08:00",
+    "sessionDuration": "0:01:31.224618 / 91.224618 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "open youtube in google chrome",
+            "intEnt": {
+                "intent": "open_site",
+                "subInt": null,
+                "commonName": "youtube",
+                "website": "https://www.youtube.com/",
+                "browser": "chrome",
+                "timing": null
+            },
+            "time": "2022-01-09 11:32:12.352328"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: https://www.youtube.com/ in chrome.",
+            "tts": false,
+            "time": "2022-01-09 11:32:12.398180"
+        },
+        {
+            "speaker": "USER",
+            "text": "open discord in 5 minutes",
+            "intEnt": {
+                "intent": "open_app",
+                "subInt": null,
+                "commonName": "discord",
+                "program": "C:\\Users\\mario\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe",
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "time": "2022-01-09 11:32:27.519542"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Attempting to open 'discord' in 5 minutes.",
+            "tts": false,
+            "time": "2022-01-09 11:32:27.519542"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "time": "2022-01-09 11:32:40.170924"
+        },
+        {
+            "speaker": "USER",
+            "text": "open discord in 5 minutes",
+            "intEnt": {
+                "intent": "open_app",
+                "subInt": null,
+                "commonName": "discord",
+                "program": "C:\\Users\\mario\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe",
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "time": "2022-01-09 11:32:48.478429"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Attempting to open 'discord' in 5 minutes.",
+            "tts": false,
+            "time": "2022-01-09 11:32:48.482413"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "time": "2022-01-09 11:32:57.765986"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "tts": false,
+            "time": "2022-01-09 11:32:57.770000"
+        }
+    ]
+}

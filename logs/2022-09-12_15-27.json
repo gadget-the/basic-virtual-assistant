@@ -1,0 +1,72 @@
+{
+    "session-start-time": "2022-09-12 15:27:46.496416-07:00",
+    "session-end-time": "2022-09-12 15:29:53.153412-07:00",
+    "session-duration": "0:02:06.656996 / 126.656996 seconds",
+    "session-log": [
+        {
+            "speaker": "ASSISTANT",
+            "text": "You called?",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:28:16.887363"
+        },
+        {
+            "speaker": "USER",
+            "text": "flip a coin",
+            "intEnt": {
+                "intent": "random",
+                "secondary-intent": "random-coin",
+                "rolls": 1,
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-09-12 15:28:21.162848"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: heads",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:28:21.165849"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hi there?",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:29:27.232564"
+        },
+        {
+            "speaker": "USER",
+            "text": "flip another coin",
+            "intEnt": {
+                "intent": "random",
+                "secondary-intent": "random-coin",
+                "rolls": 1,
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-09-12 15:29:31.731166"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: tails",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:29:31.736166"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Heard wake word! What would you like?",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:29:38.668801"
+        },
+        {
+            "speaker": "USER",
+            "text": "performance gold restart",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-restart",
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-09-12 15:29:49.327760"
+        }
+    ]
+}

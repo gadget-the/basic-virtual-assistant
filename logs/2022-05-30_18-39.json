@@ -1,0 +1,214 @@
+{
+    "session-start-time": "2022-05-30 18:39:50.281440-07:00",
+    "session-end-time": "2022-05-30 18:41:23.944596-07:00",
+    "session-duration": "0:01:33.663156 / 93.663156 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "start a five minute timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "timer",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:40:00.266740"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of \"300\" seconds. The ID for it is \"2cxiWV9V\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:40:00.266740"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:40:10.887816"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Ending the only active timer.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:40:10.887816"
+        },
+        {
+            "speaker": "USER",
+            "text": "start a five minute timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "timer",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:40:21.638435"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of \"300\" seconds. The ID for it is \"hUc3elXs\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:40:21.638435"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:40:29.592495"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Ending the only active timer.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:40:29.592495"
+        },
+        {
+            "speaker": "USER",
+            "text": "start a five minute timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "timer",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:40:41.621930"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of \"300\" seconds. The ID for it is \"H8BeAiPR\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:40:41.621930"
+        },
+        {
+            "speaker": "USER",
+            "text": "start another five minute timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "timer",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:40:50.310446"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of \"300\" seconds. The ID for it is \"E8o31LXI\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:40:50.326072"
+        },
+        {
+            "speaker": "USER",
+            "text": "do that again",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "timer",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:41:04.804011"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of \"300\" seconds. The ID for it is \"L70Imilb\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:41:04.804011"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:41:10.174937"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is more than one active timer.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:41:10.174937"
+        }
+    ]
+}

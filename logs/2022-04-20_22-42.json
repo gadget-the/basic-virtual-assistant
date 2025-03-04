@@ -1,0 +1,109 @@
+{
+    "session-start-time": "2022-04-20 22:42:49.914762-07:00",
+    "session-end-time": "2022-04-20 22:45:56.855181-07:00",
+    "session-duration": "0:03:06.940419 / 186.940419 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "set volume to 20 percent",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": 20,
+                "change-by-value": false,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-04-20 22:43:17.119617"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Setting the volume to 20.",
+            "spoken-feedback": true,
+            "time": "2022-04-20 22:43:17.127330"
+        },
+        {
+            "speaker": "USER",
+            "text": "turn tts off",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-tts-off",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-04-20 22:43:27.553539"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Turning off Text-to-Speech.",
+            "spoken-feedback": false,
+            "time": "2022-04-20 22:43:27.561265"
+        },
+        {
+            "speaker": "USER",
+            "text": "put volume at full",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": 100,
+                "change-by-value": false,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-04-20 22:43:52.032789"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Setting the volume to 100.",
+            "spoken-feedback": false,
+            "time": "2022-04-20 22:43:52.042088"
+        },
+        {
+            "speaker": "USER",
+            "text": "change volume to full",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-volume-change",
+                "specified-value": 100,
+                "change-by-value": false,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-04-20 22:44:05.451409"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The volume is already set to 100.",
+            "spoken-feedback": false,
+            "time": "2022-04-20 22:44:05.459649"
+        },
+        {
+            "speaker": "USER",
+            "text": "don't save this log",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-save-log-off",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-04-20 22:45:21.706122"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Turning log saving off.",
+            "spoken-feedback": false,
+            "time": "2022-04-20 22:45:21.713163"
+        },
+        {
+            "speaker": "USER",
+            "text": "shutdown",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-shutdown",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-04-20 22:45:56.855181"
+        }
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "session-start-time": "2022-11-28 22:23:12.828882-08:00",
+    "session-end-time": "2022-11-28 22:25:33.971331-08:00",
+    "session-duration": "0:02:21.142449 / 141.142449 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "give me a fact",
+            "intEnt": {
+                "intent": "funfact",
+                "secondary-intent": null,
+                "subject": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-28 22:23:26.529691"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Did you know that Shakespeare invented the word `assassination` and `bump`.",
+            "spoken-feedback": false,
+            "time": "2022-11-28 22:23:27.541249"
+        },
+        {
+            "speaker": "USER",
+            "text": "that's cool",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-28 22:23:39.016937"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry?",
+            "spoken-feedback": false,
+            "time": "2022-11-28 22:23:39.048703"
+        },
+        {
+            "speaker": "USER",
+            "text": "define bait",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "bait",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-28 22:23:51.711378"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "\"bait\" is a noun that means \"Any substance, especially food, used in catching fish, or other animals, by alluring them to a hook, snare, trap, or net.\"",
+            "spoken-feedback": false,
+            "time": "2022-11-28 22:23:52.230821"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is a parallelogram",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "parallelogram",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-28 22:24:39.944963"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The word \"parallelogram\" is a noun and means \"A convex quadrilateral in which each pair of opposite edges are parallel and of equal length.\"",
+            "spoken-feedback": false,
+            "time": "2022-11-28 22:24:40.387828"
+        },
+        {
+            "speaker": "USER",
+            "text": "what are you doing?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-28 22:25:01.523277"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Watching Law & Order and I popped a burrito in the microwave.",
+            "spoken-feedback": false,
+            "time": "2022-11-28 22:25:01.549548"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is your name?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-28 22:25:13.707543"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Oliver Mott",
+            "spoken-feedback": false,
+            "time": "2022-11-28 22:25:13.733216"
+        },
+        {
+            "speaker": "USER",
+            "text": "shutdown",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-shutdown",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-28 22:25:33.971331"
+        }
+    ]
+}

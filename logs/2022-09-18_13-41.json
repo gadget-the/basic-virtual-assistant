@@ -1,0 +1,24 @@
+{
+    "session-start-time": "2022-09-18 13:41:29.997611-07:00",
+    "session-end-time": "2022-09-18 13:45:04.084357-07:00",
+    "session-duration": "0:03:34.086746 / 214.086746 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "what's the meaning of the word speedy",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "assistant-remove-wake-word",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-18 13:44:38.036973"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I don't understand.",
+            "spoken-feedback": true,
+            "time": "2022-09-18 13:44:38.052630"
+        }
+    ]
+}

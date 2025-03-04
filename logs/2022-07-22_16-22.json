@@ -1,0 +1,130 @@
+{
+    "session-start-time": "2022-07-22 16:22:04.861370-07:00",
+    "session-end-time": "2022-07-22 16:23:58.171123-07:00",
+    "session-duration": "0:01:53.309753 / 113.309753 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "Define swallow",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "swallow",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:22:11.090888"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "\"swallow\" is a verb that means \"To cause (food, drink etc.) to pass from the mouth into the stomach; to take into the stomach through the throat.\"",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:22:11.768091"
+        },
+        {
+            "speaker": "USER",
+            "text": "say \"welcome everyone\"",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "welcome everyone",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:22:41.322545"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "welcome everyone",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:22:41.322545"
+        },
+        {
+            "speaker": "USER",
+            "text": "say \"welcome, everyone\"",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "welcome, everyone",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:22:51.237813"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "welcome, everyone",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:22:51.237813"
+        },
+        {
+            "speaker": "USER",
+            "text": "simon says peek-a-boo",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "peek-a-boo",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:23:07.138642"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "peek-a-boo",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:23:07.138642"
+        },
+        {
+            "speaker": "USER",
+            "text": "repeat that",
+            "intEnt": {
+                "intent": "repeat",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:23:25.342652"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:23:25.342652"
+        },
+        {
+            "speaker": "USER",
+            "text": "repeat that again",
+            "intEnt": {
+                "intent": "repeat",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:23:31.568663"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:23:31.568663"
+        },
+        {
+            "speaker": "USER",
+            "text": "repeat it's pizza time",
+            "intEnt": {
+                "intent": null,
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 16:23:43.595633"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Failed due to: \"local variable 'term' referenced before assignment\" error",
+            "spoken-feedback": true,
+            "time": "2022-07-22 16:23:43.595633"
+        }
+    ]
+}

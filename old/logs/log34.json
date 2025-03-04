@@ -1,0 +1,132 @@
+{
+    "sessionStartTime": "2021-12-19 17:31:28.058195",
+    "sessionEndTime": "2021-12-19 17:32:26.026194",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "start a 5 minute timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "timer",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 17:31:40.650332"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of 300 seconds.",
+            "tts": false,
+            "time": "2021-12-19 17:31:40.659625"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "timing": null
+            },
+            "time": "2021-12-19 17:31:43.108937"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "(298, (4, 58))",
+            "tts": false,
+            "time": "2021-12-19 17:31:43.116015"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "timing": null
+            },
+            "time": "2021-12-19 17:31:48.079340"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "(293, (4, 53))",
+            "tts": false,
+            "time": "2021-12-19 17:31:48.084792"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in five minutes to water my ficus",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "to water my ficus",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 17:32:05.223454"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of 300 seconds.",
+            "tts": false,
+            "time": "2021-12-19 17:32:05.225235"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "timing": null
+            },
+            "time": "2021-12-19 17:32:12.699853"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "tts": false,
+            "time": "2021-12-19 17:32:12.711900"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my ficus timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "ficus",
+                "timing": null
+            },
+            "time": "2021-12-19 17:32:19.329985"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You want to check the timer related to: 'ficus'.",
+            "tts": false,
+            "time": "2021-12-19 17:32:19.335239"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "sessionStartTime": "2021-12-24 16:38:26.591353-08:00",
+    "sessionEndTime": "2021-12-24 16:41:38.040300-08:00",
+    "sessionDuration": "0:03:11.448947 / 191.448947 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "hiya!",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-24 16:38:35.097682"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hello! How are you?",
+            "tts": true,
+            "time": "2021-12-24 16:38:35.119063"
+        },
+        {
+            "speaker": "USER",
+            "text": "I'm good how are you?",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-24 16:38:42.414557"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Doing well.",
+            "tts": true,
+            "time": "2021-12-24 16:38:42.436166"
+        }
+    ]
+}

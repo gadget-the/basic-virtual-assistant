@@ -1,0 +1,58 @@
+{
+    "session-start-time": "2022-04-09 09:03:25.231061-07:00",
+    "session-end-time": "2022-04-09 09:03:57.266527-07:00",
+    "session-duration": "0:00:32.035466 / 32.035466 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "turn log saving off",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-save-log-off",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-04-09 09:03:32.982118"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Turning log saving off.",
+            "spoken-feedback": false,
+            "time": "2022-04-09 09:03:32.997745"
+        },
+        {
+            "speaker": "USER",
+            "text": "turn log saving on",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-save-log-on",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-04-09 09:03:42.929596"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Turning log saving on.",
+            "spoken-feedback": true,
+            "time": "2022-04-09 09:03:42.945221"
+        },
+        {
+            "speaker": "USER",
+            "text": "disable log saving",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-save-log-off",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-04-09 09:03:52.108025"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Turning log saving off.",
+            "spoken-feedback": false,
+            "time": "2022-04-09 09:03:52.108025"
+        }
+    ]
+}

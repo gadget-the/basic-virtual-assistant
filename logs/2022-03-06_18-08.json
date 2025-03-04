@@ -1,0 +1,24 @@
+{
+    "session-start-time": "2022-03-06 18:08:51.185611-08:00",
+    "session-end-time": "2022-03-06 18:10:03.938338-08:00",
+    "session-duration": "0:01:12.752727 / 72.752727 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "five second timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-06 18:09:02.409396"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I don't understand the request.",
+            "spoken-feedback": false,
+            "time": "2022-03-06 18:09:02.409396"
+        }
+    ]
+}

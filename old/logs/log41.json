@@ -1,0 +1,136 @@
+{
+    "sessionStartTime": "2021-12-19 18:15:51.616608",
+    "sessionEndTime": "2021-12-19 18:18:45.145129",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with the ID uQRG8Rq5",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": "uQRG8Rq5",
+                "timing": null
+            },
+            "time": "2021-12-19 18:16:07.543987"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There are no active timers.",
+            "tts": false,
+            "time": "2021-12-19 18:16:07.543987"
+        },
+        {
+            "speaker": "USER",
+            "text": "start a timer for 12 minutes",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 12,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 18:16:15.807709"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 12 minutes. For a total of 720 seconds. The ID for it is grWTahlw.",
+            "tts": false,
+            "time": "2021-12-19 18:16:15.807709"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in ten minutes to til my crops",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "to til my crops",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 10,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 18:16:31.136428"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 10 minutes. For a total of 600 seconds. The ID for it is lb2lIZxJ.",
+            "tts": false,
+            "time": "2021-12-19 18:16:31.138428"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the lb2lIZxJ timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": "lb2lIZxJ",
+                "timing": null
+            },
+            "time": "2021-12-19 18:17:23.374619"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The time left on the timer with the ID 'lb2lIZxJ' is 549 seconds.",
+            "tts": false,
+            "time": "2021-12-19 18:17:23.374619"
+        },
+        {
+            "speaker": "USER",
+            "text": "grWTahlw timer time left please",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "time": "2021-12-19 18:18:16.860787"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "tts": false,
+            "time": "2021-12-19 18:18:16.860787"
+        },
+        {
+            "speaker": "USER",
+            "text": "time left on grWTahlw timer please",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "time": "2021-12-19 18:18:33.820831"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "tts": false,
+            "time": "2021-12-19 18:18:33.820831"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+Party1: Howdy!
+Party2: Hey, what's up?
+Party1: Not much, you?
+Party2: About the same.
+Party1: You find that thing you were looking for?
+Party2: Yep! I found it, at last!
+Party1: Great! Glad you found it before your roomate stumbled upon it.
+Party2: Yeah. That would've been awkward.

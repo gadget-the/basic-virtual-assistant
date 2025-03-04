@@ -1,0 +1,35 @@
+{
+    "sessionStartTime": "2021-12-19 17:46:20.921345",
+    "sessionEndTime": "2021-12-19 17:46:51.462915",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "start a timer for five minutes",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 17:46:38.168545"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of 300 seconds. The ID for it is ykt9epgd.",
+            "tts": false,
+            "time": "2021-12-19 17:46:38.178041"
+        }
+    ]
+}

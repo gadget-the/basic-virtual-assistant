@@ -1,0 +1,282 @@
+{
+    "session-start-time": "2025-02-16 21:01:27.639960-08:00",
+    "session-end-time": "2025-02-16 21:27:42.565377-08:00",
+    "session-duration": "0:26:14.925417 / 1574.925417 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "hi",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:01:56.441106"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hey!",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:01:56.493436"
+        },
+        {
+            "speaker": "USER",
+            "text": "how are you?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:02:19.221704"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm feeling about the same.",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:02:19.257236"
+        },
+        {
+            "speaker": "USER",
+            "text": "what can you do?",
+            "intEnt": {
+                "intent": "help",
+                "secondary-intent": null,
+                "term": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:02:42.744034"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hello!\nI am your Virtual Assistant.\nI have a number of functions.\n\tI can conversate(not well),\n\t\t\"Hello!\"\n\t\t\"How are you?\"\n\tI can tell you about the weather,\n\t\t\"How's the weather?\",\n\t\t\"Is it humid in Dallas?\",\n\t\t\"How does the weather look for the next three days?\"\n\tI can help you with things around the house(not actually),\n\t\t\"Turn on the lights in the kitchen\",\n\t\t\"Set the oven temp to 450 in 5 minutes\",\n\t\t\"Turn off all the lights at 6:30\"\n\tI can do math for you(like basic arithmetic, sometimes),\n\t\t\"What is two plus two?\",\n\t\t\"eight divided by 4\",\n\t\t\"What is 350 times 29?\"\n\tI can make a search on the web for you,\n\t\t\"Search on Google cake recipes\",\n\t\t\"Search Yahoo for popular tech companies\",\n\t\t\"How many satelites are currently in orbit?\"\n\tI can open apps on your computer,\n\t\t\"Open Discord in seven minutes\",\n\t\t\"Open FireFox\",\n\t\t\"Please, start up settings\"\n\tI can open websites for you,\n\t\t\"Go to Youtube\",\n\t\t\"Open Google\",\n\t\t\"Go to https://www.wired.com/\"\n\tI can tell you the time, set timers for you, and tell you long until a certain date,\n\t\t\"How many days are there until January 19\",\n\t\t\"What time is it?\",\n\t\t\"Remind me in an hour to water the plants\"\n\tI can tell you a funfact(currently just random, specified topics aren't used),\n\t\t\"Tell me a funfact\",\n\t\t\"Do you know any cat facts?\",\n\t\t\"Tell me a fact about the ISS\"\n\tI can generate random numbers,\n\t\t\"Give me two random numbers between five and fifteen\",\n\t\t\"Roll a 20 sided die, please\",\n\t\t\"Flip a coin\"\n\tAnd I can play music or grab lyrics from the web.\n\t\t\"Play Blinding Lights by The Weeknd\",\n\t\t\"What are the lyrics to Woman by Doja Cat?\",\n\t\t\"Put on 505 by Arctic Monkeys\"\n",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:02:42.786899"
+        },
+        {
+            "speaker": "USER",
+            "text": "who was the second person on the moon?",
+            "intEnt": {
+                "intent": "smarthouse",
+                "secondary-intent": "web-search",
+                "room": "",
+                "appliance": "",
+                "state": "",
+                "value": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:17:35.290190"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Can you restate that?",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:17:35.338232"
+        },
+        {
+            "speaker": "USER",
+            "text": "how far away is the moon?",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "web-search",
+                "engine": null,
+                "term": "how far away is the moon?",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:18:13.814175"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Running a Google search for \"how far away is the moon?\".",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:18:14.758032"
+        },
+        {
+            "speaker": "USER",
+            "text": "open microsoft edge",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "microsoft edge",
+                "program": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:19:06.524854"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: microsoft edge.",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:19:06.559431"
+        },
+        {
+            "speaker": "USER",
+            "text": "open google",
+            "intEnt": {
+                "intent": "open_site",
+                "secondary-intent": null,
+                "common-name": "google",
+                "website": "https://www.google.com/",
+                "browser": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:19:36.885720"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: \"google\" using default browser.",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:19:36.980509"
+        },
+        {
+            "speaker": "USER",
+            "text": "what time is it?",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-get-current",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:20:08.835612"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The time is 09:20 PM.",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:20:08.866951"
+        },
+        {
+            "speaker": "USER",
+            "text": "5 minute timer, please",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "timer, please",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:20:57.517934"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of \"300\" seconds. The ID for it is \"7jzRF0s4\".",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:20:57.539626"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on timer with ID 7jzRF0s4",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": null,
+                "ID": "7jzRF0s4",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:21:54.973941"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Only one active timer found; Time left is \"244\" seconds.",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:21:55.008031"
+        },
+        {
+            "speaker": "USER",
+            "text": "funfact",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:23:12.883142"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm afraid I don't understand what you've said.",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:23:12.931526"
+        },
+        {
+            "speaker": "USER",
+            "text": "can i have a funfact?",
+            "intEnt": {
+                "intent": "funfact",
+                "secondary-intent": "web-search",
+                "subject": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:23:28.444002"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Encountered \"HTTP Error 308: Permanent Redirect\" Error while trying to retrieve fact.",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:23:29.131019"
+        },
+        {
+            "speaker": "USER",
+            "text": "roll a 100 sided die",
+            "intEnt": {
+                "intent": "random",
+                "secondary-intent": "random-dice",
+                "sides": 100,
+                "rolls": 1,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:24:23.483010"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: 43",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:24:23.512979"
+        },
+        {
+            "speaker": "USER",
+            "text": "What are the lyrics to Woman by Doja Cat?",
+            "intEnt": {
+                "intent": "music",
+                "secondary-intent": "music-get-lyrics",
+                "term": "Woman by Doja Cat?",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:25:07.238004"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go:\n\t' + U",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:25:07.520489"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "timer, please",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:26:00.217884"
+        }
+    ]
+}

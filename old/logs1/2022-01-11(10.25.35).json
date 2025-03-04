@@ -1,0 +1,118 @@
+{
+    "sessionStartTime": "2022-01-11 10:25:35.834847-08:00",
+    "sessionEndTime": "2022-01-11 10:30:45.861907-08:00",
+    "sessionDuration": "0:05:10.027060 / 310.02706 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "roll 6 dice",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "dice",
+                "sides": null,
+                "rolls": 6,
+                "timing": null
+            },
+            "time": "2022-01-11 10:26:06.560007"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: [3, 4, 5, 1, 6, 4]",
+            "tts": false,
+            "time": "2022-01-11 10:26:06.560007"
+        },
+        {
+            "speaker": "USER",
+            "text": "give me 5 random numbers between 0 and 9",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "randomNumber",
+                "low": 0,
+                "high": 9,
+                "rolls": 5,
+                "timing": null
+            },
+            "time": "2022-01-11 10:28:03.504249"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: [7, 4, 6, 3, 2]",
+            "tts": false,
+            "time": "2022-01-11 10:28:03.504249"
+        },
+        {
+            "speaker": "USER",
+            "text": "give me 6 random numbers between 0 and 9",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "randomNumber",
+                "low": 0,
+                "high": 9,
+                "rolls": 6,
+                "timing": null
+            },
+            "time": "2022-01-11 10:28:12.690331"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: [1, 9, 2, 6, 3, 4]",
+            "tts": false,
+            "time": "2022-01-11 10:28:12.690331"
+        },
+        {
+            "speaker": "USER",
+            "text": "give me 2 random numbers between 0 and 9",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "randomNumber",
+                "low": 0,
+                "high": 9,
+                "rolls": 2,
+                "timing": null
+            },
+            "time": "2022-01-11 10:29:11.661098"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: [5, 9]",
+            "tts": false,
+            "time": "2022-01-11 10:29:11.676700"
+        },
+        {
+            "speaker": "USER",
+            "text": "roll 2 dice",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "dice",
+                "sides": null,
+                "rolls": 2,
+                "timing": null
+            },
+            "time": "2022-01-11 10:29:41.495123"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: [4, 3]",
+            "tts": false,
+            "time": "2022-01-11 10:29:41.497215"
+        },
+        {
+            "speaker": "USER",
+            "text": "roll a die",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "dice",
+                "sides": null,
+                "rolls": 1,
+                "timing": null
+            },
+            "time": "2022-01-11 10:30:37.453212"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: 4",
+            "tts": false,
+            "time": "2022-01-11 10:30:37.453212"
+        }
+    ]
+}

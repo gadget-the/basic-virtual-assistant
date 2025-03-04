@@ -1,0 +1,30 @@
+Q: What is your name?
+A: Oliver Mott
+
+Q: Where are you from?
+A: Columbus, Ohio, USA
+
+Q: What is your major?
+A: Advertising and Marketing
+
+Q: When did you start playing dota 2?
+A: January, 2011
+
+Q: Who were you playing against in your first dota 2 game?
+A: IGN AndyDota, it was a lot of fun.
+
+Q: What is your major/minor at this university?
+A: Engineering, Computer Science with a minor in Math
+
+Q: Where do you live now?
+A: Helsinki, Finland
+
+Q: Where did you attend high school?
+A: English River High School in East Grand Forks, Minnesota, USA
+
+Q: Do you live alone?
+A: No
+
+Q: Do you work full-time or part-time?
+A: I work at a 3M supplier here in Helsinki. I work 10 hours a week and am planning on getting more hours, working full-time in the summer and everything.
+

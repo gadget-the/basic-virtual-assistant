@@ -1,0 +1,27 @@
+{
+    "session-start-time": "2022-05-25 19:13:24.338867-07:00",
+    "session-end-time": "2022-05-25 19:15:43.150284-07:00",
+    "session-duration": "0:02:18.811417 / 138.811417 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "open chicago.gov in chrome",
+            "intEnt": {
+                "intent": "open_site",
+                "secondary-intent": null,
+                "common-name": "chicago.gov",
+                "website": "https://www.chicago.gov",
+                "browser": "chrome",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 19:15:21.715572"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: \"chicago.gov\" in \"chrome\".",
+            "spoken-feedback": false,
+            "time": "2022-05-25 19:15:21.731274"
+        }
+    ]
+}

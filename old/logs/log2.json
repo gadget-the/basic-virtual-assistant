@@ -1,0 +1,155 @@
+{
+    "sessionStartTime": "2021-12-17 10:09:51.731864",
+    "sessionEndTime": "2021-12-17 10:11:58.416307",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "hey!, how are you?",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:09:56.400911"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm fine.",
+            "tts": false,
+            "time": "2021-12-17 10:09:56.417807"
+        },
+        {
+            "speaker": "USER",
+            "text": "that's good",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:10:00.336567"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "How are you?",
+            "tts": false,
+            "time": "2021-12-17 10:10:00.356840"
+        },
+        {
+            "speaker": "USER",
+            "text": "I'm doing fine",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:10:04.856318"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Is it sunny outside?",
+            "tts": false,
+            "time": "2021-12-17 10:10:04.873539"
+        },
+        {
+            "speaker": "USER",
+            "text": "kind of i guess",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:10:14.720818"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm afraid I don't understand what you've said.",
+            "tts": false,
+            "time": "2021-12-17 10:10:14.739823"
+        },
+        {
+            "speaker": "USER",
+            "text": "how's the weather looking?",
+            "intEnt": {
+                "intent": "weather",
+                "subInt": null,
+                "location": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:10:23.332234"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "It is 62\u00b0F and Sunny , with wind WNW 8 MPH and 31% humid in Indio, California, United States.\nWeather information sourced from Weather.gov; Last Updated: 17 Dec 09:46 AM PST",
+            "tts": false,
+            "time": "2021-12-17 10:10:26.753303"
+        },
+        {
+            "speaker": "USER",
+            "text": "give me five random numbers between 20 and three hundred",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "randomNumber",
+                "low": 20,
+                "high": 300,
+                "rolls": 5,
+                "timing": null
+            },
+            "time": "2021-12-17 10:11:21.568906"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: [207, 128, 43, 89, 21]",
+            "tts": false,
+            "time": "2021-12-17 10:11:21.570905"
+        },
+        {
+            "speaker": "USER",
+            "text": "thank you!",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:11:41.548278"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "May I further assist you?",
+            "tts": false,
+            "time": "2021-12-17 10:11:41.574310"
+        },
+        {
+            "speaker": "USER",
+            "text": "yes, what time is it?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "currentTime",
+                "units": [],
+                "timing": null
+            },
+            "time": "2021-12-17 10:11:49.846655"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The time is: 10:11 AM",
+            "tts": false,
+            "time": "2021-12-17 10:11:49.846655"
+        },
+        {
+            "speaker": "USER",
+            "text": "goodbye!",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:11:57.619795"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "See you later!",
+            "tts": false,
+            "time": "2021-12-17 10:11:57.644791"
+        }
+    ]
+}

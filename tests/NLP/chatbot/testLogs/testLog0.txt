@@ -1,0 +1,14 @@
+Party1: Hi!
+Party2: Hello! How are you?
+Party1: I'm great! How are you?
+Party2: About the same.
+Party1: What are you up to?
+Party2: I'm working on my compsci homework. What about you?
+Party1: I'm eating dinner and watching Law & Order, right now.
+Party2: Ooh! What episode?
+Party1: It's the one where they-
+Party3: Hi!
+Party2: Oh, Hi!
+Party1: Hey!
+Party3: What are you guys doing?
+Party2: Party1 is watching Law & Order and I just asked them which episode they were watching.

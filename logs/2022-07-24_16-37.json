@@ -1,0 +1,24 @@
+{
+    "session-start-time": "2022-07-24 16:37:51.446095-07:00",
+    "session-end-time": "2022-07-24 16:38:30.253142-07:00",
+    "session-duration": "0:00:38.807047 / 38.807047 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "what did you say?",
+            "intEnt": {
+                "intent": "repeat",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-24 16:38:05.328020"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Anything else I can do for you?",
+            "spoken-feedback": false,
+            "time": "2022-07-24 16:38:05.336621"
+        }
+    ]
+}

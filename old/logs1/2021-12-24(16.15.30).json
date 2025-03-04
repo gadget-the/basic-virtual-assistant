@@ -1,0 +1,95 @@
+{
+    "sessionStartTime": "2021-12-24 16:15:30.095645-08:00",
+    "sessionEndTime": "2021-12-24 16:16:47.332911-08:00",
+    "sessionDuration": "0:01:17.237266 / 77.237266 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "hello!",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-24 16:15:35.330352"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "How are you?",
+            "tts": true,
+            "time": "2021-12-24 16:15:35.358637"
+        },
+        {
+            "speaker": "USER",
+            "text": "I'm good, how are you?",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-24 16:15:50.068934"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I am great, thanks for asking.",
+            "tts": true,
+            "time": "2021-12-24 16:15:50.098879"
+        },
+        {
+            "speaker": "USER",
+            "text": "no problem",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-24 16:15:56.764349"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Can I ask you something?",
+            "tts": true,
+            "time": "2021-12-24 16:15:56.793095"
+        },
+        {
+            "speaker": "USER",
+            "text": "sure",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-24 16:15:59.414310"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Could you please clarify?",
+            "tts": true,
+            "time": "2021-12-24 16:15:59.439023"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is mcdonald's?",
+            "intEnt": {
+                "intent": "search",
+                "subInt": null,
+                "engine": null,
+                "term": "what is mcdonald's?",
+                "timing": null
+            },
+            "time": "2021-12-24 16:16:33.340294"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Using DuckDuckGo's Instant Answer API:",
+            "tts": true,
+            "time": "2021-12-24 16:16:33.620485"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "McDonald's is an American fast food company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand, and later turned the company into a franchise, with the Golden Arches logo being introduced in 1953 at a location in Phoenix, Arizona. In 1955, Ray Kroc, a businessman, joined the company as a franchise agent and proceeded to purchase the chain from the McDonald brothers. McDonald's had its previous headquarters in Oak Brook, Illinois, but moved its global headquarters to Chicago in June 2018. McDonald's is the world's largest restaurant chain by revenue, serving over 69 million customers daily in over 100 countries across 37,855 outlets as of 2018. Although McDonald's is best known for its hamburgers, cheeseburgers and french fries, they feature chicken products, breakfast items, soft drinks, milkshakes, wraps, and desserts. Sourced from Wikipedia.",
+            "tts": true,
+            "time": "2021-12-24 16:16:37.168208"
+        }
+    ]
+}

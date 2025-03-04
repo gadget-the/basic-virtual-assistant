@@ -1,0 +1,7 @@
+User: Howdy.
+Cleverbot: How's it going?'.
+User: It's going well.
+Cleverbot: What are you up to tonight?
+User: I'm just working on a few little projects.
+Cleverbot: What projects?
+User: I'm programming.

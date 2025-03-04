@@ -1,0 +1,39 @@
+{
+    "session-start-time": "2022-03-16 22:26:33.392033-07:00",
+    "session-end-time": "2022-03-16 22:26:55.112210-07:00",
+    "session-duration": "0:00:21.720177 / 21.720177 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "turn off",
+            "intEnt": {
+                "intent": "smarthouse",
+                "secondary-intent": "assistant-shutdown",
+                "room": "",
+                "appliance": "",
+                "state": "",
+                "value": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-16 22:26:45.732265"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I don't understand the request.",
+            "spoken-feedback": false,
+            "time": "2022-03-16 22:26:45.736821"
+        },
+        {
+            "speaker": "USER",
+            "text": "shutdown",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-shutdown",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-16 22:26:55.112210"
+        }
+    ]
+}

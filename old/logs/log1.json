@@ -1,0 +1,106 @@
+{
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "how's the weather looking?",
+            "intEnt": {
+                "intent": "weather",
+                "subInt": null,
+                "location": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:01:59.163365"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "It is 62\u00b0F and Sunny , with wind WNW 8 MPH and 31% humid in Indio, California, United States.\nWeather information sourced from Weather.gov; Last Updated: 17 Dec 09:46 AM PST",
+            "tts": false,
+            "time": "2021-12-17 10:02:01.563043"
+        },
+        {
+            "speaker": "USER",
+            "text": "thank you",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:02:05.003267"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "No problem.",
+            "tts": false,
+            "time": "2021-12-17 10:02:05.021291"
+        },
+        {
+            "speaker": "USER",
+            "text": "give me a random number between 2 and 5",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "randomNumber",
+                "low": 2,
+                "high": 5,
+                "rolls": 1,
+                "timing": null
+            },
+            "time": "2021-12-17 10:02:21.581083"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: 2",
+            "tts": false,
+            "time": "2021-12-17 10:02:21.582025"
+        },
+        {
+            "speaker": "USER",
+            "text": "flip a coin",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "coinFlip",
+                "rolls": 1,
+                "timing": null
+            },
+            "time": "2021-12-17 10:02:24.782655"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: tails",
+            "tts": false,
+            "time": "2021-12-17 10:02:24.784556"
+        },
+        {
+            "speaker": "USER",
+            "text": "give me a random fact",
+            "intEnt": {
+                "intent": "funfact",
+                "subInt": null,
+                "subject": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:02:31.355650"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Fun fact! Did you know that 70% of all boats sold are used for fishing.",
+            "tts": false,
+            "time": "2021-12-17 10:02:32.467191"
+        },
+        {
+            "speaker": "USER",
+            "text": "that's cool!",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:02:40.175358"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hello! How are you?",
+            "tts": false,
+            "time": "2021-12-17 10:02:40.191864"
+        }
+    ]
+}

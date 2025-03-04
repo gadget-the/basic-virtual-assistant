@@ -1,0 +1,75 @@
+{
+    "session-start-time": "2022-07-24 16:33:20.902558-07:00",
+    "session-end-time": "2022-07-24 16:34:05.378271-07:00",
+    "session-duration": "0:00:44.475713 / 44.475713 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "heyo",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-24 16:33:31.528170"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "How are you?",
+            "spoken-feedback": false,
+            "time": "2022-07-24 16:33:31.552724"
+        },
+        {
+            "speaker": "USER",
+            "text": "repeat that please",
+            "intEnt": {
+                "intent": "repeat",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-24 16:33:37.911239"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "How are you?",
+            "spoken-feedback": false,
+            "time": "2022-07-24 16:33:37.911239"
+        },
+        {
+            "speaker": "USER",
+            "text": "come again?",
+            "intEnt": {
+                "intent": "repeat",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-24 16:33:50.826142"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "How are you?",
+            "spoken-feedback": false,
+            "time": "2022-07-24 16:33:50.826142"
+        },
+        {
+            "speaker": "USER",
+            "text": "thank you",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-24 16:34:03.269549"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "No problem.",
+            "spoken-feedback": false,
+            "time": "2022-07-24 16:34:03.318137"
+        }
+    ]
+}

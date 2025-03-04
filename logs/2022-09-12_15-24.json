@@ -1,0 +1,61 @@
+{
+    "session-start-time": "2022-09-12 15:24:05.287838-07:00",
+    "session-end-time": "2022-09-12 15:27:36.041406-07:00",
+    "session-duration": "0:03:30.753568 / 210.753568 seconds",
+    "session-log": [
+        {
+            "speaker": "ASSISTANT",
+            "text": "You called?",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:25:03.217442"
+        },
+        {
+            "speaker": "USER",
+            "text": "flip a coin",
+            "intEnt": {
+                "intent": "random",
+                "secondary-intent": "random-coin",
+                "rolls": 1,
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-09-12 15:25:07.942327"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: tails",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:25:07.947328"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hi there?",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:25:20.726348"
+        },
+        {
+            "speaker": "USER",
+            "text": "flip another coin",
+            "intEnt": {
+                "intent": "random",
+                "secondary-intent": "random-coin",
+                "rolls": 1,
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-09-12 15:25:24.796403"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: tails",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:25:24.808386"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hello?",
+            "spoken-feedback": true,
+            "time": "2022-09-12 15:25:48.276645"
+        }
+    ]
+}

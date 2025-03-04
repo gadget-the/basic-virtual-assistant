@@ -1,0 +1,9 @@
+{
+    "spokenFeedback": false,
+    "printLog": false,
+    "printClassification": true,
+    "printChatDebug": false,
+    "debugOpen": true,
+    "saveLog": false,
+    "lastInput": "hello"
+}

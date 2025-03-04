@@ -1,0 +1,27 @@
+{
+    "sessionStartTime": "2022-01-11 16:51:55.801861-08:00",
+    "sessionEndTime": "2022-01-11 16:52:04.218357-08:00",
+    "sessionDuration": "0:00:08.416496 / 8.416496 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "what is today's date?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [],
+                "timing": {
+                    "elapsed": false,
+                    "time": "today"
+                }
+            },
+            "time": "2022-01-11 16:52:01.664702"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Today is Tuesday, January 11, 2022, or 2022/01/11.",
+            "tts": false,
+            "time": "2022-01-11 16:52:01.669516"
+        }
+    ]
+}

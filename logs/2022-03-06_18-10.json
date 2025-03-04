@@ -1,0 +1,58 @@
+{
+    "session-start-time": "2022-03-06 18:10:10.308109-08:00",
+    "session-end-time": "2022-03-06 18:11:19.135741-08:00",
+    "session-duration": "0:01:08.827632 / 68.827632 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "five second timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "timer",
+                "units": [
+                    "seconds"
+                ],
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-06 18:10:17.703681"
+        },
+        {
+            "speaker": "USER",
+            "text": "start a timer for five seconds",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "",
+                "units": [
+                    "seconds"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 5
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-03-06 18:10:35.464724"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 seconds. For a total of \"5\" seconds. The ID for it is \"nLVG6veO\".",
+            "spoken-feedback": false,
+            "time": "2022-03-06 18:10:35.464724"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Time's up!",
+            "spoken-feedback": false,
+            "time": "2022-03-06 18:10:40.487349"
+        }
+    ]
+}

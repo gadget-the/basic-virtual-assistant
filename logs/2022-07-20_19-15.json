@@ -1,0 +1,49 @@
+{
+    "session-start-time": "2022-07-20 19:15:41.309561-07:00",
+    "session-end-time": "2022-07-20 19:16:37.393611-07:00",
+    "session-duration": "0:00:56.084050 / 56.08405 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "what does sleight mean?",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "sleight",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-20 19:15:48.819797"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Unable to get a definition for \"sleight\".",
+            "spoken-feedback": false,
+            "time": "2022-07-20 19:15:49.302536"
+        },
+        {
+            "speaker": "USER",
+            "text": "what does swallow mean?",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "swallow",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-20 19:15:58.515755"
+        },
+        {
+            "speaker": "USER",
+            "text": "what does swallow mean?",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "swallow",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-20 19:16:34.456236"
+        }
+    ]
+}

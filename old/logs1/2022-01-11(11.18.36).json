@@ -1,0 +1,23 @@
+{
+    "sessionStartTime": "2022-01-11 11:18:36.921903-08:00",
+    "sessionEndTime": "2022-01-11 11:18:59.971118-08:00",
+    "sessionDuration": "0:00:23.049215 / 23.049215 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "how do you make an omelette?",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2022-01-11 11:18:53.308110"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "About the same.",
+            "tts": false,
+            "time": "2022-01-11 11:18:53.395830"
+        }
+    ]
+}

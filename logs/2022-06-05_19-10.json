@@ -1,0 +1,104 @@
+{
+    "session-start-time": "2022-06-05 19:10:17.550705-07:00",
+    "session-end-time": "2022-06-05 19:19:30.544258-07:00",
+    "session-duration": "0:09:12.993553 / 552.993553 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "open youtube in edge",
+            "intEnt": {
+                "intent": "open_site",
+                "secondary-intent": null,
+                "common-name": "youtube",
+                "website": "https://www.youtube.com/",
+                "browser": "edge",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-06-05 19:10:29.111560"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: \"youtube\" in \"edge\".",
+            "spoken-feedback": false,
+            "time": "2022-06-05 19:10:29.124872"
+        },
+        {
+            "speaker": "USER",
+            "text": "open url in chrome",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "url in chrome",
+                "program": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-06-05 19:10:47.491225"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting \"url in chrome\".",
+            "spoken-feedback": false,
+            "time": "2022-06-05 19:10:47.505755"
+        },
+        {
+            "speaker": "USER",
+            "text": "open youtube in chrome",
+            "intEnt": {
+                "intent": "open_site",
+                "secondary-intent": null,
+                "common-name": "youtube",
+                "website": "https://www.youtube.com/",
+                "browser": "chrome",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-06-05 19:11:39.282921"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: \"youtube\" in \"chrome\".",
+            "spoken-feedback": false,
+            "time": "2022-06-05 19:11:39.289493"
+        },
+        {
+            "speaker": "USER",
+            "text": "open steam",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "steam",
+                "program": "C:\\Program Files (x86)\\Steam\\steam.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-06-05 19:19:09.604376"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Attempting to open: steam.",
+            "spoken-feedback": false,
+            "time": "2022-06-05 19:19:09.616452"
+        },
+        {
+            "speaker": "USER",
+            "text": "open steam in chrome",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "steam in chrome",
+                "program": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-06-05 19:19:24.809830"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Attempting to open: steam in chrome.",
+            "spoken-feedback": false,
+            "time": "2022-06-05 19:19:24.817850"
+        }
+    ]
+}

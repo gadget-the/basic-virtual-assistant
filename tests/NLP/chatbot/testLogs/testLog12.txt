@@ -1,0 +1,9 @@
+levi: Hi there!
+ai: How are you?
+levi: I'm good, how are you?
+ai: I am great, thanks for asking.
+levi: No problem!
+ai: So, how was your day?
+levi: My day went well. It was rather uneventful.
+ai: Oh? Mine was. Sort of.
+levi: Hmm? how so?

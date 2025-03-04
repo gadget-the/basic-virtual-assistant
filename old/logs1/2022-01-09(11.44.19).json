@@ -1,0 +1,24 @@
+{
+    "sessionStartTime": "2022-01-09 11:44:19.438754-08:00",
+    "sessionEndTime": "2022-01-09 11:44:56.460433-08:00",
+    "sessionDuration": "0:00:37.021679 / 37.021679 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "what are the lyrics to i me myself by will wood",
+            "intEnt": {
+                "intent": "music",
+                "subInt": "lyrics",
+                "term": "i me myself by will wood",
+                "timing": null
+            },
+            "time": "2022-01-09 11:44:31.330590"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here are the lyrics for 'i me myself by will wood':\nI've been feeling lightheaded\n\tSince I lost enough weight to fit back in my skin\n\tFlower petals and feathers tether me to the ground\n\tPound for pound\n\tTake my tea with formaldehyde for my\n\tFeminine side since the day that I died\n\tWhile I whittle my bones until I'm brittle\n\tAm I pretty now\n\tFor some reason I find myself\n\tLost in what you think of me\n\tAnd too confused to choose who I should be\n\tAnd now you've got me thinking\n\tI wish I could be a girl, and that way\n\tYou'd wish I could be your girlfriend, boyfriend\n\tAm I pretty enough to lie to\n\tI wish I could be a girl, and that way\n\tYou'd wish I could be your girlfriend, boyfriend\n\tJust little old me in a big, big world\n\tLittle old me in a big world\n\tI wish I were a girl\n\tI've been feeling lighthearted\n\tSince I gained enough weight back to cover my bones\n\tI get dressed up in shadows one leg at a time\n\tWe're so alike\n\tBut if the shoe fits, then I won't try it on\n\tYou'll be walking out early, but the show must go on\n\tNo, I know that I'm wrong\n\tBut I love how you're on my side when I cross that line\n\tIt's been a point of contention between myself and this\n\tBody that they stuck me in\n\tThe privilege of being born to be a man\n\tAnd now you got me thinking\n\tI wish I could be a girl, and that way\n\tYou'd wish I could be your girlfriend, boyfriend\n\tAm I pretty enough to lie to\n\tI wish I could be a girl, and that way\n\tYou'd wish I could be your girlfriend, boyfriend\n\tJust little old me in a big, big world\n\tLittle old me in a big world\n\tI wish\n\tEating your prosthetic meat/meet your anesthetic criteria\n\tPathetic seeing you be copacetic/come acetic\n\tSay my name like a slur, but I've been called worse\n\tAnd I've heard it all before, no this isn't a first\n\tLet me be the void you fill with\n\tTaxidermy fingerprints, taxonomize our differences\n\tI am quantum physics\n\tMy witness brings me into existence\n\tI wish I could be a girl, and that way\n\tYou'd wish I could be your girlfriend, boyfriend\n\tAm I pretty enough to love back\n\tNo not yet\n\tI wish I could be a girl, and really\n\tI'd prefer it if you would use I, Me, Myself\n\tAm I pretty enough, am I pretty enough\n\tTo fucking die\n\tLittle old me in a big world\n\tWell I would give you my whole world\n\tLittle old me in a big world\n\tI wish\n\tAll identities are equally invalid\n\tDon't you think that there's a chance that you could live without it\n\tAll identities are equally invalid\n\tDon't you think that there's a chance that you could live without it\n\tAll identities are equally invalid\n\tDon't you think that there's a chance that you could live without it\n\tAll identities are equally invalid\n\tDon't you think that there's a chance that you",
+            "tts": false,
+            "time": "2022-01-09 11:44:32.696330"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "SELF": {
+        "type": "ASSISTANT",
+        "names": [],
+        "qualities": [],
+        "events": []
+    },
+    "vd6sMhGh": {
+        "type": "USER",
+        "names": [],
+        "age": 0,
+        "likes": [],
+        "dislikes": [],
+        "relationships": {
+            "family": [
+                ["UUID", "sister"]
+            ],
+            "romance": [],
+            "friend": [],
+            "work": [],
+            "acquaintance": [],
+            "pet": [
+                ["dog", "DOG"]
+            ]
+        },
+        "remember": []
+    },
+    "UUID": {
+        "type": "PERSON",
+        "names": ["Kathy"],
+        "age": 0,
+        "likes": [],
+        "dislikes": [],
+        "relationships": {
+            "family": [],
+            "romance": [],
+            "friend": [],
+            "work": [],
+            "acquaintance": [],
+            "pets": []
+        }
+    },
+    "DOG": {
+        "type": "PET",
+        "names": ["William"],
+        "age": 0,
+        "likes": [],
+        "dislikes": [],
+        "relationships": {
+            "family": [],
+            "romance": [],
+            "friend": [],
+            "work": [],
+            "acquaintance": [],
+            "pets": []
+        }
+    }
+}

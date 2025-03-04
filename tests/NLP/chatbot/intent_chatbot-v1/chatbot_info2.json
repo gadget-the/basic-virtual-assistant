@@ -1,0 +1,68 @@
+{
+    "personality-key": {
+        "traits": {
+            "curious": 0,
+            "creative": 0,
+            "forgetful": 0,
+            "aggressive": 0,
+            "passive": 0,
+            "polite": 0,
+            "excitable": 0,
+            "enthusiastic": 0,
+            "trusting": 0,
+            "loyal": 0
+        },
+        "details": {
+            "name": "",
+            "time-of-creation": "",
+            "nicknames": []
+        }
+    },
+    "memory": {},
+    "input-response-data": [
+        {
+            "text": "Hi!",
+            "intent": "greeting",
+            "emotions": {
+                "Joy": 0,
+                "Trust": 0,
+                "Fear": 0,
+                "Surprise": 0,
+                "Sadness": 0,
+                "Disgust": 0,
+                "Anger": 0,
+                "Anticipation": 0
+            },
+            "responses": [
+                {
+                    "text": "Hello! How are you?",
+                    "intent": "inquiry",
+                    "emotions": {
+                        "Joy": 0,
+                        "Trust": 0,
+                        "Fear": 0,
+                        "Surprise": 0,
+                        "Sadness": 0,
+                        "Disgust": 0,
+                        "Anger": 0,
+                        "Anticipation": 0
+                    }
+                },
+                {
+                    "text": "Oh, Hi!",
+                    "intent": "greeting",
+                    "emotions": {
+                        "Joy": 0,
+                        "Trust": 0,
+                        "Fear": 0,
+                        "Surprise": 0,
+                        "Sadness": 0,
+                        "Disgust": 0,
+                        "Anger": 0,
+                        "Anticipation": 0
+                    }
+                }
+            ]
+        }
+    ]
+}

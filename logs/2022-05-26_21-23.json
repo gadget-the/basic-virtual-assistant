@@ -1,0 +1,308 @@
+{
+    "session-start-time": "2022-05-26 21:23:17.436595-07:00",
+    "session-end-time": "2022-05-26 21:31:12.299953-07:00",
+    "session-duration": "0:07:54.863358 / 474.863358 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "open Calc",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "Calc",
+                "program": "C:\\Windows\\System32\\calc.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:23:29.556973"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: Calc.",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:23:29.571839"
+        },
+        {
+            "speaker": "USER",
+            "text": "open Calculator",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "Calculator",
+                "program": "C:\\Windows\\System32\\calc.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:23:44.160985"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: Calculator.",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:23:44.171889"
+        },
+        {
+            "speaker": "USER",
+            "text": "open the calculator",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "the calculator",
+                "program": "C:\\Windows\\System32\\calc.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:23:58.738264"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: the calculator.",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:23:58.750941"
+        },
+        {
+            "speaker": "USER",
+            "text": "open the calculator app",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "the calculator app",
+                "program": "C:\\Windows\\System32\\calc.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:24:05.992259"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting \"the calculator app\".",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:24:06.013426"
+        },
+        {
+            "speaker": "USER",
+            "text": "open the calculator program",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "the calculator program",
+                "program": "C:\\Windows\\System32\\calc.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:24:17.848166"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Attempting to open: the calculator program.",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:24:17.861151"
+        },
+        {
+            "speaker": "USER",
+            "text": "hello",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:25:00.233855"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "How are you?",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:25:00.284694"
+        },
+        {
+            "speaker": "USER",
+            "text": "good, you?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:25:06.030100"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry, I don't know how to respond to that.",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:25:06.076983"
+        },
+        {
+            "speaker": "USER",
+            "text": "good, and you?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:25:13.002777"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hey!",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:25:13.054741"
+        },
+        {
+            "speaker": "USER",
+            "text": "good, and you?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:25:16.334702"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Oh, Hi!",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:25:16.383719"
+        },
+        {
+            "speaker": "USER",
+            "text": "good, how are you?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:25:25.618475"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I am great, thanks for asking.",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:25:25.669604"
+        },
+        {
+            "speaker": "USER",
+            "text": "your welcome",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:25:34.458620"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "All is forgiven.",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:25:34.511184"
+        },
+        {
+            "speaker": "USER",
+            "text": "your welcome",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:25:39.404668"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Oh, that's okay.",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:25:39.454299"
+        },
+        {
+            "speaker": "USER",
+            "text": "i'm sorry",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:25:50.276589"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I forgive you.",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:25:50.327064"
+        },
+        {
+            "speaker": "USER",
+            "text": "sorry",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:25:56.146778"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "All is forgiven.",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:25:56.196731"
+        },
+        {
+            "speaker": "USER",
+            "text": "ayo",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:28:32.799951"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hello! How are you?",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:28:32.846119"
+        },
+        {
+            "speaker": "USER",
+            "text": "how's the weather in Tempe",
+            "intEnt": {
+                "intent": "weather",
+                "secondary-intent": null,
+                "location": "Tempe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:28:54.994513"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Weather for Clear (as of W 8 MPH):\n98\u00b0F Farenheit\nClear  skies\n wind W 8 MPH\nand 8% humidity\nWeather data from Weather.gov",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:28:56.346297"
+        },
+        {
+            "speaker": "USER",
+            "text": "how's the weather in Tempe",
+            "intEnt": {
+                "intent": "weather",
+                "secondary-intent": null,
+                "location": "Tempe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-26 21:30:23.719219"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "It is 98\u00b0F and Clear , with wind W 8 MPH and 8% humid in Clear .\nWeather information sourced from Weather.gov; Last Updated: W 8 MPH",
+            "spoken-feedback": false,
+            "time": "2022-05-26 21:30:24.327226"
+        }
+    ]
+}

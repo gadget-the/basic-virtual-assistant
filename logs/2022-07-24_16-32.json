@@ -1,0 +1,41 @@
+{
+    "session-start-time": "2022-07-24 16:32:43.408769-07:00",
+    "session-end-time": "2022-07-24 16:33:14.704807-07:00",
+    "session-duration": "0:00:31.296038 / 31.296038 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "heyo",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-24 16:32:50.409085"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hey! How are you?",
+            "spoken-feedback": true,
+            "time": "2022-07-24 16:32:50.457872"
+        },
+        {
+            "speaker": "USER",
+            "text": "repeat that",
+            "intEnt": {
+                "intent": "repeat",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-24 16:32:53.636333"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "spoken-feedback": true,
+            "time": "2022-07-24 16:32:53.636333"
+        }
+    ]
+}

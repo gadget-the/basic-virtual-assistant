@@ -1,0 +1,45 @@
+{
+    "session-start-time": "2022-03-06 20:06:41.828182-08:00",
+    "session-end-time": "2022-03-06 20:07:59.853836-08:00",
+    "session-duration": "0:01:18.025654 / 78.025654 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "search for pizza recipes on google",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": "google",
+                "term": "pizza recipes",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-06 20:07:03.244372"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on google: \"pizza recipes\".",
+            "spoken-feedback": false,
+            "time": "2022-03-06 20:07:04.217108"
+        },
+        {
+            "speaker": "USER",
+            "text": "search for pizza recipes on yahoo",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": "yahoo",
+                "term": "pizza recipes",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-06 20:07:18.073092"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on yahoo: \"pizza recipes\".",
+            "spoken-feedback": false,
+            "time": "2022-03-06 20:07:18.969090"
+        }
+    ]
+}

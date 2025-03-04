@@ -1,0 +1,205 @@
+[
+    {
+        "text": "I went to Walmart yesterday.",
+        "entry-type": ["EVENT", "ORGANIZATION"],
+        "entities": ["SPEAKER", "Walmart"],
+        "given-time": "yesterday"
+    },
+    {
+        "text": "Sadie is my sister's friend.",
+        "entry-type": ["PERSON"],
+        "entities": ["Sadie"],
+        "relations": ["sister", "friend"]
+    },
+    {
+        "text": "I visited the Lincoln Memorial",
+        "entry-type": ["EVENT", "LOCATION"],
+        "entities": ["SPEAKER", "Lincoln Memorial"],
+        "given-time": "None"
+    },
+    {
+        "text": "I applied for a position at Walmart.",
+        "entry-type": ["EVENT", "ORGANIZATION"],
+        "entities": ["SPEAKER", "Walmart"],
+        "organization-type": "BUSINESS",
+        "given-time": "None"
+    },
+    {
+        "text": "I just bought a Honda Civic",
+        "entry-type": ["EVENT", "OBJECT"],
+        "entities": ["SPEAKER", "Honda Civic"],
+        "object-type": "VEHICLE",
+        "given-time": "None"
+    },
+    {
+        "text": "I'm going to the dentist today.",
+        "entry-type": ["EVENT"],
+        "entities": ["SPEAKER"],
+        "given-time": "today"
+    },
+    {
+        "text": "I lost my pen two days ago.",
+        "entry-type": ["EVENT", "OBJECT"],
+        "entities": ["SPEAKER", "pen"],
+        "object-type": "TOOL",
+        "given-time": "two days ago"
+    },
+    {
+        "text": "I'm gonna go to Walmart later",
+        "entry-type": ["EVENT", "ORGANIZATION"],
+        "entities": ["Walmart"],
+        "given-time": "None"
+    },
+    {
+        "text": "My name is Allie.",
+        "entry-type": ["PERSON"],
+        "entities": ["SPEAKER", "Allie"],
+        "relations": []
+    },
+    {
+        "text": "He went to the Grand Canyon.",
+        "entry-type": ["EVENT","LOCATION"],
+        "entities": ["Grand Canyon"],
+        "given-time": "None"
+    },
+    {
+        "text": "It's kind of like the Grand Canyon.",
+        "entry-type": ["LOCATION"],
+        "entities": ["Grand Canyon"]
+    },
+    {
+        "text": "We're going on a trip to Cairo.",
+        "entry-type": ["EVENT", "LOCATION"],
+        "entities": ["Cairo"],
+        "given-time": "None"
+    },
+    {
+        "text": "John is her boyfriend",
+        "entry-type": ["PERSON"],
+        "entities": ["John"],
+        "relations": ["boyfriend"]
+    },
+    {
+        "text": "His cousin's name is Katelyn.",
+        "entry-type": ["PERSON"],
+        "entities": ["Katelyn"],
+        "relations": ["cousin"]
+    },
+    {
+        "text": "Elvie just got a scooter.",
+        "entry-type": ["EVENT", "PERSON", "OBJECT"],
+        "entities": ["Elvie", "scooter"],
+        "relations": ["got a "],
+        "object-type": "VEHICLE",
+        "given-time": "None"
+    },
+    {
+        "text": "He lost his job at Tesla",
+        "entry-type": ["EVENT", "ORGANIZATION"],
+        "entities": ["Tesla"],
+        "given-time": "None"
+    },
+    {
+        "text": "I've always wanted to go to Tajikistan.",
+        "entry-type": ["PERSON"],
+        "entities": ["SPEAKER", "Tajikistan"],
+        "relations": ["always wanted to go to"]
+    },
+    {
+        "text": "I don't like almonds.",
+        "entry-type": ["PERSON", "OBJECT"],
+        "entities": ["SPEAKER", "almonds"],
+        "object-type": "FOOD",
+        "relations": ["don't like"]
+    },
+    {
+        "text": "Dave just graduated.",
+        "entry-type": ["EVENT"],
+        "entities": ["Dave"],
+        "relations": [],
+        "given-time": "None"
+    },
+    {
+        "text": "Edgar Allan Poe was a great poet.",
+        "entry-type": ["PERSON"],
+        "entities": ["Edgar Allan Poe"],
+        "relations": []
+    },
+    {
+        "text": "Steve likes his steak rare.",
+        "entry-type": ["PERSON"],
+        "entities": ["Steve", "steak"],
+        "relations": ["like"]
+    },
+    {
+        "text": "Arnold Schwarzenegger was the governor of California",
+        "entry-type": ["PERSON", "LOCATION"],
+        "entities": ["Arnold Schwarzenegger", "California"],
+        "relations": ["governor"]
+    },
+    {
+        "text": "I was sat next to Hans Wagner",
+        "entry-type": ["PERSON"],
+        "entities": ["SPEAKER", "Hans Wagner"],
+        "relations": []
+    },
+    {
+        "text": "School starts next week.",
+        "entry-type": ["EVENT"],
+        "entities": ["School"],
+        "given-time": "next week"
+    },
+    {
+        "text": "The Tesla is parked outside.",
+        "entry-type": ["OBJECT"],
+        "entities": ["Tesla"],
+        "object-type": "VEHICLE"
+    },
+    {
+        "text": "Just bought some new pants",
+        "entry-type": ["EVENT", "OBJECT"],
+        "entities": ["pants"],
+        "object-type": "CLOTHING"
+    },
+    {
+        "text": "I think Jamie is Eleanor's boyfriend.",
+        "entry-type": ["PERSON", "PERSON"],
+        "entities": ["Jamie", "Eleanor"],
+        "relations": ["boyfriend"]
+    },
+    {
+        "text": "My boss's name is Katy",
+        "entry-type": ["PERSON"],
+        "entities": ["SPEAKER", "Katy"],
+        "relations": ["boss"]
+    },
+    {
+        "text": "he died last year",
+        "entry-type": ["EVENT"],
+        "entities": [],
+        "given-time": "last year"
+    },
+    {
+        "text": "You are my assistant.",
+        "entry-type": ["PERSON"],
+        "entities": ["SELF", "SPEAKER"],
+        "relations": ["assistant"]
+    },
+    {
+        "text": "Your name is Alvi.",
+        "entry-type": ["PERSON"],
+        "entities": ["SELF", "Alvi"],
+        "relations": []
+    },
+    {
+        "text": "Your name is Evelyn",
+        "entry-type": ["PERSON"],
+        "entities": ["SELF", "Evelyn"],
+        "relations": []
+    },
+    {
+        "text": "",
+        "entry-type": ["UNKNOWN"],
+        "entities": [""]
+    }
+]

@@ -1,0 +1,25 @@
+{
+    "session-start-time": "2022-07-20 19:11:38.214810-07:00",
+    "session-end-time": "2022-07-20 19:12:25.549883-07:00",
+    "session-duration": "0:00:47.335073 / 47.335073 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "what does sleight mean?",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "sleight",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-20 19:11:45.636901"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You want to know what \"sleight\" means.",
+            "spoken-feedback": false,
+            "time": "2022-07-20 19:11:46.201176"
+        }
+    ]
+}

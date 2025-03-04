@@ -1,0 +1,82 @@
+{
+    "session-start-time": "2022-07-21 10:55:46.071114-07:00",
+    "session-end-time": "2022-07-21 10:59:01.220220-07:00",
+    "session-duration": "0:03:15.149106 / 195.149106 seconds",
+    "session-log": [
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hi there?",
+            "spoken-feedback": true,
+            "time": "2022-07-21 10:55:59.386435"
+        },
+        {
+            "speaker": "USER",
+            "text": "repeat after me hello",
+            "intEnt": {
+                "intent": null,
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-07-21 10:56:05.786939"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Failed due to: \"local variable 'term' referenced before assignment\" error",
+            "spoken-feedback": true,
+            "time": "2022-07-21 10:56:05.796456"
+        },
+        {
+            "speaker": "USER",
+            "text": "repeat after me \"Hello\"",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "Hello",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-21 10:58:13.819517"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hello",
+            "spoken-feedback": true,
+            "time": "2022-07-21 10:58:13.827069"
+        },
+        {
+            "speaker": "USER",
+            "text": "repeat after me \"I like my girls like i like my coffee\"",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-21 10:58:28.819645"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Yeah?",
+            "spoken-feedback": true,
+            "time": "2022-07-21 10:58:28.908962"
+        },
+        {
+            "speaker": "USER",
+            "text": "repeat after me \"it ain't got no gas in it\"",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-21 10:58:53.486361"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry, I didn't understand that.",
+            "spoken-feedback": true,
+            "time": "2022-07-21 10:58:53.492820"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "session-start-time": "2022-02-18 11:06:46.156011-08:00",
+    "session-end-time": "2022-02-18 11:19:00.330127-08:00",
+    "session-duration": "0:12:14.174116 / 734.174116 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "remind me in 15 minutes to walk the dog",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "to walk the dog",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 15,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-02-18 11:18:33.841279"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 15 minutes. For a total of \"900\" seconds. The ID for it is \"UI1kYCqK\".",
+            "spoken-feedback": false,
+            "time": "2022-02-18 11:18:33.852284"
+        }
+    ]
+}

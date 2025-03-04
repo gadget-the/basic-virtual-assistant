@@ -1,0 +1,534 @@
+{
+    "session-start-time": "2022-05-18 21:50:51.772581-07:00",
+    "session-end-time": "2022-05-18 21:52:54.299689-07:00",
+    "session-duration": "0:02:02.527108 / 122.527108 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "asdawfasdfasdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:50:59.738941"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm afraid I don't understand what you've said.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:50:59.762990"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:03.907423"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm unsure how to respond to that.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:03.923048"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:05.622280"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm lost?",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:05.653300"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:06.313365"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm afraid I don't understand what you've said.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:06.344641"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:07.777178"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry, I don't know how to respond to that.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:07.806375"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:08.749283"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm lost?",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:08.764909"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:09.850079"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Come again?",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:09.881236"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:10.665901"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'd be lying, if I said that I knew what that meant.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:10.697558"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:11.341226"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm unsure how to respond to that.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:11.356852"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:12.221821"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry, I don't know how to respond to that.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:12.237447"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:12.991041"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I don't know what that means.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:13.022311"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:13.650101"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I don't know what that means.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:13.681340"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:14.227693"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Could you please clarify?",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:14.258945"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:14.794317"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'd be lying, if I said that I knew what that meant.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:14.825656"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:15.454088"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry, what?",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:15.469714"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:16.082896"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'd be lying, if I said that I knew what that meant.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:16.114559"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:16.618215"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry, what?",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:16.649467"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:17.135868"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "That sentence makes no sense to me.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:17.167118"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:17.695457"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm confused.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:17.717624"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:18.376427"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "That sentence makes no sense to me.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:18.408098"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:19.177631"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'd be lying, if I said that I knew what that meant.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:19.198262"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:19.916518"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm unsure how to respond to that.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:19.947778"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:20.685943"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry, what?",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:20.717626"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:21.251531"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Come again?",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:21.282783"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:21.989765"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm afraid I don't understand what you've said.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:22.021453"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:22.617686"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I don't know what that means.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:22.648956"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:23.230009"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'd be lying, if I said that I knew what that meant.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:23.245635"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:23.936697"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Would you mind restating that?",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:23.952335"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:24.769406"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm unsure how to respond to that.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:24.785032"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:25.608473"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I don't know what that means.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:25.634397"
+        },
+        {
+            "speaker": "USER",
+            "text": "asdafwedfsdf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-18 21:51:28.192979"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm confused.",
+            "spoken-feedback": false,
+            "time": "2022-05-18 21:51:28.224642"
+        }
+    ]
+}

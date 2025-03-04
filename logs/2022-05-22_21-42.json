@@ -1,0 +1,426 @@
+{
+    "session-start-time": "2022-05-22 21:42:36.271290-07:00",
+    "session-end-time": "2022-05-22 21:53:34.753080-07:00",
+    "session-duration": "0:10:58.481790 / 658.48179 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "remind me in an hour to take out the trash",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "to take out the trash",
+                "units": [
+                    "hours"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 1,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:43:27.529929"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 1 hours. For a total of \"3600\" seconds. The ID for it is \"gP3Bb1qd\".",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:43:27.529929"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with the id \"gP3Bb1qd\"",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": null,
+                "ID": "gP3Bb1qd",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:44:20.921275"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is only one active timer. The time left is \"3547\" seconds.",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:44:20.936906"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with the id \"gP3Bb1qd\"",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": null,
+                "ID": "gP3Bb1qd",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:44:29.461464"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Only one active timer found; Time left is \"3539\" seconds.",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:44:29.477096"
+        },
+        {
+            "speaker": "USER",
+            "text": "start a 28 minute timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "timer",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 28,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:44:43.215617"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 28 minutes. For a total of \"1680\" seconds. The ID for it is \"3xiVWdYC\".",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:44:43.215617"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with the id \"gP3Bb1qd\"",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": null,
+                "ID": "gP3Bb1qd",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:44:59.933147"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There are 3509 seconds left on the timer with an ID of \"gP3Bb1qd\".",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:44:59.933147"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with the id \"gP3Bb1qd\"",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": null,
+                "ID": "gP3Bb1qd",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:45:19.368219"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Time left on the timer with the \"gP3Bb1qd\" ID is 3489 seconds.",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:45:19.383847"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with the id \"gP3Bb1qd\"",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": null,
+                "ID": "gP3Bb1qd",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:45:20.545573"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There are 3488 seconds left on the timer with the ID \"gP3Bb1qd\".",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:45:20.545573"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:45:29.306409"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "More than one active timer, please be more specific.",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:45:29.316431"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:45:32.048336"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is more than one active timer, Please specify which one.",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:45:32.063962"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my trash timer?",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": "trash",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:46:00.793685"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There are 3448 seconds left on your \"trash\" timer.",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:46:00.809313"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my trash timer?",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": "trash",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:46:06.381957"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The time left on the timer related to \"trash\" is 3442 seconds.",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:46:06.397628"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my ",
+            "intEnt": {
+                "intent": null,
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:46:40.132185"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm afraid I don't understand what you've said.",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:46:40.147810"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my \"cat food\" timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": "\"cat food\"",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:46:46.819932"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I was unable to find an active timer with a message containing \"\"cat food\"\".",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:46:46.819932"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my \"cat food\" timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": "\"cat food\"",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:46:49.636756"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I was unable to find an active timer with a message containing \"\"cat food\"\".",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:46:49.640995"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my \"cat food\" timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": "\"cat food\"",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:46:50.399844"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "\"\"cat food\"\" timer was not found.",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:46:50.415364"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my cat food timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": "cat food",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:47:04.736330"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "\"cat food\" timer was not found.",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:47:04.751947"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with id \"gP3Bb1qf\"",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": null,
+                "ID": "gP3Bb1qf",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:47:47.548141"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Unable to find a timer with the ID \"gP3Bb1qf\".",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:47:47.548141"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with id \"gP3Bb1qf\"",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": null,
+                "ID": "gP3Bb1qf",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:47:50.930186"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I was unable to find a timer found with the ID \"gP3Bb1qf\".",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:47:50.945819"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with id \"gP3Bb1qf\"",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": null,
+                "ID": "gP3Bb1qf",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:47:53.975728"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I was unable to find a timer found with the ID \"gP3Bb1qf\".",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:47:53.975728"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with id \"gP3Bb1qf\"",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": null,
+                "ID": "gP3Bb1qf",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:47:59.032244"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "No timer found with the ID \"gP3Bb1qf\".",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:47:59.032244"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with id \"gP3Bb1qf\"",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-check-timer",
+                "IDTerm": null,
+                "ID": "gP3Bb1qf",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:48:00.696644"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Unable to find a timer with the ID \"gP3Bb1qf\".",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:48:00.696644"
+        }
+    ]
+}

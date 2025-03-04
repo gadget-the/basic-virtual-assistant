@@ -1,0 +1,35 @@
+{
+    "sessionStartTime": "2022-01-22 19:47:53.348983-08:00",
+    "sessionEndTime": "2022-01-22 19:48:00.114753-08:00",
+    "sessionDuration": "0:00:06.765770 / 6.76577 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "what month is it?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [
+                    "month"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2022-01-22 19:47:57.927861"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "It is the 03th week of the year.",
+            "tts": false,
+            "time": "2022-01-22 19:47:57.936070"
+        }
+    ]
+}

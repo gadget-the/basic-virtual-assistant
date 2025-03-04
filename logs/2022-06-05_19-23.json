@@ -1,0 +1,27 @@
+{
+    "session-start-time": "2022-06-05 19:23:16.141710-07:00",
+    "session-end-time": "2022-06-05 19:25:42.921009-07:00",
+    "session-duration": "0:02:26.779299 / 146.779299 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "open steam in chrome",
+            "intEnt": {
+                "intent": "open_site",
+                "secondary-intent": null,
+                "common-name": "steam",
+                "website": "https://www.steam.com/",
+                "browser": "chrome",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-06-05 19:25:32.925213"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: \"steam\" at \"https://www.steam.com/\" in \"chrome\".",
+            "spoken-feedback": false,
+            "time": "2022-06-05 19:25:32.931203"
+        }
+    ]
+}

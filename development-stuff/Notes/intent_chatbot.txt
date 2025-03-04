@@ -1,0 +1,1223 @@
+what do I want?
+    a chatbot that can speak coherently and pretty convincingly
+
+    it should
+        be able to take into account what has been said previously as context
+        learn from inputed(external) chatlogs as well as from the conversations it has (directly?)
+        generate appropriate responses
+
+    it would be cool if it could be given a "personality script"("personality key"? guide?), essentially a piece of text that describes the way it should present itself and information about it("past" information)
+        it could be 
+
+    being able to remember things like names, relationships, events, etc.(like the memory filter) sounds important
+
+    using machine learning(and deep learning) for part of this would make things easier and at the same time much more complex
+        which is why I think it would be good to try to figure out ways to do most/all of this stuff without it(which creates a different set of problems)
+            this would mean that it would at least lean more toward a rule-based chatbot
+
+    "The Future of AI Is Intent" - https://www.freshworks.com/lp/freshdesk-messaging-chatbots
+        while diving back into chatbot research, i saw an add on google with that text
+
+        i have already tried incorporating the concepts of Intents and Entities into things like the IntEntFilter and memory filter
+            maybe I should try doing the same thing for a chatbot
+
+            this sort of thing could allow it to more simply get/present information about the conversation and inputed text
+
+            it could have information like sentence type(Declarative, interrogative, imperative, exclamatory), emotional/sentiment analysis, entities/entity types, etc.
+                {}
+
+                it could also involve information about the conversation as a whole: people involved, pace, tone, 
+
+    something that could simplify things is being able to distinguish between inputs that can be responded to be looking up a piece of info versus ones that require more in-depth analysis to "generate" a response
+        to simplify:
+            something like "what is your name?" is something you could just look up
+            in contrast, something like "how are you?" or "Been a while since we've seen Jerry, huh?" is more of something that would require a "different method of responding"(for lack of better wording)
+
+    i like the statResp file part of the "chatParser"
+        i like that it's able to store information about how the bot should respond to a given input(more permanently)
+            of course it's pretty simple: input1 has x amount of possible responses; if the users input is close enough to a known input, we should use a randomly chosen response from its list
+
+        I think i'll almost definitely use something similar going forward
+            i might use it to store the "personality text"
+
+    a big problem with doing this is training data
+        it's more than likely that i would need to gather/find a bunch of training data for this
+            it would also need to be labeled for everything i'm looking for(emotion/sentiment, sentence type, entities, etc.)
+
+
+the personality key should describe how "it should present itself" and include information about it
+    i need to break down the necessary parts of personality(within this context)
+        attitude?
+
+        The Big 5? extraversion, agreeableness, openness, conscientiousness, and neuroticism(https://examplanning.com/5-aspects-personality-development/)
+            extraversion - "outgoing or social attitude"
+                cheerfulness, excited, activity level, assertiveness, gregariousness and friendliness
+
+            agreeableness - "behaviour that shows kindness, sympathy, warmness and consideration for others"
+                sympathy, modesty, co-operation and trust
+
+            openness - "open-mindedness of an individual"
+                imagination, adventurousness, emotionality, artistic interests, intellect and liberalism
+
+            conscientiousness - "how an individual controls, regulates and directs their impulses"
+                achievement-driven, dutifulness, orderliness, self-efficacy, self-discipline and cautiousness
+
+            neuroticism - "emotional stability"
+                anxiety, anger, depression, self-consciousness, vulnerability and immoderation
+
+            i think trying to incorporation everything this encompasses would be complicated and likely unnecessarily so
+                i definitely won't try to use all of it(maybe not even most of it) but I can use it to help understand and get closer to what I'm looking for
+
+        trait-based?
+            or at least partially so...
+
+            the idea here(that I got from The Big 5) is that the personality could/probably should be described in terms of traits
+                is probably the obvious answer(?)
+
+        another part of this is how it's going to affect how responses are chosen
+            what i'm thinking is that certain response are more likely to be given from different personality types(or a chatbot with specific traits)
+
+            if i decide to do the emotional tracking whatever, the personality could be part of why/how the emotion shifts(by how much and when/in response to what, and which emotions)
+                and the emotional state would have a more direct impact on which response is chosen
+
+                personality(traits) --> emotions --> responses
+
+                it would go back to statement-response sets
+                    this time each statement and response would need to have additional information, like emotion conveyed, sentence type, etc.
+
+        personality traits?
+            certain personality traits should make certain types of responses more likely and certain emotions more likely to shift
+                https://www.geeksforgeeks.org/how-to-get-weighted-random-choice-in-python/
+                https://stackoverflow.com/questions/3679694/a-weighted-version-of-random-choice
+
+            curious - more likely to ask questions?(inquiry); maybe happiness increases in response to an "inform" input
+            creative? - 
+            forgetful? - more likely to forget things?(for the memory)
+            aggressive - more easily angered?
+            passive/docile - not easily angered
+            Passive-Aggressive? - 
+            polite/proper - 
+            excitable - 
+            enthusiastic - happiness is more likely to increase
+            trusting - 
+            loyal - 
+
+    information about it would be things like its name, time of creation, maybe relationships to different entities, and more similar info
+
+
+emotions?
+    in addition to analysing inputs for emotion, maybe it would make sense to give and keep track of the chatbots "emotional state"
+
+    the idea here is that the chatbot would have a system for changing and storing its "pseudo-emotions"
+        i could try using the idea i had before of describing emotions kind of like a coordinate grid, somewhat inspired by the emotional wheel(https://feelingswheel.com/)
+            the spider chart thing where each emotion is given a value(between 0 and some other arbitray number like 10 or 100) so that combinations of emotions(an more complex emotional state) can be conveyed/stored
+                leading to a sort of "emotional footprint"(at least the resulting shape on a spider/radar chart would be)
+
+    this makes me think it would probably make sense to use OOP for this
+
+
+instead of sentence type maybe it should be input-type or intent
+    because sometimes statements/responses have multiple sentences
+
+    "intent" allows for more types and thus a chance to be more specific
+        sentence types: ["declarative", "interrogative", "imperative", "exclamatory"]
+
+        possible intents: ["greeting", "inquiry", "small-talk", "request", "goodbye", "agreement", "inform", "apology", "comfort", "forgive", "condolences", "thanks", "accepting-thanks", "accusation"]
+
+
+{
+    "text": "",
+    "emotions": {"happiness": 0, "excited": 0, "surprise": 0, "sadness": 0, "fear": 0, "disgust": 0, "anger": 0, "confusion": 0, "indifference": 0},
+    "intent": "",
+    "responses": [
+        {
+            "text": "",
+            "emotions": {"happiness": 0, "excited": 0, "surprise": 0, "sadness": 0, "fear": 0, "disgust": 0, "anger": 0, "confusion": 0, "indifference": 0},
+            "intent": ""
+        }
+    ]
+}
+
+
+emotional classification instead of trying to generate an emotional value?
+    i feel like it might easier to try and figure out a multi-class classifier than to find/figure out how to generate the values from an input text
+
+    another thing, i'm not even sure if having a specific value for each emotion is necessary
+
+
+emotional state?
+    {"intent": "",  "emotions": {}, entities: [("type", "extraction")]}
+
+    emotional state would be probably just be a dictionary of each of the emotions.
+        each emotion would/could changed after each input/output cycle, meaning that emotions could change based on the input and/or the output?
+            might mean the inputs and outputs might need different weights, so that emotions change by a different amount based on if the statement is an input or an output
+
+        each emotion should have a specific weight that modifies how much it will change based on the emotion of the statement; these weights would be changed based on the personality traits
+            weights that affect the amount by which an emotion is changed. weights that are affected by the traits, and whether the statement is an input/output 
+
+            emotional shift = ((statement's emotions * trait weights) * i/o weight)
+
+            but how should the statement's emotions be determined?
+                i first thought that it would be like the chatparser, it would find the statement that shared the most words/characters and use the emotional values from that. the way I've been working, it almost seems like i want to generate actual emotional values based on the input in real time
+                    the latter sounds better/more effective(?) in the long run, but the former is simple and requires less actual machine learning(ie none)
+
+                even if i want to go with the second option, i should probably just use the non-ml way first
+
+
+since i want to have the traits affect which responses are given, it would make sense to give statements and responses tags/labels that tell the bot whether its a rude/polite thing to say or if it's something intrusive etc.
+    this would allow it to better "understand" the intent/nature of what is being said to it/what it is saying
+        though, it would make sense for certain characteristics of a statement to be described as a value than as a yes/no(having the tag or not having the tag)
+
+    {
+        "text": "",
+        "emotion": {},
+        "intent": "",
+        "responses": []
+    }
+
+    {
+        "text": "",
+        "emotion": {},
+        "intention": {"main-intent": "", "secondary-intent": "", },
+        "responses": []
+    }
+
+    {
+        "text": "",
+        "emotion": {},
+        "intent": "",
+        "tags": ["polite", "caring"],
+        "responses": []
+    }
+
+    {
+        "text": "",
+        "emotion": {},
+        "intent": "",
+        "tags": {"politeness": 1, }
+        "responses": []
+    }
+
+
+The Core Emotions(https://royallifecenters.com/the-emotional-spectrum/)
+    "all emotions stem from the core emotions[...]researchers found that all human behavior can be reduced to four core emotions, including: fear, anger, sadness, and happiness"
+        "All emotions stemming from these core, or primary, emotions, are secondary emotions and a list of counterparts. Core emotions are the foundation for all other emotions we can feel"
+
+        i find the idea of using the bare minimum to describe the emotional state
+            and then decyphering it through combinations
+            basically, decoding combinations of the primary emotions into more complex ones/concepts
+            it would take the top two(or three) strongest emotions(ones with the highest values) and compare the combination to a dictionary of emotion combos and their names
+
+            fear and trust --> submission
+            joy and trust --> love
+
+    fear, anger, sadness, and happiness or fear, hurt/sadness, and happiness
+        anticipation and joy --> optimism
+
+    https://www.6seconds.org/2022/03/13/plutchik-wheel-emotions/
+
+    https://www.interaction-design.org/literature/article/putting-some-emotion-into-your-design-plutchik-s-wheel-of-emotions
+        primary emotions
+            interest/vigilance
+            ecstacy/joy
+            admiration/trust
+            fear/terror
+            surprise/amazement
+            sadness/grief
+            disgust/loathing
+            anger/rage
+
+        secondary emotion combinations
+            joy + trust = love
+            joy + fear = guilt
+            joy + surprise = delight
+            trust + fear = submission
+            trust + surprise = curiosity
+            trust + sadness = sentimentality
+            fear + surprise = alarm
+            fear + sadness = despair
+            fear + disgust = shame
+            surprise + sadness = disappointment
+            surprise + disgust = ?
+            surprise + anger = outrage
+            sadness + disgust = remorse
+            sadness + anger = envy
+            sadness + interest = pessimism
+            disgust + anger = contempt
+            disgust + interest = cynism
+            disgust + joy = morbidness
+            anger + interest = aggression
+            anger + joy = pride
+            anger + trust = dominance
+            interest + joy = optimism
+            interest + trust = fatalism(?)
+            interest + fear = anxiety
+
+        conflicting combinations
+            joy + sadness
+            trust + disgust
+            fear + anger
+            surprise + interest
+
+    https://positivepsychology.com/emotion-wheel/
+        Primary
+            ecstacy - joy - serenity
+            admiration - trust - acceptance
+            terror - fear - apprehension
+            amazement - surprise - distraction
+            grief - sadness - pensiveness
+            loathing - disgust - boredom
+            rage - anger - annoyance
+            vigilance - anticipation - interest
+
+        secondary
+            joy + trust = love
+            trust + fear = submission
+            fear + surprise = awe
+            surprise + sadness = disapproval
+            sadness + disgust = remorse
+            disgust + anger = contempt
+            anticipation + anger = agressiveness
+            serenity + interest = optimism
+
+    https://en.wikipedia.org/wiki/Emotion_classification#Plutchik's_wheel_of_emotions
+        "Primary dyad = one petal apart = Love = Joy + Trust
+        Secondary dyad = two petals apart = Envy = Sadness + Anger
+        Tertiary dyad = three petals apart = Shame = Fear + Disgust
+        Opposite emotions = four petals apart = Anticipation ∉ Surprise"
+
+        "There are also triads, emotions formed from 3 primary emotions.
+        This leads to a combination of 24 dyads and 32 triads, making 56 emotions at 1 intensity level.
+        Emotions can be mild or intense; for example, distraction is a mild form of surprise, and rage is an intense form of anger"
+
+        Emotions and opposites
+            Basic emotion
+                Joy, Cheerfulness
+                Trust
+                Fear, Fright
+                Surprise
+
+            Basic opposite
+                Sadness, Dejection
+                Disgust, Aversion
+                Anger, Hostility
+                Anticipation, Expectancy
+
+            Mild emotion
+                Serenity
+                Acceptance, Tolerance
+                Apprehension, Dismay
+                Distraction, Uncertainty
+
+            Mild opposite
+                Pensiveness, Gloominess
+                Boredom, Dislike
+                Annoyance, Iritation
+                Interest, Attentiveness
+
+            Intense emotion
+                Ecstasy, Elation
+                Admiration, Adoration
+                Terror, Panic
+                Amazement, Astonishment
+
+            Intense opposite
+                Grief, Sorrow
+                Loathing, Revulsion
+                Rage, Fury
+                Vigilance
+        
+        Dyads (Combinations)
+            Optimism, Courage = Anticipation + Joy
+            Disapproval, Disappointment = Surprise + Sadness
+            Hope, Fatalism = Anticipation + Trust
+            Unbelief, Shock = Surprise + Disgust
+            Anxiety, Dread = Anticipation + Fear
+            Outrage, Hate = Surprise + Anger
+            Love, Friendliness = Joy + Trust
+            Remorse, Misery = Sadness + Disgust
+            Guilt, Excitement = Joy + Fear
+            Envy, Sullenness = Sadness + Anger
+            Delight, Doom = Joy + Surprise
+            Pessimism = Sadness+ Anticipation
+            Submission, Modesty = Trust + Fear
+            Contempt, Scorn = Disgust + Anger
+            Curiosity = Trust + Surprise
+            Cynicism = Disgust + Anticipation
+            Sentimentaity, Resignation =  Trust + Sadness
+            Morbidness, Derisiveness = Disgust + Joy
+            Awe, Alarm = Fear + Surprise
+            Aggressiveness, Vengeance = Anger + Anticipation
+            Despair = Fear + Sadness
+            Pride, Victory = Anger + Joy
+            Shame, Prudishness = Fear + Disgust
+            Dominance = Anger + Trust
+
+        Opposite combinations
+            Bittersweetness = Joy + Sadness
+            Ambivalence = Trust + Disgust
+            Frozenness = Fear + Anger
+            Confusion = Surprise + Anticipation
+
+        "Similar emotions in the wheel are adjacent to each other. Anger, Anticipation, Joy, and Trust are positive in valence, while Fear, Surprise, Sadness, and Disgust are negative in valence.
+        Anger is classified as a "positive" emotion because it involves "moving toward" a goal, while surprise is negative because it is a violation of someone's territory"
+
+    https://www.vox.com/2015/6/29/8860247/inside-out-emotions-graphic
+        emotional overlap in inside out
+            ecstacy = joy + joy
+            melancholy = joy + sadness
+            intrigue = joy + disgust
+            surprise = joy + fear
+            righteousness = joy + anger
+
+            despair = sadness + sadness
+            self-loathing = sadness + disgust
+            anxiety = sadness + fear
+            betrayal = sadness + anger
+
+            prejudice = disgust + disgust
+            revulsion = disgust + fear
+            loathing = disgust + anger
+
+            terror = fear + fear
+            hatred = fear + anger
+
+            rage = anger + anger
+
+    i'm now thinking that i could represent emotions using eight base/primary emotions(Joy, Trust, Fear, Surprise, Sadness, Disgust, Anger, Anticipation)
+        i can then hold an intensity value for each(mild, base, intense/strong)
+            it could probably be 1, 2, and 3
+                though, there should probably be a level for none, as well
+                0, 1, 2, 3 --> none, mild, basic, strong
+            
+        emotions: {"Joy": 0, "Trust": 0, "Fear": 0, "Surprise": 0, "Sadness": 0, "Disgust": 0, "Anger": 0, "Anticipation": 0}
+
+        {
+            "text": "",
+            "intent": "",
+            "emotions": {
+                "Joy": 0,
+                "Trust": 0,
+                "Fear": 0,
+                "Surprise": 0,
+                "Sadness": 0,
+                "Disgust": 0,
+                "Anger": 0,
+                "Anticipation": 0
+            },
+            "responses": [
+                {
+                    "text": "",
+                    "intent": "",
+                    "emotions": {
+                        "Joy": 0,
+                        "Trust": 0,
+                        "Fear": 0,
+                        "Surprise": 0,
+                        "Sadness": 0,
+                        "Disgust": 0,
+                        "Anger": 0,
+                        "Anticipation": 0
+                    }
+                },
+                {
+                    "text": "",
+                    "intent": "",
+                    "emotions": {
+                        "Joy": 0,
+                        "Trust": 0,
+                        "Fear": 0,
+                        "Surprise": 0,
+                        "Sadness": 0,
+                        "Disgust": 0,
+                        "Anger": 0,
+                        "Anticipation": 0
+                    }
+                }
+            ]
+        }
+
+        {
+            "text": "",
+            "emotions": {"Joy": 0, "Trust": 0, "Fear": 0, "Surprise": 0, "Sadness": 0, "Disgust": 0, "Anger": 0, "Anticipation": 0},
+            "intent": "",
+            "responses": [
+                {
+                    "text": "",
+                    "emotions": {"Joy": 0, "Trust": 0, "Fear": 0, "Surprise": 0, "Sadness": 0, "Disgust": 0, "Anger": 0, "Anticipation": 0},
+                    "intent": ""
+                },
+                {
+                    "text": "",
+                    "emotions": {"Joy": 0, "Trust": 0, "Fear": 0, "Surprise": 0, "Sadness": 0, "Disgust": 0, "Anger": 0, "Anticipation": 0},
+                    "intent": ""
+                }
+            ]
+        }
+
+
+Traits in terms of "Virtues"?(https://en.wikipedia.org/wiki/Outline_of_self#Virtues)
+    curious
+        (trust + surprise = curiosity)
+
+    Temperance - "self-control regarding pleasure"
+    
+    Good temper - "self-control regarding anger"
+
+    Politeness
+
+https://www.esolcourses.com/content/exercises/grammar/adjectives/personality/words-for-describing-personality.html
+    moody
+
+
+slot filling?
+    i think it would be a good idea to have it change statements/responses to allow for different words to be slotted
+    like what i was working on in name_replace, but for more than names
+
+
+memory should be "entity-based"
+    the "memories" should be a list of things
+        people
+        locations
+        events
+        organizations
+        objects
+        important things
+
+    the memory could be split into respective categories
+        this would make things more organized, though i'm not sure if it'd be necessarily better
+
+        each category could have its own ID system(this might just end up making things more complicated)
+
+    the structure/formatting of the "memory entries"
+        will probably end up being similar to the second or third iteration of the other memory files
+
+        i'm thinking two options:
+            dictionary(of dictionaries) using Unique/Random IDs for each entry and including the entity/entry type in its info
+            a list of dictionaries representing each entity/entry 
+
+    "I went to Walmart yesterday."
+        should be classified as an event
+
+        event entries should have a "datetime of occurrence"
+            what about events that happen during a range of time?
+                maybe instead of a "time of occurrence", it could use "event start time" and "event end time"
+                or even just time of occurrence and event duration 
+
+        the entry should also in someway describe the matter of the event as well as the things involved(people, locations)
+            since all entities are being given ID Codes, it could just be a list of the ids of the entities involved
+
+            could also just include quotations verbatim of what was said about the event
+
+        {
+            "type": "EVENT",
+            "time-of-occurrence": "",
+            "event-duration": "",
+            "subjects": []
+        }
+
+        {
+            "type": "EVENT",
+            "event-start-time": "",
+            "event-end-time": "",
+            "subjects": []
+        }
+        
+        {
+            "type": "EVENT",
+            "time-of-occurrence": "",
+            "event-duration": "",
+            "involved": [],
+            "quotations": []
+        }
+
+    "Sadie is my sister's friend."
+        when statements are used to training/learning, i think that they should be omitted if it are describing an event
+            as opposed to a statement saying information about a person, in cases like that things like names and specific info would be removed and replaced with a fString slot
+
+        for entries on people(or people-type entities), it should have basically the same information i wanted it to have when i was working on the memoryFilter
+
+        age or date of birth? both?
+            i think dob would be more "useful"? but age is something that is more likely to be said
+                could do the math for the other based on the given piece of data and the date at the time
+
+            i guess i can have a slot for both
+
+        for relationships, it should probably be a list of doubles including the nature of the relationship and the ID of the entity
+            i would use a dictionary for this, but i want to be able to have multiples of a certain type
+                you can't have duplicate keys, but you can have duplicate values; i could just use the ID as the key(since there wouldn't be any duplicate IDs)
+
+                there also might be times in which there is a relationship of multiple types between two entities
+                    friend and coworker
+
+            this would allow it to have the relation between a person and any other entity type
+                PERSON-PERSON
+                PERSON-LOCATION
+                PERSON-ORGANIZATION
+                PERSON-EVENT
+                PERSON-
+
+            Relation-Types(should all be nouns that describe some form of relationship between a person and another entity)
+                PERSON-PERSON
+                    family
+                        "cousin", "brother", "sister", "aunt", "mom", "mother", "father", "dad", "son", "daughter", "child", "parent", "grandfather", "grandmother", "grandpa", "grandma", "uncle", "sibling", "baby", "stepfather", "stepmother", "step-father", "step-mother", "stepdad", "stepmom", "step-dad", "step-mom", "father-in-law", "mother-in-law", "sister-in-law", "brother-in-law", "grandparent", "nephew", "niece", "grandchild", "grandson", "granddaughter", "son-in-law", "daughter-in-law", "half-brother", "half-sister", "half-sibling"
+                    romance
+                        "partner", "spouse", "boyfriend", "girlfriend", "significant other", "wife", "husband", "lover", "babe", "companion", "mate", "date"
+                    school
+                        ""
+                    work
+                        "coworker", "boss", "manager", "intern", "employee", "supervisor", "owner", "ceo", "head", "colleague", "foreman", "superintendent", "administrator", "worker", "forewoman", "foreperson", "director", "coordinator"
+                    friend
+                    acquaintance
+                    pets
+                        "puppy", "pet", "kitten", "dog", "cat", "gecko", "ferret", "lizard", "spider", "snake", "opposum", "raccoon"
+                    
+                PERSON-ORGANIZATION
+                    work
+                        "EMPLOYER"
+                    school
+                        ""
+
+                PERSON-LOCATION
+                    work
+                        "JOBSITE", "WORKPLACE"
+                    school
+                        ""
+
+                PERSON-EVENT
+
+        appearance could either be a list of words/phrases used to describe the person, or it could be a dictionary of specific values("height": 128)
+            there is also the idea that it could be a combination of both, though i'm not completely sure how i would format that
+
+            for traits(describing their character/personality) a simple list makes the most sense
+
+            it would make sense to include a "quotations" like for events
+
+        how should pets be handled?
+            i was thinking it would have a "sub-type"(other entry types could use the same thing)
+
+        the assistant itself should be given a unique ID so that it can be referred to in "relationships"
+
+        {
+            "type": "PERSON",
+            "full-name": "",
+            "nicknames": [],
+            "age": 0,
+            "date-of-birth": "",
+            "likes": "",
+            "dislikes": "",
+            "appearance": [],
+            "traits": [],
+            "relationships": [
+                ["ID", "RELATION-TYPE"]
+            ]
+        }
+
+        {
+            "type": "PERSON",
+            "full-name": "",
+            "nicknames": [],
+            "age": 0,
+            "date-of-birth": "",
+            "likes": "",
+            "dislikes": "",
+            "gender": "",
+            "appearance": [],
+            "traits": [],
+            "relationships": {
+                "ID": "RELATION-TYPE"
+            },
+            "quotations": []
+        }
+
+        {
+            "type": "PERSON",
+            "full-name": "",
+            "nicknames": [],
+            "age": 0,
+            "date-of-birth": "",
+            "likes": "",
+            "dislikes": "",
+            "gender": "",
+            "appearance": [],
+            "traits": [],
+            "relationships": {
+                "ID": ["RELATION-TYPE"]
+            },
+            "quotations": []
+        }
+
+        still not sure how I want to handle pets
+
+    "I visited the Lincoln Memorial"
+        location entries should include info about the where specifically it is(address? latitude and longitude), and related events, organizations, people, and other locations
+
+        how should nested locations/locations in other locations be handled?
+            maybe under relations as "PARENT-LOCATION" or "CHILD-LOCATION"
+
+        {
+            "type": "LOCATION",
+            "names": [],
+            "latitude-longitude": [],
+            "relations": {},
+            "quotations": []
+        }
+
+        {
+            "type": "LOCATION",
+            "names": [],
+            "relations": {},
+            "quotations": []
+        }
+
+    "I applied for a position at Walmart."
+        
+        {
+            "type": "ORGANIZATION",
+            "names": [],
+            "relations": {},
+            "quotations": []
+        }
+
+        organization-types?
+            BUSINESS
+
+    "I just bought a Honda Civic"
+        {
+            "type": "OBJECT",
+            "names": [],
+            "object-type": "",
+            "relations": {},
+            "properties": {},
+            "quotations": []
+        }
+
+        object-types
+            VEHICLE
+            TOOL
+            FOOD
+            CLOTHING
+            FURNITURE
+            TOY
+            ART
+            ELECTRONIC
+            MUSICAL
+            DIGITAL
+            MEDIA
+            MATERIALS
+            CONCEPTS
+            UKNOWN
+
+        should also store some attributes(/characteristics/properties/qualities) of it like color(at least, things that were said as assumed to be "non-standard")
+
+    NE Type and Examples (https://pythonprogramming.net/named-entity-recognition-nltk-tutorial/)(https://www.nltk.org/book/ch07.html)
+        ORGANIZATION - Georgia-Pacific Corp., WHO
+        PERSON - Eddy Bonte, President Obama
+        LOCATION - Murray River, Mount Everest
+        DATE - June, 2008-06-29
+        TIME - two fifty a m, 1:30 p.m.
+        MONEY - 175 million Canadian Dollars, GBP 10.40
+        PERCENT - twenty pct, 18.75 %
+        FACILITY - Washington Monument, Stonehenge
+        GPE - South East Asia, Midlothian
+
+    Types and Descriptions of spacy entity tags (https://www.geeksforgeeks.org/named-entity-recognition/)(https://media.geeksforgeeks.org/wp-content/uploads/20210324175946/pwn-623x660.png)
+        PERSON
+            People, including fictional.
+        NORP
+            Nationalities or religious or political groups.
+        FAC
+            Buildings, airports, highways, bridge, etc.
+        ORG
+            Companies, agencies, institutions etc.
+        GPE
+            Countries, cities, states.
+        LOC
+            Non-GPE locations, mountain ranges, bodies of water.
+        PRODUCT
+            objects, vehicles, foods, etc. ( Not services)
+        EVENT
+            Named hurricanes, battles, wars, sports events, etc.
+        WORK OF ART
+            Titles of books, songs, etc.
+        LAW
+            Named documents made into laws.
+        LANGUAGE
+            Any named language.
+        DATE
+            Absolute or relative dates or periods.
+        TIME
+            Times smaller than a day.
+        PERCENT
+            Percentage, including "6"
+        MONEY
+            Monetary values, including unit.
+        QUANTITYY
+            Measurements, as of weight or distance.
+        ORDINAL
+            "first", "second", etc.
+        CARDINAL
+            Nuerals that do not fall under another type.
+
+    "Supported Named Entity Recognition (NER) entity categories" (https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/named-entity-recognition/concepts/named-entity-categories)
+        Person - Names of people
+        PersonType - Job types or roles held by a person
+        Location - Natural and human-made landmarks, structures, geographical features, and geopolitical entities.
+            Geopolitical Entity (GPE) - Cities, countries/regions, states.
+            Structural - Manmade structures.
+            Geographical - Geographic and natural features such as rivers, oceans, and deserts.
+        Organization - Companies, political groups, musical bands, sport clubs, government bodies, and public organizations. Nationalities and religions are not included in this entity type.
+            Medical - Medical companies and groups.
+            Stock exchange - Stock exchange groups.
+            Sports - Sports-related organizations.
+        Event - Historical, social, and naturally occurring events.
+            Cultural - Cultural events and holidays.
+            Natural - Naturally occurring events.
+            Sports - Sporting events.
+        Product - Physical objects of various categories.
+            Computing products - Computing products.
+        Skill - A capability, skill, or expertise.
+        Address - Full mailing address.
+        PhoneNumber - Phone numbers (US and EU phone numbers only).
+        Email - Email addresses.
+        URL - URLs to websites.
+        IP - network IP addresses.
+        DateTime - Dates and times of day.
+            Date - Calender dates.
+            Time - Times of day.
+            DateRange - Date ranges.
+            TimeRange - Time ranges.
+            Duration - Durations.
+            Set - Set, repeated times.
+        Quantity - Numbers and numeric quantities
+            Number - Numbers.
+            Percentage - Percentages
+            Ordinal numbers - Ordinal numbers.
+            Age - Ages.
+            Currency - Currencies
+            Dimensions - Dimensions and measurements.
+            Temperature - Temperatures.
+
+
+System Structure
+    Self-Identification(Information about itself)
+        Personality
+        Self Details(names, date-of-birth/date-of-creation, )
+
+    Memories(Each Item would be representative of an entity that has come up in conversation.)
+
+    Statement-Response Data(Statement-Response Sets with data describing each and the context with in they were said.)
+
+
+Personality Guide bad idea?
+    i'm starting to think that the whole personality key thing for affecting how it chooses responses might be too complex
+        tagging the statements and responses with certain tags 
+
+    at least for now, i'm thinking that i might abandon the function
+
+
+i think i should rethink the way i was going about the chatbot
+    the emotional analysis is probably too difficult/complex, at least for now
+
+    i do like some of the methods though (intent based; "statement type", etc
+
+
+    i should start simpler, start from the beginning and break down how conversations work
+
+    better understand the problem to better form a solution
+
+    parts of a conversation?
+        https://aphcareerconnect.org/lesson-plans-for-teachers-and-professionals/social-skills/lesson-2-elements-of-a-conversation/ - 
+            Greeting
+                "The purpose of a greeting is to acknowledge the other person by saying hello or welcoming them into a brief or lengthy conversation..."
+                "...formality will depend on whom you are addressing..."
+
+            Dialogue
+                "Dialogue is the back-and-forth sharing of ideas, thoughts, questions, and plans."
+                "The goal is a well-balanced, reciprocal dialogue, meaning both parties share and are interested in the other's perspective."
+                "...each person has the opportunity to ask questions, inform, add to existing ideas, assert needs, agree or disagree, listen, share emotions or feelings, and steer the conversation"
+                "avoid interrupting, constant self-promotion, endless talking without listening to the other person, and consistent negativity."
+
+            Conclusion
+                "You should not exit a verbal conversation without saying goodbye."
+
+            brings ups the idea of formality
+                it being able to choose and discern "polite"/"impolite" responses was an idea i was planning on trying to implement
+
+
+        Turn-Taking
+        Discussion
+        Introduction
+        Context
+
+
+        https://www.codurance.com/publications/2017/02/08/the-4-key-elements-of-a-conversation
+            Four key elements of conversations 
+                Turn-Taking
+                    "A turn is one interaction between the user and the system, and a conversation is made of at least two turns."
+
+                Context
+                    "...it should remember what occurred in previous conversational turns..."
+
+                Reference
+                    "The system should understand follow-up questions that include pronouns, in order to feel more conversational."
+
+                Variety
+                    "The system should ask open questions only if it is able to handle different ways of saying the same thing."
+
+    intent-based
+        since i'm keeping the "intent stuff", i should work on improving it
+
+        sentence types: ["declarative", "interrogative", "imperative", "exclamatory"]
+        possible intents: ["greeting", "inquiry", "small-talk", "request", "goodbye", "agreement", "inform", "apology", "comfort", "forgive", "condolences", "thanks", "accepting-thanks", "accusation"]
+
+        given intent types for an input, it would then be able to follow certain rules based on that intent
+            rule would then dictate what kind of response would/could be given
+
+            i'm thinking a secondary intent would also be useful
+                though, i am unsure about cases that could have an additional(or more than one) intent classifications
+                    not to be confused with a secondary intent
+                    i'm thinking it can either generate multiple labels(Multilabel classification) or I can just use the secondary intent label for this
+                
+                    "Hello! How are you?" --> "intent": ["greeting", "inquiry"]
+
+                statement type?
+
+            there should also be intent labels for "yes" or "no" answers "affirmative" and "denial" or "yea" and "nay"(or even "agreement")
+                i think that "affirmative" would cover things like agreement and acceptance(in certain contexts)(https://wikidiff.com/agreement/affirmative)
+                    nay covers denial and refusal
+                    i thinki i'm going to just use yea and nay; the thinking here is that they cover all of what the other words cover
+                        if i were to use one of the other words, the label might feel to restrictive(?)/specific and might lead to the need for other labels for other specific cases
+                        this gives a broad label that is able to describe the things the others do, leading to needing only one label for all of the cases(should see if I can apply this thinking to the other labels i already have)
+
+            "No problem", "Don't worry about it", and "it's nothing"
+                are all phrases that can be used in response to someone saying "thank you"
+                but i don't really think that they all can be called "accepting-thanks", as they seem dismissive(feeling or showing that something is unworthy of consideration)
+                they are saying "no need to thank me"; dismissive of the need to say thanks
+
+                I think "it's nothing" is an example of a phrase that is simply dismissive
+                    as opposed to "no problem", which is dismissive but is also used as a response to someone giving thanks/showing gratitude
+
+                    this might be a case where a dual label would be good for certain statements
+
+            {"intent": "", "": }
+
+            possible intents: ["greeting", "inquiry", "small-talk", "request", "goodbye", "inform", "apology", "comfort", "forgive", "condolences", "thanks", "accepting-thanks", "accusation", "yea", "nay", "dismissive"]
+
+    able to switch between types/styles of conversation?
+        the main style of conversation is dialogue
+            involving a back and forth/turn-taking; both parties act a speaker and listener
+
+        but I think it would be interesting if it could be switched to a mode of conversation in which it is a listener only(or with limited responses)
+            quite possibly triggered by specific inputs(kinds of input/intent type)
+
+    combining statements?
+        i think it would be cool, and allow it more possible responses if it could combine responses depending on the intent of the inputed statement
+
+        "Hello! How are you?" --> "intent": ["greeting", "inquiry"]
+            in this instance, you could respond to either the "greeting" or the "inquiry"
+                "Hi!"("greeting") or "I'm doing great!"("inform")
+
+            but what if you combined two of the possible responses to both?
+                "Hi! I'm doing great!"(["greeting", "inform"])
+
+        since i'm considering the possibility of giving statements dual intents, i think it should only combine responses that have a single intent
+
+    secondary intent field?
+        i'm using dual intent labels
+
+        was thinking that the second intent field could be the subject matter
+            it would be subject matter types for broad categories
+                "How are you doing?" --> {"intent": ["inquiry",], "topic": "well-being"}
+                "I'm good." --> {"intent": ["inform",], "topic": "well-being"}
+
+                "What've you been up to?" --> {"intent": ["inquiry",], "topic": "activity"}
+                "Oh. What's going on?" --> {"intent": ["inquiry",], "topic": "activity"}
+
+                "Tell me about yourself." --> {"intent": ["inquiry",], "topic": "personal-details"}
+                "How old are you?" --> {"intent": ["inquiry",], "topic": "personal-details"}
+
+            it could also have an "inconclusive"/"unknown" label
+
+        possible_topics = ["well-being", "activity", "personal-details", "story", "relationship", "unknown"]
+
+        should this be a dual label field?
+            was thinking it would just be the single label, which would make it simpler
+
+        https://uwaterloo.ca/english-teaching-portal/teaching-and-responding-writing/types-response
+
+
+Things to work on:
+    intent-based response generation/picking
+        dual intents - DONE
+        ruleset determines the certain types of responses are given to certain types of statements
+            based on the intent(s) and other qualities of the statement(both input and response)
+    
+    memory
+        entries are on an entity basis(people, locations, events, organizations, important things)
+        slot filling
+
+    combining statements(of a single intent)
+
+
+ruleset?
+    simple(statement-response intent)
+        greeting --> greeting
+        goodbye --> goodbye
+
+        inquiry --> inform
+        inquiry --> yea
+        inquiry --> nay
+
+        apology --> forgive
+
+        thanks --> accepting-thanks
+        thanks --> dismiss
+
+        accusation --> apology
+        accusation --> nay
+        accusation --> dismiss
+
+        condolences --> thanks
+
+    these rules are more like suggestions as responses with the right intent won't always be able to be given
+        i think it would take the list of possible responses to a statement and remove the ones that aren't the matching intent
+        in the event that there aren't responses of a matching type, it would then just use the original list as is
+
+    there should be some way it tells how to answer a question
+        question types? "yes or no"/"polar" and "open"/"open-ended"
+        "closed" for questions that give options
+
+        the problem is that i'm not sure how this would fit into the "intent/entity package"
+            i guess if one of the intents is "inquiry", it would then add the "inquiry-type" tag
+
+            {"intent": [""], "topic": "", "": ""}
+
+            {"intent": ["inquiry"], "topic": "well-being", "inquiry-type": "polar"}
+            {"intent": ["inquiry"], "topic": "activity", "inquiry-type": "open"}
+
+
+it's just occurred to me that I haven't really thought about how it would actually generate responses
+    i have thought about how it would cull/filter the responses options based on the rule set and how i might combine those responses
+    but i haven't thought about where it gets those response statements
+
+    the previous iteration compared the input statement to all of the statements in its statResp file
+        it then took the statement with the most characters/words in common and randomly pick one of its possible responses
+
+    i was considering doing a similar thing here, but then i realized it would render some of the process pointless
+    
+    idea 1 - "response pool"
+        just have all of the statements(input or response) as a list and perform the filtering process on the whole list
+            a problem with this is that it would take longer the more statements and responses it learns/takes in
+
+            this also separates the statement-response sets
+                which kind of removes some context(makes it so that it's even more on a simple statement-response basis)
+
+    idea 2
+        input <-- response
+
+        input's intent package + ruleset --> response
+
+
+i like the chat class that nltk has
+    (https://www.nltk.org/_modules/nltk/chat/util.html, https://www.geeksforgeeks.org/creating-a-basic-hardcoded-chatbot-using-python-nltk/, https://meriales.medium.com/a-simple-chatbot-using-nltk-chat-640456dcdf72)
+    using "pairs", you can tell it how to respond to things
+        "variable pairs which is a list (as per docs list of tuple, but you can use either).
+        The first item in the pair is the pattern which is a string or regular expression.
+        The second item is a list of possible responses, Chat will randomly select a response if a pattern matches the user’s input."
+
+    using it with reflections allows it to repeat parts of the inputed string with flipped subject/verb
+        "this is a dictionary that when a value in a regex group matches a key in the dict it will output the value in the response"
+
+    
+how to use the previous conversation as context?
+    p
+
+
+Am I overcomplicating things?
+    probably
+
+    the thought has occurred to me a few times, and i think i have at a couple of pointless
+
+    in other ways i'm not too sure
+
+    i'm sure that some of the ideas/methods might work, but i'm would take a bunch of time
+
+    my goal should probably be to keep it simple, as simple as i can
+
+
+rethink
+    i think I should focus on allowing it to use the context of the previous conversation and the "memory"
+
+    "long-term" and "short-term" memories
+        long
+            would be the information taken from inputed statements and saved to the memory file
+            would be basically permanent
+            would allow it to call upon things said in conversations other than the current one
+
+        short
+            would be information taken from inputed statements/the previous conversation
+            would be used to allow it to remember certain things to slot in(like names said previously in the conversation)
+            would also allow it to understand who is being referred to with pronouns and the like
+
+in the case of memories and storing information, it would make sense for it to ask certain questions for clarification/to gain more info to better "understand" what is being talked about
+    User: "I saw Janey at the store today."
+        {'text': 'I saw Janey at the store today.', 'entry-type': ('PERSON',), 'entities': ["Janey"]}
+        *it would add a new event to its memory*
+        *then it would search its memory for a person of the name "Janey" to link to the memory*
+        *it doesn't find a "Janey"*
+        Bot: "Who is Janey?"
+
+    essentially these would be question templates into which names(and sim.) would be slotted
+
+
+new version
+    i want to take a step back, as i feel like i was still overcomplicating things
+    before I was overcomplicating it with the emotions thing and now I'm making it pointlessly complicated with the intent/topic/sentence type system
+    
+    I want to uncomplicate things
+        I actually want to take a look at the problem and come up with a completely different solution
+        however, for now I want to try and find a simple solution based on what I already have
+
+        I'm thinking for this next approach, I want to take ideas from the memoryFilter, the oop approach, and the original chatParser
+
+    what I want it to do
+        respond well to input texts
+            the original chatParser is definitely capable of this, it just needs more training data(and probably some optimization)
+
+        have a memory
+            I can work some more on the memoryFilter concept
+
+
+AIML
+    https://www.chatbotpack.com/aiml-chatbots/
+    https://docs.bmc.com/docs/livechat2002/sample-aiml-file-915362523.html#Sample.aimlfile-AIMLstructures
+
+    I do really like what aiml does, but i'm not sure how i would use it
+        not sure how i would incorporate the memory things
+        also not exactly sure how i would "train" an aiml chatbot with chat logs
+            i'm sure I could figure it out tho
+
+    what I can do is basically make my own version of it
+        i can use some concepts from it but build upon them and better/more easily combine it with the memory
+
+        I'll probably still use json files for now
+
+        basic AIML structures.
+            <category> - used as a container for a question and response.
+            <pattern> - identifies possible keywords or questions that users might type.
+            <template> - contains the response to a question.
+            <random> - used to respond to a user's input with one of multiple possible answers.
+                Each possible response is defined with an <li> tag, such as a list of possible service desk numbers.
+                The <random> tag selects randomly one of its <li> tags to include in the response.
+            <srai> - used in many of the answers, as a way to reuse answer templates. 
+                The sample.aiml file heavily relies on reuse because it uses multiple variations on keywords.
+
+        """
+        <category>
+            <pattern>HOLIDAYS</pattern>
+            <template>You can find the list of holidays in HR site. Click <a href="https://hr.calbro.com">here</a> to open it.</template>
+        </category>
+        <category>
+            <pattern>_ HOLIDAYS *</pattern>
+            <template><srai>HOLIDAYS</srai></template>
+        </category>
+        <category>
+            <pattern>_ HOLIDAYS</pattern>
+            <template><srai>HOLIDAYS</srai></template>
+        </category>
+        <category>
+            <pattern>HOLIDAYS *</pattern>
+            <template><srai>HOLIDAYS</srai></template>
+        </category>
+        """
+
+        I like the pattern-template thing
+            the idea of having separate random and hardcoded responses is interesting to me
+                maybe I could have a set of hardcoded responses that are put in "by hand", in addition to the random responses pairs that can be learned from chatlogs
+                    the list of hardcoded pairs wouldn't be changed when the chatbot "trains" off of a chatlog, the "learned pairs" would however
+
+                I always struggle with the language I should use to describe these things in practice:
+                    I have trouble finguring out/deciding on the words to use as labels for things
+
+                {
+                    "personality-vector": {},
+                    "memories": {},
+                    "hardcoded-pairs": {},
+                    "learned-pairs": {}
+                }
+
+                not sure if the "pairs" should be like the ones in the chatParser or be different
+
+                    <category>
+                        <pattern>HOLIDAYS</pattern>
+                        <template>You can find the list of holidays in HR site. Click <a href="https://hr.calbro.com">here</a> to open it.</template>
+                    </category>
+
+                    {
+                        "input": "",
+                        "output": "",
+                        "type": "keyword"
+                    }
+
+                    {
+                        "type": "whole",
+                        "query": "",
+                        "responses": []
+                    }
+
+                    {
+                        "type": "whole",
+                        "prompt": "",
+                        "responses": []
+                    }
+
+                the hardcoded pairs/sets can use slotfilling/templating(for lack of a better term)
+                    kind of like the nltk chatbot pairs
+                        [
+                            r"my name is (.*)",
+                            ["Hello %1, How are you today ?",]
+                        ]
+
+                    slot filling for the responses
+
+                    templates for the inputs
+                        essentially leaving empty slots for corresponding words/entities
+                        for things like names
+                        something like the relation pairs thing i was messing with(i.e. ('PERSON', "'s brother, ", 'PERSON'))
+
+                        "My name is Evelyn." --> "My name is <PERSON>."
+                        
+                        "I like <ITEM-1>."
+
+                    could also incorporate an OR thing for specific keywords
+                        "You are so nice|kind"
+                        "You are stupid|dumb"
+
+                the hardcoded and learned pairs could probably just be put together into on "list" when generating a response
+                    or the input could be compared to the hardcoded pairs and if it isn't in those it'll get compared to the learned ones
+
+                the hardcoded pairs can be used to guide the conversation
+                    in the context of trying to sell something or as a helper bot
+
+                    I would want it to ask clarifying questions to learn more info about what is being talked about(like i was thinking about before)
+
+        the use of keywords is also a good idea
+            in aiml, you put either put a keyword or the whole string for the pattern
+                you can also use "wildcard" characters to indicate if the keyword should be at the start, middle, or end of the input
+
+        The <that> element specifies the required previous
+            I like this, it means that a specific response will be given for a specific previous output
+            not sure if it's something that would be necessary, but cool nonetheless
+
+
+process?
+    user give an input
+
+    input is run through memoryFilter
+        pieces of information(or even the whole input) are saved to the file
+
+    response is generated
+        input is checked against hardcoded pairs
+        if it's not found there, it is checked against the learned pairs
+        if it's not found there, a default response is given("I don't understand")

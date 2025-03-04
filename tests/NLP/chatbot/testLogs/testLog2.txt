@@ -1,0 +1,21 @@
+Party1: Hi!
+Party2: Hello! How are you?
+Party1: I'm fine.
+Party2: Is it sunny outside?
+Party1: Yeah, it is sunny.
+Party2: I like the sunny days, you?
+Party1: Yeah, I like the sunny days.
+Party2: What is your name?
+Party1: I'm Party1.
+Party2: Party1?
+Party1: Yeah, Party1.
+Party2: I'm Party2.
+Party1: Party2?
+Party2: Yeah, Party2.
+Party1: Thanks.
+Party2: No problem.
+Party1: Can I ask you something?
+Party2: Yeah?
+Party1: Why did you come here?
+Party2: Well, we have our picnic here every week, and we always come here.
+Party1: 

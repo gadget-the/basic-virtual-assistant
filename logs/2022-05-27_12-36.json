@@ -1,0 +1,58 @@
+{
+    "session-start-time": "2022-05-27 12:36:33.823642-07:00",
+    "session-end-time": "2022-05-27 12:41:28.089839-07:00",
+    "session-duration": "0:04:54.266197 / 294.266197 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my ",
+            "intEnt": {
+                "intent": null,
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-27 12:36:38.438136"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Pardon?",
+            "spoken-feedback": false,
+            "time": "2022-05-27 12:36:38.442143"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my ",
+            "intEnt": {
+                "intent": null,
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-27 12:36:45.541226"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I don't know what that means.",
+            "spoken-feedback": false,
+            "time": "2022-05-27 12:36:45.549227"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my ",
+            "intEnt": {
+                "intent": null,
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-27 12:37:09.304382"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I don't understand the request.",
+            "spoken-feedback": false,
+            "time": "2022-05-27 12:37:09.312390"
+        }
+    ]
+}

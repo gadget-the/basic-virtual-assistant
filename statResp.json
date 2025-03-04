@@ -1,0 +1,329 @@
+{
+    "Hi!": [
+        "Hello! How are you?",
+        "Oh, Hi!"
+    ],
+    "Hello! How are you?": [
+        "I'm great! How are you?",
+        "I'm fine."
+    ],
+    "I'm great! How are you?": [
+        "About the same."
+    ],
+    "About the same.": [
+        "What are you up to?",
+        "You find that thing you were looking for?",
+        "What've you been up to?"
+    ],
+    "What are you up to?": [
+        "I'm working on my compsci homework. What about you?"
+    ],
+    "I'm working on my compsci homework. What about you?": [
+        "I'm eating dinner and watching Law & Order, right now."
+    ],
+    "I'm eating dinner and watching Law & Order, right now.": [
+        "Ooh! What episode?"
+    ],
+    "Ooh! What episode?": [
+        "It's the one where they-"
+    ],
+    "Oh, Hi!": [
+        "Hey!"
+    ],
+    "Hey!": [
+        "Oh, hey! What are you doing?",
+        "Hey! What are you up to?",
+        "Hey! How are you?",
+        "How are you?"
+    ],
+    "What are you doing?": [
+        "Watching Law & Order and I popped a burrito in the microwave."
+    ],
+    "I'm fine.": [
+        "Is it sunny outside?"
+    ],
+    "Is it sunny outside?": [
+        "Yeah, it is sunny."
+    ],
+    "Yeah, it is sunny.": [
+        "I like the sunny days, you?"
+    ],
+    "I like the sunny days, you?": [
+        "Yeah, I like sunny days."
+    ],
+    "Yeah, I like sunny days.": [
+        "What is your name?"
+    ],
+    "What is your name?": [
+        "Oliver Mott"
+    ],
+    "Thanks.": [
+        "No problem."
+    ],
+    "No problem.": [
+        "Can I ask you something?"
+    ],
+    "Can I ask you something?": [
+        "Yeah?"
+    ],
+    "Why did you come here?": [
+        "Well, we have our picnic here every week, and we always come here."
+    ],
+    "How are you?": [
+        "Doing pretty good. Just getting up and looking for work.",
+        "I'm good.",
+        "I'm feeling about the same.",
+        "About the same.",
+        "I'm good, how are you?"
+    ],
+    "Doing pretty good. Just getting up and looking for work.": [
+        "Nice to hear that."
+    ],
+    "I just found out something about you.": [
+        "What's that?"
+    ],
+    "Well, I heard you were traveling a lot.": [
+        "Yes"
+    ],
+    "You better be careful out there.": [
+        "I'll try my best."
+    ],
+    "Ayo!": [
+        "Hello! How are you?",
+        "Oh, Hi!",
+        "Hey!"
+    ],
+    "Umm, I don't think it's an issue.": [
+        "Why not?"
+    ],
+    "You busy?": [
+        "Hey! Not currently."
+    ],
+    "Hey! Not currently.": [
+        "How's it going, J, how have you been?"
+    ],
+    "How's it going, J, how have you been?": [
+        "Ok."
+    ],
+    "Ok.": [
+        "Have you been hanging out with anybody or are you just home getting your paperwork together?"
+    ],
+    "Have you been hanging out with anybody or are you just home getting your paperwork together?": [
+        "I'm here getting my stuff together."
+    ],
+    "I'm here getting my stuff together.": [
+        "Are you thinking about it or is it just kind of part of the process?"
+    ],
+    "Are you thinking about it or is it just kind of part of the process?": [
+        "It's just one of those things, right?"
+    ],
+    "It's just one of those things, right?": [
+        "You've really made a huge effort to say nice things about everyone, including Bob, so I think that's really great."
+    ],
+    "You've really made a huge effort to say nice things about everyone, including Bob, so I think that's really great.": [
+        "I feel really good about it, that's why I'm saying that."
+    ],
+    "I feel really good about it, that's why I'm saying that.": [
+        "I think you guys are going to be really good."
+    ],
+    "I think you guys are going to be really good.": [
+        "I really think we're going to be good, yeah."
+    ],
+    "I really think we're going to be good, yeah.": [
+        "You think so?"
+    ],
+    "You think so?": [
+        "I think so."
+    ],
+    "Where are you from?": [
+        "Columbus, Ohio, USA"
+    ],
+    "What is your major?": [
+        "Advertising and Marketing"
+    ],
+    "When did you start playing dota 2?": [
+        "January, 2011"
+    ],
+    "Who were you playing against in your first dota 2 game?": [
+        "IGN AndyDota, it was a lot of fun."
+    ],
+    "What is your major/minor at this university?": [
+        "Engineering, Computer Science with a minor in Math"
+    ],
+    "Where do you live now?": [
+        "Helsinki, Finland"
+    ],
+    "Where did you attend high school?": [
+        "English River High School in East Grand Forks, Minnesota, USA"
+    ],
+    "Do you live alone?": [
+        "No"
+    ],
+    "Do you work full-time or part-time?": [
+        "I work at a 3M supplier here in Helsinki. I work 10 hours a week and am planning on getting more hours, working full-time in the summer and everything."
+    ],
+    "Howdy!": [
+        "Hey, what's up?"
+    ],
+    "Hey, what's up?": [
+        "Not much, you?"
+    ],
+    "Not much, you?": [
+        "About the same."
+    ],
+    "You find that thing you were looking for?": [
+        "Yep! I found it, at last!"
+    ],
+    "Yep! I found it, at last!": [
+        "Great! Glad you found it before your roomate stumbled upon it."
+    ],
+    "Great! Glad you found it before your roomate stumbled upon it.": [
+        "Yeah. That would've been awkward."
+    ],
+    "Hi": [
+        "Hey!"
+    ],
+    "I'm good.": [
+        "That's good."
+    ],
+    "That's good.": [
+        "How are you?",
+        "What have you been up to recently?"
+    ],
+    "I'm feeling about the same.": [
+        "Are you at work?"
+    ],
+    "Are you at work?": [
+        "No."
+    ],
+    "No.": [
+        "Oh. What's going on?"
+    ],
+    "Oh. What's going on?": [
+        "I just got back from a small get together."
+    ],
+    "Oh! Are you still planning on taking me out?": [
+        "Well, I'm thinking about it."
+    ],
+    "Well, I'm thinking about it.": [
+        "What about?"
+    ],
+    "Can you meet me there?": [
+        "Ok."
+    ],
+    "What've you been up to?": [
+        "Just working on a little project."
+    ],
+    "Just working on a little project.": [
+        "oh? what's the project?"
+    ],
+    "I'm sorry.": [
+        "Oh, that's okay.",
+        "It's okay.",
+        "I forgive you.",
+        "All is forgiven.",
+        "No apology needed."
+    ],
+    "I apologize.": [
+        "Oh, that's okay.",
+        "It's okay.",
+        "I forgive you.",
+        "All is forgiven.",
+        "No apology needed."
+    ],
+    "Sorry": [
+        "Oh, that's okay.",
+        "It's okay.",
+        "I forgive you.",
+        "All is forgiven.",
+        "No apology needed."
+    ],
+    "Bye!": [
+        "Goodbye!",
+        "See you later!",
+        "Have a great day!",
+        "Bye!"
+    ],
+    "Thank you!": [
+        "Anything else I can do for you?",
+        "May I further assist you?",
+        "No problem."
+    ],
+    "oh? what's the project?": [
+        "It's a little game called \"Bag boy.\" It 's got a really funny premise."
+    ],
+    "It's a little game called \"Bag boy.\" It 's got a really funny premise.": [
+        "what's it about?"
+    ],
+    "what's it about?": [
+        "It's a cute little game where you use a small bag to collect things you find around the world."
+    ],
+    "It's a cute little game where you use a small bag to collect things you find around the world.": [
+        "what do you do with all of the things you collect?"
+    ],
+    "what do you do with all of the things you collect?": [
+        "There are different levels where you collect different things and there are different animals that you can meet and get special gifts from after you've collected enough items."
+    ],
+    "There are different levels where you collect different things and there are different animals that you can meet and get special gifts from after you've collected enough items.": [
+        "cool!"
+    ],
+    "cool!": [],
+    "Hello!": [
+        "How are you?"
+    ],
+    "I'm good, how are you?": [
+        "Doing well.",
+        "I am great, thanks for asking."
+    ],
+    "Doing well.": [
+        "That's good."
+    ],
+    "What have you been up to recently?": [
+        "I've been working on some programming projects and playing games."
+    ],
+    "I've been working on some programming projects and playing games.": [
+        "Oh yeah? What kind?"
+    ],
+    "Oh yeah? What kind?": [
+        "Which? Projects or games?"
+    ],
+    "Which? Projects or games?": [],
+    "Howdy.": [
+        "How's it going?'."
+    ],
+    "How's it going?'.": [
+        "It's going well."
+    ],
+    "It's going well.": [
+        "What are you up to tonight?"
+    ],
+    "What are you up to tonight?": [
+        "I'm just working on a few little projects."
+    ],
+    "I'm just working on a few little projects.": [
+        "What projects?"
+    ],
+    "What projects?": [
+        "I'm programming."
+    ],
+    "I'm programming.": [],
+    "Hi there!": [
+        "How are you?"
+    ],
+    "I am great, thanks for asking.": [
+        "No problem!"
+    ],
+    "No problem!": [
+        "So, how was your day?"
+    ],
+    "So, how was your day?": [
+        "My day went well. It was rather uneventful."
+    ],
+    "My day went well. It was rather uneventful.": [
+        "Oh? Mine was. Sort of."
+    ],
+    "Oh? Mine was. Sort of.": [
+        "Hmm? how so?"
+    ],
+    "Hmm? how so?": []
+}

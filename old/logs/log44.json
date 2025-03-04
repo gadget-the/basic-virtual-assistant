@@ -1,0 +1,129 @@
+{
+    "sessionStartTime": "2021-12-20 08:07:02.753808",
+    "sessionEndTime": "2021-12-20 08:08:22.236004",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "start a timer for 4 minutes",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 4,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-20 08:07:06.769778"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 4 minutes. For a total of 240 seconds. The ID for it is Jim92aKi.",
+            "tts": false,
+            "time": "2021-12-20 08:07:06.779788"
+        },
+        {
+            "speaker": "USER",
+            "text": "start a timer for 7 minutes",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 7,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-20 08:07:14.851611"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 7 minutes. For a total of 420 seconds. The ID for it is Sh5ubnIA.",
+            "tts": false,
+            "time": "2021-12-20 08:07:14.861135"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in an hour to drink water",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "to drink water",
+                "units": [
+                    "hours"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 1,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-20 08:07:40.878756"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 1 hours. For a total of 3600 seconds. The ID for it is Bjj0qZtD.",
+            "tts": false,
+            "time": "2021-12-20 08:07:40.878756"
+        },
+        {
+            "speaker": "USER",
+            "text": "end the timer with ID Bjj0qZtD",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "endTimer",
+                "IDTerm": "",
+                "ID": "Bjj0qZtD",
+                "timing": null
+            },
+            "time": "2021-12-20 08:08:04.093703"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Ending timer with ID 'Bjj0qZtD'.",
+            "tts": false,
+            "time": "2021-12-20 08:08:04.109333"
+        },
+        {
+            "speaker": "USER",
+            "text": "end all timers",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "endTimer",
+                "IDTerm": "",
+                "ID": "all",
+                "timing": null
+            },
+            "time": "2021-12-20 08:08:12.796125"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "tts": false,
+            "time": "2021-12-20 08:08:12.803981"
+        }
+    ]
+}

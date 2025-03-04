@@ -1,0 +1,76 @@
+{
+    "session-start-time": "2022-02-10 22:02:41.255142-08:00",
+    "session-end-time": "2022-02-10 22:03:50.120686-08:00",
+    "session-duration": "0:01:08.865544 / 68.865544 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "hey Getrude!",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-02-10 22:02:50.806308"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hey! What are you up to?",
+            "spoken-feedback": false,
+            "time": "2022-02-10 22:02:50.853198"
+        },
+        {
+            "speaker": "USER",
+            "text": "not much, what are you up to?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-02-10 22:02:58.541503"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm working on my compsci homework. What about you?",
+            "spoken-feedback": false,
+            "time": "2022-02-10 22:02:58.572755"
+        },
+        {
+            "speaker": "USER",
+            "text": "coolio",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-02-10 22:03:02.361555"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'd be lying, if I said that I knew what that meant.",
+            "spoken-feedback": false,
+            "time": "2022-02-10 22:03:02.408814"
+        },
+        {
+            "speaker": "USER",
+            "text": "have you got the weather?",
+            "intEnt": {
+                "intent": "weather",
+                "secondary-intent": null,
+                "location": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-02-10 22:03:25.904719"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "It is 71\u00b0F and Clear , with wind WNW 0 MPH and 21% humid in Indio, California, United States.\nWeather information sourced from Weather.gov; Last Updated: 10 Feb 09:30 PM PST",
+            "spoken-feedback": false,
+            "time": "2022-02-10 22:03:29.611705"
+        }
+    ]
+}

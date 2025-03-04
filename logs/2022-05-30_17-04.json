@@ -1,0 +1,75 @@
+{
+    "session-start-time": "2022-05-30 17:04:29.508588-07:00",
+    "session-end-time": "2022-05-30 17:05:51.092455-07:00",
+    "session-duration": "0:01:21.583867 / 81.583867 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "what is the current theme",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-theme-check",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:04:50.857203"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The visual theme you're currently using is \"Greyscale\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:04:50.872808"
+        },
+        {
+            "speaker": "USER",
+            "text": "which ui theme is this?",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-theme-check",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:05:02.146761"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The current ui theme is \"Greyscale\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:05:02.162372"
+        },
+        {
+            "speaker": "USER",
+            "text": "what theme am i using?",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-theme-check",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:05:14.345425"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The name of the visual theme you're currently using is \"Greyscale\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:05:14.359934"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is the name of this visual theme?",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-theme-check",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 17:05:29.549406"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The current ui theme is \"Greyscale\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 17:05:29.562170"
+        }
+    ]
+}

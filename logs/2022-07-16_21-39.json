@@ -1,0 +1,61 @@
+{
+    "session-start-time": "2022-07-16 21:39:12.021720-07:00",
+    "session-end-time": "2022-07-16 21:43:33.338107-07:00",
+    "session-duration": "0:04:21.316387 / 261.316387 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "simon says \"apache\"",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "apache",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-16 21:39:23.205803"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "apache",
+            "spoken-feedback": false,
+            "time": "2022-07-16 21:39:23.209812"
+        },
+        {
+            "speaker": "USER",
+            "text": "please say 'I'm sorry , Dave.'",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "I'm sorry , Dave.",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-16 21:40:03.086102"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry , Dave.",
+            "spoken-feedback": false,
+            "time": "2022-07-16 21:40:03.090144"
+        },
+        {
+            "speaker": "USER",
+            "text": "repeat after me, \"Where is it?\"",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "Where is it?",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-16 21:42:11.681307"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Where is it?",
+            "spoken-feedback": false,
+            "time": "2022-07-16 21:42:11.685319"
+        }
+    ]
+}

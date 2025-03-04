@@ -1,0 +1,31 @@
+{
+    "sessionStartTime": "2021-12-24 16:45:50.957403-08:00",
+    "sessionEndTime": "2021-12-24 16:47:02.021412-08:00",
+    "sessionDuration": "0:01:11.064009 / 71.064009 seconds",
+    "log": [
+        {
+            "speaker": "ASSISTANT",
+            "text": "Taking speech input...",
+            "tts": true,
+            "time": "2021-12-24 16:45:56.597638"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Taking speech input...",
+            "tts": true,
+            "time": "2021-12-24 16:46:09.262040"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Taking speech input...",
+            "tts": true,
+            "time": "2021-12-24 16:46:22.173261"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Taking speech input...",
+            "tts": true,
+            "time": "2021-12-24 16:46:34.689804"
+        }
+    ]
+}

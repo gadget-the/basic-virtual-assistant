@@ -1,0 +1,1 @@
+{"session-start-time": "2022-07-24 16:27:22.019021-07:00", "session-end-time": "2022-07-24 16:27:56.677036-07:00", "session-duration": "0:00:34.658015 / 34.658015 seconds", "session-log": [{"speaker": "USER", "text": "repeat that", "intEnt": {"intent": "repeat", "secondary-intent": null, "timing": null}, "spoken-input": false, "time": "2022-07-24 16:27:42.366786"}]}

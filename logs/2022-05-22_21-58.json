@@ -1,0 +1,24 @@
+{
+    "session-start-time": "2022-05-22 21:58:04.788492-07:00",
+    "session-end-time": "2022-05-22 21:59:05.008240-07:00",
+    "session-duration": "0:01:00.219748 / 60.219748 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "how are you?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-22 21:58:39.001116"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm good.",
+            "spoken-feedback": false,
+            "time": "2022-05-22 21:58:39.032375"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+User: Hello!
+Cleverbot: How are you?
+User: I'm good, how are you?
+Cleverbot: Doing well.
+User: That's good.
+Cleverbot: What have you been up to recently?
+User: I've been working on some programming projects and playing games.
+Cleverbot: Oh yeah? What kind?
+User: Which? Projects or games?

@@ -1,0 +1,280 @@
+{
+    "sessionStartTime": "2022-01-09 11:34:28.564894-08:00",
+    "sessionEndTime": "2022-01-09 11:42:57.100487-08:00",
+    "sessionDuration": "0:08:28.535593 / 508.535593 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "open discord in 2 minutes",
+            "intEnt": {
+                "intent": "open_app",
+                "subInt": null,
+                "commonName": "discord",
+                "program": "C:\\Users\\mario\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe",
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 2,
+                    "seconds": 0
+                }
+            },
+            "time": "2022-01-09 11:34:54.939278"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Attempting to open 'discord' in 2 minutes.",
+            "tts": false,
+            "time": "2022-01-09 11:34:54.942907"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "time": "2022-01-09 11:35:08.312278"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is only one active timer. The time left is 107 seconds.",
+            "tts": false,
+            "time": "2022-01-09 11:35:08.323935"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "time": "2022-01-09 11:35:34.994700"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is only one active timer. The time left is 81 seconds.",
+            "tts": false,
+            "time": "2022-01-09 11:35:35.008008"
+        },
+        {
+            "speaker": "USER",
+            "text": "how's the weather for tomorrow?",
+            "intEnt": {
+                "intent": "weather",
+                "subInt": "forecast",
+                "location": null,
+                "timing": {
+                    "elapsed": false,
+                    "time": "tomorrow"
+                }
+            },
+            "time": "2022-01-09 11:36:11.893582"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You wanted weather for Here for the next tomorrow days.",
+            "tts": false,
+            "time": "2022-01-09 11:36:11.901793"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "time": "2022-01-09 11:36:21.418864"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is only one active timer. The time left is 35 seconds.",
+            "tts": false,
+            "time": "2022-01-09 11:36:21.429712"
+        },
+        {
+            "speaker": "USER",
+            "text": "how's the weather for the next eight days",
+            "intEnt": {
+                "intent": "weather",
+                "subInt": "forecast",
+                "location": null,
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 8,
+                    "hours": 0,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2022-01-09 11:36:33.909235"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You wanted weather for Here for the next 8 days.",
+            "tts": false,
+            "time": "2022-01-09 11:36:33.909235"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "time": "2022-01-09 11:36:40.759867"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is only one active timer. The time left is 15 seconds.",
+            "tts": false,
+            "time": "2022-01-09 11:36:40.766262"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "time": "2022-01-09 11:36:53.924607"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is only one active timer. The time left is 2 seconds.",
+            "tts": false,
+            "time": "2022-01-09 11:36:53.931312"
+        },
+        {
+            "speaker": "USER",
+            "text": "what can you do?",
+            "intEnt": {
+                "intent": "help",
+                "subInt": null,
+                "term": null,
+                "timing": null
+            },
+            "time": "2022-01-09 11:40:03.930642"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hello!\nI am your Virtual Assistant.\nI have a number of functions.\n\tI can conversate(not well),\n\t\t\"Hello!\"\n\t\t\"How are you?\"\n\tI can tell you about the weather,\n\t\t\"How's the weather?\",\n\t\t\"Is it humid in Dallas?\",\n\t\t\"How does the weather look for the next three days?\"\n\tI can help you with things around the house(not actually),\n\t\t\"Turn on the lights in the kitchen\",\n\t\t\"Set the oven temp to 450 in 5 minutes\",\n\t\t\"Turn off all the lights at 6:30\"\n\tI can do math for you(like basic arithmetic, sometimes),\n\t\t\"What is two plus two?\",\n\t\t\"eight divided by 4\",\n\t\t\"What is 350 times 29?\"\n\tI can make a search on the web for you,\n\t\t\"Search on Google cake recipes\",\n\t\t\"Search Yahoo for popular tech companies\",\n\t\t\"How many satelites are currently in orbit?\"\n\tI can open apps on your computer,\n\t\t\"Open Discord in seven minutes\",\n\t\t\"Open FireFox\",\n\t\t\"Please, start up settings\"\n\tI can open websites for you,\n\t\t\"Go to Youtube\",\n\t\t\"Open Google\",\n\t\t\"Go to https://www.wired.com/\"\n\tI can tell you the time, set timers for you, and tell you long until a certain date,\n\t\t\"How many days are there until January 19\",\n\t\t\"What time is it?\",\n\t\t\"Remind me in an hour to water the plants\"\n\tI can tell you a funfact(currently just random, specified topics aren't used),\n\t\t\"Tell me a funfact\",\n\t\t\"Do you know any cat facts?\",\n\t\t\"Tell me a fact about the ISS\"\n\tI can generate random numbers,\n\t\t\"Give me two random numbers between five and fifteen\",\n\t\t\"Roll a 20 sided die, please\",\n\t\t\"Flip a coin\"\n\tAnd I can play music or grab lyrics from the web.\n\t\t\"Play Blinding Lights by The Weeknd\",\n\t\t\"What are the lyrics to Woman by Doja Cat?\",\n\t\t\"Put on 505 by Arctic Monkeys\"\n",
+            "tts": false,
+            "time": "2022-01-09 11:40:03.961892"
+        },
+        {
+            "speaker": "USER",
+            "text": "give me a random number",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "randomNumber",
+                "low": null,
+                "high": null,
+                "rolls": 1,
+                "timing": null
+            },
+            "time": "2022-01-09 11:40:55.357457"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: 1",
+            "tts": false,
+            "time": "2022-01-09 11:40:55.373100"
+        },
+        {
+            "speaker": "USER",
+            "text": "give me a random number between 25 and 75",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "randomNumber",
+                "low": 25,
+                "high": 75,
+                "rolls": 1,
+                "timing": null
+            },
+            "time": "2022-01-09 11:41:02.322721"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: 50",
+            "tts": false,
+            "time": "2022-01-09 11:41:02.332249"
+        },
+        {
+            "speaker": "USER",
+            "text": "give me a random number between three and three hundred",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "randomNumber",
+                "low": 3,
+                "high": 300,
+                "rolls": 1,
+                "timing": null
+            },
+            "time": "2022-01-09 11:41:20.059259"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: 40",
+            "tts": false,
+            "time": "2022-01-09 11:41:20.059259"
+        },
+        {
+            "speaker": "USER",
+            "text": "give me five random numbers between three and three hundred",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "randomNumber",
+                "low": 3,
+                "high": 300,
+                "rolls": 5,
+                "timing": null
+            },
+            "time": "2022-01-09 11:41:30.917843"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: [216, 142, 160, 9, 77]",
+            "tts": false,
+            "time": "2022-01-09 11:41:30.918659"
+        },
+        {
+            "speaker": "USER",
+            "text": "what are the lyrics to i me myself by will wood",
+            "intEnt": {
+                "intent": "music",
+                "subInt": "lyrics",
+                "term": "i me myself by will wood",
+                "timing": null
+            },
+            "time": "2022-01-09 11:42:31.993996"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here are the lyrics for 'i me myself by will wood':\nI've been feeling lightheaded\nSince I lost enough weight to fit back in my skin\nFlower petals and feathers tether me to the ground\nPound for pound\nTake my tea with formaldehyde for my\nFeminine side since the day that I died\nWhile I whittle my bones until I'm brittle\nAm I pretty now\nFor some reason I find myself\nLost in what you think of me\nAnd too confused to choose who I should be\nAnd now you've got me thinking\nI wish I could be a girl, and that way\nYou'd wish I could be your girlfriend, boyfriend\nAm I pretty enough to lie to\nI wish I could be a girl, and that way\nYou'd wish I could be your girlfriend, boyfriend\nJust little old me in a big, big world\nLittle old me in a big world\nI wish I were a girl\nI've been feeling lighthearted\nSince I gained enough weight back to cover my bones\nI get dressed up in shadows one leg at a time\nWe're so alike\nBut if the shoe fits, then I won't try it on\nYou'll be walking out early, but the show must go on\nNo, I know that I'm wrong\nBut I love how you're on my side when I cross that line\nIt's been a point of contention between myself and this\nBody that they stuck me in\nThe privilege of being born to be a man\nAnd now you got me thinking\nI wish I could be a girl, and that way\nYou'd wish I could be your girlfriend, boyfriend\nAm I pretty enough to lie to\nI wish I could be a girl, and that way\nYou'd wish I could be your girlfriend, boyfriend\nJust little old me in a big, big world\nLittle old me in a big world\nI wish\nEating your prosthetic meat/meet your anesthetic criteria\nPathetic seeing you be copacetic/come acetic\nSay my name like a slur, but I've been called worse\nAnd I've heard it all before, no this isn't a first\nLet me be the void you fill with\nTaxidermy fingerprints, taxonomize our differences\nI am quantum physics\nMy witness brings me into existence\nI wish I could be a girl, and that way\nYou'd wish I could be your girlfriend, boyfriend\nAm I pretty enough to love back\nNo not yet\nI wish I could be a girl, and really\nI'd prefer it if you would use I, Me, Myself\nAm I pretty enough, am I pretty enough\nTo fucking die\nLittle old me in a big world\nWell I would give you my whole world\nLittle old me in a big world\nI wish\nAll identities are equally invalid\nDon't you think that there's a chance that you could live without it\nAll identities are equally invalid\nDon't you think that there's a chance that you could live without it\nAll identities are equally invalid\nDon't you think that there's a chance that you could live without it\nAll identities are equally invalid\nDon't you think that there's a chance that you",
+            "tts": false,
+            "time": "2022-01-09 11:42:33.580148"
+        }
+    ]
+}

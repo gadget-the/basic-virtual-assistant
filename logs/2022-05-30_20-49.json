@@ -1,0 +1,81 @@
+{
+    "session-start-time": "2022-05-30 20:49:24.679972-07:00",
+    "session-end-time": "2022-05-30 20:59:05.611877-07:00",
+    "session-duration": "0:09:40.931905 / 580.931905 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "what is the temp in des moines",
+            "intEnt": {
+                "intent": "weather",
+                "secondary-intent": "weather-temperature",
+                "location": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 20:49:30.365635"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Temperature is 64\u00b0F in Los Angeles, California, United States.\nWeather information sourced from Weather.gov; Last Updated: 30 May 07:47 PM PDT.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 20:49:32.842714"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is the temp in des moines",
+            "intEnt": {
+                "intent": "weather",
+                "secondary-intent": "weather-temperature",
+                "location": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 20:50:08.133601"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Temperature is 64\u00b0F in Los Angeles, California, United States.\nWeather information sourced from Weather.gov; Last Updated: 30 May 07:47 PM PDT.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 20:50:10.134460"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is omurice",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": null,
+                "term": "what is omurice",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 20:57:34.713183"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Using DuckDuckGo's Instant Answer API:\n Omurice or omu-rice is an example of y\u014dshoku consisting of an omelette made with fried rice and thin, fried scrambled eggs, usually topped with ketchup. It is a popular dish both commonly cooked at home and often found at western style diners in Japan. Children in particular enjoy omurice. It is often featured in Japan's version of a children's meal, okosama-ranchi. Sourced from Wikipedia.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 20:57:35.039914"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is omurice",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": null,
+                "term": "what is omurice",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 20:58:58.446871"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Using DuckDuckGo's Instant Answer API:\n Omurice or omu-rice is an example of y\u014dshoku consisting of an omelette made with fried rice and thin, fried scrambled eggs, usually topped with ketchup. It is a popular dish both commonly cooked at home and often found at western style diners in Japan. Children in particular enjoy omurice. It is often featured in Japan's version of a children's meal, okosama-ranchi. Sourced from Wikipedia.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 20:58:58.736298"
+        }
+    ]
+}

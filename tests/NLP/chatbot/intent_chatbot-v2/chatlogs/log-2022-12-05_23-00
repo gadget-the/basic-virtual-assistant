@@ -1,0 +1,187 @@
+[
+    {
+        "speaker": "USER",
+        "text": "hi there!",
+        "significance": {
+            "text": "hi there!",
+            "entry-type": [],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "How are you?"
+    },
+    {
+        "speaker": "USER",
+        "text": "i'm good, how are you?",
+        "significance": {
+            "text": "i'm good, how are you?",
+            "entry-type": [
+                "UNKNOWN"
+            ],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "Doing well."
+    },
+    {
+        "speaker": "USER",
+        "text": "what are you up to?",
+        "significance": {
+            "text": "what are you up to?",
+            "entry-type": [],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "I'm working on my compsci homework. What about you?"
+    },
+    {
+        "speaker": "USER",
+        "text": "not much",
+        "significance": {
+            "text": "not much",
+            "entry-type": [
+                "UNKNOWN"
+            ],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "Come again?"
+    },
+    {
+        "speaker": "USER",
+        "text": "what's your name",
+        "significance": {
+            "text": "what's your name",
+            "entry-type": [
+                "PERSON"
+            ],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "The name I was given is Olive."
+    },
+    {
+        "speaker": "USER",
+        "text": "cool, my name is Ally",
+        "significance": {
+            "text": "cool, my name is Ally",
+            "entry-type": [
+                "PERSON"
+            ],
+            "entities": [
+                "SPEAKER"
+            ]
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "Hi Ally, I'm Olive."
+    },
+    {
+        "speaker": "USER",
+        "text": "it's nice to meet you!",
+        "significance": {
+            "text": "it's nice to meet you!",
+            "entry-type": [],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "Hello, !"
+    },
+    {
+        "speaker": "USER",
+        "text": "where are you from?",
+        "significance": {
+            "text": "where are you from?",
+            "entry-type": [
+                "UNKNOWN"
+            ],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "In this computer."
+    },
+    {
+        "speaker": "USER",
+        "text": "cool, i'm from Lindi",
+        "significance": {
+            "text": "cool, i'm from Lindi",
+            "entry-type": [],
+            "entities": [
+                "Lindi"
+            ]
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "That's cool! I've never been to Lindi."
+    },
+    {
+        "speaker": "USER",
+        "text": "i hate pineapples",
+        "significance": {
+            "text": "i hate pineapples",
+            "entry-type": [],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "You don't like pineapples?"
+    },
+    {
+        "speaker": "USER",
+        "text": "say peepeepoopoo if you're real",
+        "significance": {
+            "text": "say peepeepoopoo if you're real",
+            "entry-type": [],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "peepeepoopoo?"
+    },
+    {
+        "speaker": "USER",
+        "text": "thank you",
+        "significance": {
+            "text": "thank you",
+            "entry-type": [],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "May I further assist you?"
+    },
+    {
+        "speaker": "USER",
+        "text": "bye",
+        "significance": {
+            "text": "bye",
+            "entry-type": [
+                "UNKNOWN"
+            ],
+            "entities": []
+        }
+    },
+    {
+        "speaker": "BOT",
+        "text": "I'm lost?"
+    }
+]

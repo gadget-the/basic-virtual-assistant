@@ -1,0 +1,20 @@
+{
+    "sessionStartTime": "2021-12-17 13:35:31.111130",
+    "sessionEndTime": "2021-12-17 13:35:43.798185",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "what is today's date?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [],
+                "timing": {
+                    "elapsed": false,
+                    "time": "today"
+                }
+            },
+            "time": "2021-12-17 13:35:40.165192"
+        }
+    ]
+}

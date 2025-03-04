@@ -1,0 +1,23 @@
+{
+    "sessionStartTime": "2021-12-19 17:22:27.502997",
+    "sessionEndTime": "2021-12-19 17:22:36.451110",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the cat food timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "cat food",
+                "timing": null
+            },
+            "time": "2021-12-19 17:22:30.530520"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "tts": false,
+            "time": "2021-12-19 17:22:30.530520"
+        }
+    ]
+}

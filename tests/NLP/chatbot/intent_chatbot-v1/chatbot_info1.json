@@ -1,0 +1,476 @@
+{
+    "personality-key": {
+        "traits": {
+            "curious": 0,
+            "creative": 0,
+            "forgetful": 0,
+            "aggressive": 0,
+            "passive": 0,
+            "polite": 0,
+            "excitable": 0,
+            "enthusiastic": 0,
+            "trusting": 0,
+            "loyal": 0
+        },
+        "details": {
+            "name": "",
+            "time-of-creation": "",
+            "nicknames": []
+        }
+    },
+    "memory": {},
+    "input-response-data": [
+        {
+            "text": "Hi!",
+            "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "greeting",
+            "responses": [
+                {
+                    "text": "Hello! How are you?",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                },
+                {
+                    "text": "Oh, Hi!",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "greeting"
+                }
+            ]
+        },
+        {
+            "text": "Oh, Hi!",
+            "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "greeting",
+            "responses": [
+                {
+                    "text": "Hey!",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "greeting"
+                }
+            ]
+        },
+        {
+            "text": "Hey!",
+            "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "greeting",
+            "responses": [
+                {
+                    "text": "Oh, hey! What are you doing?",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                },
+                {
+                    "text": "Hey! What are you up to?",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                },
+                {
+                    "text": "Hey! How are you?",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                },
+                {
+                    "text": "How are you?",
+                    "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                }
+            ]
+        },
+        {
+            "text": "Hello! How are you?",
+            "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "inquiry",
+            "responses": [
+                {
+                    "text": "I'm great! How are you?",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                },
+                {
+                    "text": "I'm fine.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inform"
+                }
+            ]
+        },
+        {
+            "text": "I'm great! How are you?",
+            "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "inquiry",
+            "responses": [
+                {
+                    "text": "About the same.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inform"
+                },
+                {
+                    "text": "I'm fine.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inform"
+                }
+            ]
+        },
+        {
+            "text": "About the same.",
+            "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "inform",
+            "responses": [
+                {
+                    "text": "What are you up to?",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                },
+                {
+                    "text": "You find that thing you were looking for?",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                },
+                {
+                    "text": "What've you been up to?",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                }
+            ]
+        },
+        {
+            "text": "Nice to meet you.",
+            "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "greeting",
+            "responses": [
+                {
+                    "text": "Nice to meet you, too.",
+                    "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "greeting"
+                }
+            ]
+        },
+        {
+            "text": "Nice to meet you, too.",
+            "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "greeting",
+            "responses": []
+        },
+        {
+            "text": "It was nice meeting you.",
+            "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "goodbye",
+            "responses": [
+                {
+                    "text": "It was nice meeting you, too.",
+                    "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "goodbye"
+                }
+            ]
+        },
+        {
+            "text": "It was nice meeting you, too.",
+            "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "goodbye",
+            "responses": []
+        },
+        {
+            "text": "Have a nice day!",
+            "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "goodbye",
+            "responses": [
+                {
+                    "text": "You too.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "goodbye"
+                },
+                {
+                    "text": "You too!",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "goodbye"
+                }
+            ]
+        },
+        {
+            "text": "It's good to see you.",
+            "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "greeting",
+            "responses": [
+                {
+                    "text": "It's good to see you, too.",
+                    "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "greeting"
+                },
+                {
+                    "text": "It's good to see you, too!",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "greeting"
+                }
+            ]
+        },
+        {
+            "text": "I'm sorry,",
+            "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 1.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "apology",
+            "responses": [
+                {
+                    "text": "Oh, that's okay.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                },
+                {
+                    "text": "It's okay.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                },
+                {
+                    "text": "I forgive you.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                },
+                {
+                    "text": "All is forgiven.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                },
+                {
+                    "text": "No apology needed.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                }
+            ]
+        },
+        {
+            "text": "I apologize.",
+            "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 1.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "apology",
+            "responses": [
+                {
+                    "text": "Oh, that's okay.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                },
+                {
+                    "text": "It's okay.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                },
+                {
+                    "text": "I forgive you.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                },
+                {
+                    "text": "All is forgiven.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                },
+                {
+                    "text": "No apology needed.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                }
+            ]
+        },
+        {
+            "text": "Sorry",
+            "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 1.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "apology",
+            "responses": [
+                {
+                    "text": "Oh, that's okay.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                },
+                {
+                    "text": "It's okay.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                },
+                {
+                    "text": "I forgive you.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                },
+                {
+                    "text": "All is forgiven.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                },
+                {
+                    "text": "No apology needed.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "forgive"
+                }
+            ]
+        },
+        {
+            "text": "Bye!",
+            "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "goodbye",
+            "responses": [
+                {
+                    "text": "Goodbye!",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "goodbye"
+                },
+                {
+                    "text": "See you later!",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "goodbye"
+                },
+                {
+                    "text": "Have a great day!",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "goodbye"
+                },
+                {
+                    "text": "Bye!",
+                    "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "goodbye"
+                }
+            ]
+        },
+        {
+            "text": "Thank you!",
+            "emotions": {"happiness": 1.0, "excited": 1.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "thanks",
+            "responses": [
+                {
+                    "text": "Anything else I can do for you?",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                },
+                {
+                    "text": "How may I further assist you?",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                },
+                {
+                    "text": "No problem.",
+                    "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "accepting-thanks"
+                },
+                {
+                    "text": "Anytime.",
+                    "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "accepting-thanks"
+                },
+                {
+                    "text": "You're welcome.",
+                    "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "accepting-thanks"
+                }
+            ]
+        },
+        {
+            "text": "So, how was your day?",
+            "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "inquiry",
+            "responses": [
+                {
+                    "text": "My day went well. It was rather uneventful.",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inform"
+                }
+            ]
+        },
+        {
+            "text": "Whatcha doing?",
+            "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "inquiry",
+            "responses": [
+                {
+                    "text": "Not much",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inform"
+                },
+                {
+                    "text": "I'm working on a project",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inform"
+                }
+            ]
+        },
+        {
+            "text": "Thanks",
+            "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "thanks",
+            "responses": [
+                {
+                    "text": "Anything else I can do for you?",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                },
+                {
+                    "text": "How may I further assist you?",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                },
+                {
+                    "text": "No problem.",
+                    "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "accepting-thanks"
+                },
+                {
+                    "text": "Anytime.",
+                    "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "accepting-thanks"
+                },
+                {
+                    "text": "You're welcome.",
+                    "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "accepting-thanks"
+                }
+            ]
+        },
+        {
+            "text": "I'm so sorry.",
+            "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 1.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "apology",
+            "responses": []
+        },
+        {
+            "text": "You're right.",
+            "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 1.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "agreement",
+            "responses": []
+        },
+        {
+            "text": "I agree.",
+            "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 1.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "agreement",
+            "responses": []
+        },
+        {
+            "text": "Hello!",
+            "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 1.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+            "intent": "greeting",
+            "responses": [
+                {
+                    "text": "How are you?",
+                    "emotions": {"happiness": 1.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.0, "fear": 0.0, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.0},
+                    "intent": "inquiry"
+                }
+            ]
+        },
+        {
+            "text": "You lied to me?",
+            "emotions": {"happiness": 0, "excited": 0, "surprise": 0, "sadness": 0.5, "fear": 0, "disgust": 0.5, "anger": 0.6, "confusion": 0.2, "indifference": 0},
+            "intent": "accusation",
+            "responses": []
+        },
+        {
+            "text": "You Liar!",
+            "emotions": {"happiness": 0, "excited": 0, "surprise": 0, "sadness": 0, "fear": 0, "disgust": 0.6, "anger": 1, "confusion": 0, "indifference": 0},
+            "intent": "accusation",
+            "responses": []
+        },
+        {
+            "text": "What were you thinking?!",
+            "emotions": {"happiness": 0, "excited": 0, "surprise": 0, "sadness": 0, "fear": 0, "disgust": 0.2, "anger": 1, "confusion": 0.1, "indifference": 0},
+            "intent": "inquiry",
+            "responses": [
+                {
+                    "text": "I wasn't",
+                    "emotions": {"happiness": 0.0, "excited": 0.0, "surprise": 0.0, "sadness": 0.3, "fear": 0.1, "disgust": 0.0, "anger": 0.0, "confusion": 0.0, "indifference": 0.2},
+                    "intent": "inform"
+                }
+            ]
+        }
+    ]
+}

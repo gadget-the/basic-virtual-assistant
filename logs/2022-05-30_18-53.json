@@ -1,0 +1,382 @@
+{
+    "session-start-time": "2022-05-30 18:53:52.092422-07:00",
+    "session-end-time": "2022-05-30 18:56:30.307702-07:00",
+    "session-duration": "0:02:38.215280 / 158.21528 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:54:25.204588"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "No active timers.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:54:25.204588"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:54:27.939892"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "No active timers.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:54:27.946414"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:54:28.647543"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "No active timers.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:54:28.647543"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:54:39.874329"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "No active timers.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:54:39.890278"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:54:40.799895"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I found no active timers.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:54:40.817363"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:54:41.696523"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There are no active timers.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:54:41.696523"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:54:42.692762"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There are no active timers.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:54:42.692762"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:54:44.384627"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "No active timers.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:54:44.398829"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in five minutes to clean my room",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "to clean my room",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:54:57.133861"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of \"300\" seconds. The ID for it is \"3qtE61Ii\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:54:57.141863"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in an hour to feed the cats",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "to feed the cats",
+                "units": [
+                    "hours"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 1,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:55:03.854083"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 1 hours. For a total of \"3600\" seconds. The ID for it is \"FRCbs37x\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:55:03.862949"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in forty-five minutes to water my plants",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "to water my plants",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 45,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:55:31.476978"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 45 minutes. For a total of \"2700\" seconds. The ID for it is \"61OVclQJ\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:55:31.495105"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:55:45.930492"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is more than one active timer.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:55:45.930492"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:55:48.371843"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is more than one active timer.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:55:48.376938"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:55:50.170582"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is more than one active timer.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:55:50.170582"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:55:50.645273"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There is more than one active timer.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:55:50.653160"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my cat timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "cat",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:55:57.525002"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Ending the timer related to \"cat\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:55:57.540628"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my clean timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "clean",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:56:10.353147"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Ending the timer related to \"clean\".",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:56:10.357395"
+        },
+        {
+            "speaker": "USER",
+            "text": "end my plant timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-end-timer",
+                "IDTerm": "plant",
+                "ID": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-30 18:56:18.774254"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Ending the only active timer.",
+            "spoken-feedback": false,
+            "time": "2022-05-30 18:56:18.780255"
+        }
+    ]
+}

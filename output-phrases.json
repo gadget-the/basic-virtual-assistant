@@ -1,0 +1,500 @@
+{
+    "wake-phrase-used": [
+        "Heard wake word! What do you want to say?",
+        "Heard wake word! What would you like me to do?",
+        "Heard wake word! What would you like?",
+        "Yes?",
+        "Hello?",
+        "You called?",
+        "Hi there?"
+    ],
+    "search": {
+        "duckduckgo": [
+            "Using DuckDuckGo's Instant Answer API:\n{results}\nSourced from {source}.",
+            "Results from the DuckDuckGo Instant Answer API:\n{results}\nSourced from {source}."
+        ],
+        "default-search-engine-fallback": [
+            "Searching on Google: \"{term}\".",
+            "Searching for \"{term}\" on Google.",
+            "Searching \"{term}\" on Google.",
+            "Running a Google search for \"{term}\"."
+        ],
+        "specified-search-engine": [
+            "Searching on {search_engine}: \"{term}\".",
+            "Searching \"{term}\" on {search_engine}.",
+            "Running a {search_engine} search for \"{term}\".",
+            "Running a search on {search_engine} for \"{term}\"."
+        ],
+        "definition": [
+            "\"{term}\" is a {part_of_speech}, meaning \"{definition}\"",
+            "\"{term}\" means \"{definition}\"",
+            "The word \"{term}\" means \"{definition}\"",
+            "The word \"{term}\" is a {part_of_speech} and means \"{definition}\"",
+            "\"{term}\" is a {part_of_speech} that means \"{definition}\"",
+            "The word \"{term}\" is a {part_of_speech} that means \"{definition}\"",
+            "\"{term}\" is \"{definition}\""
+        ]
+    },
+    "weather": {
+        "general-request": [
+            "It is {temp_farenheit} and {sky}, with wind {wind} and {humidity} humid in {location}.\nWeather information sourced from Weather.gov; Last Updated: {update_time}",
+            "It is {temp_farenheit} and {sky}, with wind {wind} and {humidity} humid in {location}.\nWeather data from Weather.gov accurate as of {update_time}.",
+            "Temperature is {temp_farenheit}, it is {sky}, with wind {wind} and {humidity} humidity in {location}.\nWeather data from Weather.gov accurate as of {update_time}.",
+            "Weather for {location}(as of {update_time}):\n{temp_farenheit} Farenheit\n{sky} skies\n wind {wind}\nand {humidity} humidity\nWeather data from Weather.gov"
+        ],
+        "precipitation": [],
+        "temperature": [
+            "It is {temp_farenheit} in {location}.\nWeather information sourced from Weather.gov; Last Updated: {update_time}.",
+            "Temperature is {temp_farenheit} in {location}.\nWeather information sourced from Weather.gov; Last Updated: {update_time}."
+        ],
+        "humidity": [
+            "It is {humidity} humid in {location}.\nWeather information sourced from Weather.gov; Last Updated: {update_time}",
+            "There is {humidity} humidity in {location}.\nWeather information sourced from Weather.gov as of {update_time}"
+        ],
+        "forecast": {
+            "given-time-period": [],
+            "time-period-info": []
+        },
+        "error": [
+            "Failed to get weather data due to \"{error}\" error.",
+            "Encountered \"{error}\" error while retrieving weather data.",
+            "\"{error}\" error encountered while attempting to retrieve weather data."
+        ]
+    },
+    "smarthouse": {
+        "change-state-timing": [],
+        "change-state-no-timing": [],
+        "check-state": []
+    },
+    "run-program": {
+        "common-name-and-location": [
+            "Attempting to open: {common_name}.",
+            "Opening: {common_name}.",
+            "Starting \"{common_name}\"."
+        ],
+        "common-name-without-location": [],
+        "with-timing": [],
+        "error": [
+            "Failed to open \"{common_name}\"; due to \"{error}\" Error.",
+            "Failed to start \"{common_name}\"; due to \"{error}\" Error.",
+            "Encountered \"{error}\" error while attempting to open \"{common_name}\".",
+            "Encountered \"{error}\" error while opening \"{common_name}\".",
+            "\"{error}\" error encountered while opening \"{common_name}\".",
+            "\"{error}\" error encountered while attempting to open \"{common_name}\"."
+        ]
+    },
+    "open-website": {
+        "common-name-url-browser": [
+            "Opening: \"{common_name}\" in \"{browser}\".",
+            "Opening: \"{common_name}\" at \"{url}\" in \"{browser}\".",
+            "Opening: \"{url}\" in \"{browser}\"."
+        ],
+        "common-name-url-browser-error": [
+            "Unable to open \"{common_name}\" in {browser} due to: \"{error}\" Error. Attempting to open in default browser.",
+            "Unable to open \"{url}\" in {browser} due to: \"{error}\" Error. Attempting to open in default browser.",
+            "\"{error}\" error encountered while trying to open \"{common_name}\" in {browser}; Opening in default browser."
+        ],
+        "common-name-url-no-browser": [
+            "Opening: \"{common_name}\" using default browser."
+        ],
+        "with-timing": [],
+        "error": []
+    },
+    "time": {
+        "current-time": [
+            "The time is {current_time_12_hour}.",
+            "It is {current_time_12_hour}.",
+            "It's {current_time_12_hour}.",
+            "The current time is {current_time_12_hour}.",
+            "{current_time_12_hour} is the current time."
+        ],
+        "start-timer": [
+            "Starting a timer for {time_in_units}. For a total of {total_seconds} seconds. The ID for it is \"{timer_ID}\".",
+            "Timer started for {time_in_units}. For a total of {total_seconds} seconds. The ID for it is \"{timer_ID}\"."
+        ],
+        "check-timer": {
+            "one-active-timer": [
+                "There is only one active timer. The time left is \"{time_left}\" seconds.",
+                "Only one active timer found; Time left is \"{time_left}\" seconds."
+            ],
+            "unspecified-timer": [
+                "There is more than one active timer, Please specify which one.",
+                "More than one active timer, please be more specific."
+            ],
+            "timer-term": [
+                "The time left on the timer related to \"{term}\" is {time_left} seconds.",
+                "There are {time_left} seconds left on your \"{term}\" timer."
+            ],
+            "timer-term-not-found": [
+                "Unable to find a timer with a message containing the term: \"{term}\".",
+                "Unable to find a timer with a message related to: \"{term}\".",
+                "\"{term}\" timer not found.",
+                "\"{term}\" timer was not found.",
+                "I was unable to find an active timer with a message containing \"{term}\"."
+            ],
+            "timer-ID": [
+                "The time left on the timer with the ID \"{timer_ID}\" is {time_left} seconds.",
+                "Time left on the timer with the \"{timer_ID}\" ID is {time_left} seconds.",
+                "There are {time_left} seconds left on the timer with the ID \"{timer_ID}\".",
+                "There are {time_left} seconds left on the timer with an ID of \"{timer_ID}\"."
+            ],
+            "timer-ID-not-found": [
+                "Unable to find a timer with the ID \"{timer_ID}\".",
+                "No timer found with the ID \"{timer_ID}\".",
+                "I was unable to find a timer found with the ID \"{timer_ID}\"."
+            ],
+            "no-active-timers": [
+                "There are no active timers.",
+                "No active timers.",
+                "I found no active timers."
+            ]
+        },
+        "end-timer": {
+            "one-active-timer": [
+                "Ending the only active timer."
+            ],
+            "unspecified-timer": [
+                "There is more than one active timer."
+            ],
+            "timer-term": [
+                "Ending the timer related to \"{given_term}\".",
+                "Ending your \"{given_term}\" timer."
+            ],
+            "timer-term-not-found": [
+                "Unable to find a timer with a message containing the term: \"{given_term}\".",
+                "Unable to find a timer with a message related to: \"{given_term}\".",
+                "\"{given_term}\" timer not found.",
+                "\"{given_term}\" timer was not found.",
+                "I was unable to find an active timer with a message containing \"{given_term}\"."
+            ],
+            "timer-ID": [
+                "Ending the timer with the ID \"{given_timer_ID}\".",
+                "Stopping timer \"{given_timer_ID}\"."
+            ],
+            "timer-ID-not-found": [
+                "Unable to find a timer with the ID \"{given_timer_ID}\".",
+                "No timer was found with the ID \"{given_timer_ID}\".",
+                "I was unable to find a with the ID \"{given_timer_ID}\"."
+            ],
+            "all-timers": [
+                "Ending all active timers.",
+                "Stopping all timers.",
+                "I have stopped all active timers.",
+                "I have stopped all of the active timers.",
+                "Ending all timers, now.",
+                "All timers have been stopped.",
+                "All active timers have been stopped."
+            ],
+            "no-active-timers": [
+                "There are no active timers.",
+                "No active timers.",
+                "I found no active timers."
+            ]
+        },
+        "date": {
+            "today": [
+                "Today is {day_of_week}, {current_month} {day_of_month}, {current_year}, {date_year_month_day}.",
+                "It is {day_of_week}, {current_month} {day_of_month}, {current_year}({date_year_month_day}).",
+                "It's {day_of_week}, {current_month} {day_of_month}, {current_year}({date_year_month_day}).",
+                "Today is {day_of_week}, {current_month} {day_of_month}, {current_year} or {date_year_month_day}."
+            ],
+            "tomorrow": [
+                "Tomorrow is {tomorrow_day_of_week}, {current_month} {tomorrow_day_of_month}, {current_year} or {tomorrow_date_year_month_day}.",
+                "Tomorrow is {tomorrow_day_of_week}, {current_month} {tomorrow_day_of_month}, {current_year}, {tomorrow_date_year_month_day}."
+            ],
+            "yesterday": [
+                "Yesterday was {yesterday_day_of_week}, {current_month} {yesterday_day_of_month}, {current_year} or {yesterday_date_year_month_day}.",
+                "Yesterday was {yesterday_day_of_week}, {current_month} {yesterday_day_of_month}, {current_year}, {yesterday_date_year_month_day}."
+            ],
+            "blank-of-blank": {
+                "day-of-the-week": [
+                    "Today is {day_of_week}.",
+                    "It's {day_of_week}.",
+                    "It is {day_of_week}."
+                ],
+                "day-of-the-month": [
+                    "Today is the {day_of_month} day of the month.",
+                    "It's the {day_of_month}.",
+                    "It is the {day_of_month}."
+                ],
+                "day-of-the-year": [
+                    "Today is the {day_of_year} day of the year.",
+                    "It is the {day_of_year} day of the year.",
+                    "It's the {day_of_year} day of the year."
+                ],
+                "week-of-the-year": [
+                    "It is the {week_of_year} week of the year.",
+                    "It's the {week_of_year} week of the year.",
+                    "This week is the {week_of_year} week of the year."
+                ]
+            },
+            "single-unit-date-request": {
+                "month": [
+                    "It is {current_month}.",
+                    "It's {current_month}.",
+                    "The month is {current_month}.",
+                    "The current month is {current_month}."
+                ],
+                "year": [
+                    "It is {current_year}",
+                    "It's {current_year}",
+                    "The current year is {current_year}"
+                ]
+            },
+            "time-until": {
+                "until": [
+                    "There are {difference_in_time} {units} until {formatted_date}.",
+                    "{formatted_date} is {difference_in_time} {units} away."
+                ],
+                "ago": [
+                    "It's been {difference_in_time} {units} since {formatted_date}.",
+                    "{formatted_date} was {difference_in_time} {units} ago."
+                ]
+            }
+        }
+    },
+    "random-generators": {
+        "random-number": [
+            "Here you go: {numbers}."
+        ],
+        "dice": [
+            "Here you go: {numbers}."
+        ],
+        "coin-flip": [
+            "Here you go: {numbers}."
+        ]
+    },
+    "music": {
+        "play": [
+            "Attempting to play: \"{term}\" at \"{link}\".",
+            "Trying to play: \"{term}\" at \"{link}\"."
+        ],
+        "play-error": [
+            "Unable to play \"{term}\" due to \"{error}\" Error.",
+            "Ran into a \"{error}\" Error while trying to play \"{term}\".",
+            "Encountered a \"{error}\" Error while attempting to play \"{term}\"."
+        ],
+        "lyrics": [
+            "Here are the lyrics for \"{term}\":\n\t' + {lyrics}",
+            "The lyrics for \"{term}\" are:\n\t' + {lyrics}",
+            "Here you go:\n\t' + {lyrics}"
+        ],
+        "lyrics-error": [
+            "Unable to get the lyrics for \"{term}\" due to \"{error}\" Error.",
+            "Ran into a \"{error}\" Error while trying to get the lyrics for \"{term}\".",
+            "Encountered a \"{error}\" Error while attempting to get the lyrics for \"{term}\"."
+        ]
+    },
+    "funfact": {
+        "with-subject": [
+            "You want a fact about \"{subject}\"."
+        ],
+        "without-subject": [
+            "Did you know {fact}",
+            "Fun fact: {fact}",
+            "Here's an interesting fact: {fact}",
+            "Fun fact! Did you know that {fact}",
+            "Here's a fun fact, did you know {fact}",
+            "Did you know that {fact}",
+            "Here's a random fact: {fact}",
+            "Here you go: {fact}"
+        ],
+        "error": [
+            "Unable to retrieve fact; Failed due to: \"{error}\" Error.",
+            "Encountered \"{error}\" Error while trying to retrieve fact.",
+            "Ran into a \"{error}\" Error while trying to retrieve fact."
+        ]
+    },
+    "help": {
+        "general": [
+            "Hello!\nI am your Virtual Assistant.\nI have a number of functions.\n\tI can conversate(not well),\n\t\t\"Hello!\"\n\t\t\"How are you?\"\n\tI can tell you about the weather,\n\t\t\"How's the weather?\",\n\t\t\"Is it humid in Dallas?\",\n\t\t\"How does the weather look for the next three days?\"\n\tI can help you with things around the house(not actually),\n\t\t\"Turn on the lights in the kitchen\",\n\t\t\"Set the oven temp to 450 in 5 minutes\",\n\t\t\"Turn off all the lights at 6:30\"\n\tI can do math for you(like basic arithmetic, sometimes),\n\t\t\"What is two plus two?\",\n\t\t\"eight divided by 4\",\n\t\t\"What is 350 times 29?\"\n\tI can make a search on the web for you,\n\t\t\"Search on Google cake recipes\",\n\t\t\"Search Yahoo for popular tech companies\",\n\t\t\"How many satelites are currently in orbit?\"\n\tI can open apps on your computer,\n\t\t\"Open Discord in seven minutes\",\n\t\t\"Open FireFox\",\n\t\t\"Please, start up settings\"\n\tI can open websites for you,\n\t\t\"Go to Youtube\",\n\t\t\"Open Google\",\n\t\t\"Go to https://www.wired.com/\"\n\tI can tell you the time, set timers for you, and tell you long until a certain date,\n\t\t\"How many days are there until January 19\",\n\t\t\"What time is it?\",\n\t\t\"Remind me in an hour to water the plants\"\n\tI can tell you a funfact(currently just random, specified topics aren't used),\n\t\t\"Tell me a funfact\",\n\t\t\"Do you know any cat facts?\",\n\t\t\"Tell me a fact about the ISS\"\n\tI can generate random numbers,\n\t\t\"Give me two random numbers between five and fifteen\",\n\t\t\"Roll a 20 sided die, please\",\n\t\t\"Flip a coin\"\n\tAnd I can play music or grab lyrics from the web.\n\t\t\"Play Blinding Lights by The Weeknd\",\n\t\t\"What are the lyrics to Woman by Doja Cat?\",\n\t\t\"Put on 505 by Arctic Monkeys\"\n"
+        ],
+        "specified-term": {},
+        "invalid-term": [],
+        "specified-term-error": []
+    },
+    "assistant-settings": {
+        "assistant-restart": [
+            "Restarting...",
+            "Performing restart...",
+            "Performing simple restart...",
+            "Performing normal restart..."
+        ],
+        "assistant-hard-restart": [
+            "Performing a full restart...",
+            "Performing a hard restart...",
+            "Running a hard restart...",
+            "Running full restart..."
+        ],
+        "assistant-shutdown": [
+            "Shutting down...",
+            "Turning off...",
+            "Performing shutdown..."
+        ],
+        "assistant-theme-change": {
+            "success": [],
+            "no-change": [],
+            "theme-not-found": []
+        },
+        "assistant-theme-check": [
+            "The current ui theme is \"{theme}\".",
+            "The visual theme you're currently using is \"{theme}\".",
+            "The name of the visual theme you're currently using is \"{theme}\".",
+            "The visual theme you're currently using is called \"{theme}\".",
+            "This theme is called \"{theme}\"."
+        ],
+        "assistant-volume-change": {
+            "change-by-success": [
+                "Volume is now {volume}.",
+                "Volume is now set to {volume}.",
+                "Changing volume by {specified_value}; it is now {volume}.",
+                "Changing volume by {specified_value}; it's now {volume}."
+            ],
+            "set-to-success": [
+                "Setting the volume to {specified_value}.",
+                "The volume has been set to {specified_value}.",
+                "Setting the volume to {specified_value}."
+            ],
+            "volume-full": [
+                "Setting volume to full",
+                "Setting volume to maximum",
+                "Setting volume to max",
+                "Setting volume to 100%",
+                "Setting volume to one hundred percent",
+                "Volume has been set to full",
+                "Volume has been set to 100%",
+                "Volume has been set to one hundred percent"
+            ],
+            "volume-muted": [
+                "Muting",
+                "Muting volume",
+                "Muting the volume",
+                "Muting my volume",
+                "Setting volume to zero",
+                "Setting volume to 0",
+                "Setting volume to zero percent",
+                "Setting volume to 0%",
+                "Volume has been set to zero percent",
+                "Volume has been set to 0%",
+                "Volume has been muted"
+            ],
+            "no-change": [
+                "The volume is already set to {specified_value}.",
+                "The volume is already {specified_value}.",
+                "My volume is already {specified_value}.",
+                "My volume was already set to {specified_value}."
+            ]
+        },
+        "assistant-volume-check": [
+            "The current volume is {volume}%.",
+            "Volume is set to {volume}%.",
+            "My volume is set to {volume} percent.",
+            "My volume is currently set to {volume}%."
+        ],
+        "assistant-tts-on": {
+            "success": [
+                "Turning on Text-to-Speech.",
+                "Enabling Text-to-Speech.",
+                "Turning Text-to-Speech on.",
+                "Text-to-Speech has been turned on.",
+                "Text-to-Speech on."
+            ],
+            "no-change": [
+                "Text-to-Speech is already on.",
+                "TTS was already turned on.",
+                "Text-to-Speech has already been enabled."
+            ]
+        },
+        "assistant-tts-off": {
+            "success": [
+                "Turning off Text-to-Speech.",
+                "Disabling Text-to-Speech.",
+                "Disabling TTS.",
+                "Disabling Text-to-Speech.",
+                "Text-to-Speech has been turned off."
+            ],
+            "no-change": [
+                "TTS is already disabled.",
+                "Text-to-Speech has already been disabled",
+                "Text-to-Speech has already been turned off",
+                "TTS is already off",
+                "Text-to-Speech off",
+                "Text-to-Speech is already off."
+            ]
+        },
+        "assistant-add-wake-word": {
+            "success": [
+                "Adding \"{term}\" as wake word.",
+                "Adding \"{term}\" to wake phrase list."
+            ],
+            "duplicate-wake-word": [
+                "That wake word is already in the list.",
+                "I already have that wake phrase.",
+                "I already have that wake phrase in my list."
+            ]
+        },
+        "assistant-remove-wake-word": {
+            "success": [
+                "Removing \"{term}\" from wake phrases.",
+                "Removing \"{term}\" from my wake phrases.",
+                "Removing \"{term}\" from my wake phrase list.",
+                "Removing \"{term}\" from my list of wake phrases."
+            ],
+            "wake-word-not-found": [
+                "\"{term}\" is not in the wake phrase list."
+            ]
+        },
+        "assistant-list-wake-words": [
+            "The current list of wake phrases is:\n\t{wake_phrases}",
+            "My wake phrases is:\n\t{wake_phrases}",
+            "My activation phrases is:\n\t{wake_phrases}"
+        ],
+        "assistant-save-log-on": {
+            "success": [
+                "Turning log saving on."
+            ],
+            "no-change": [
+                "Log saving is already on."
+            ]
+        },
+        "assistant-save-log-off": {
+            "success": [
+                "Turning log saving off."
+            ],
+            "no-change": [
+                "Log saving is already off."
+            ]
+        },
+        "assistant-save-log-check":  {
+            "on": [
+                "Log saving is turned on.",
+                "Log saving is currently enabled.",
+                "Log saving is enabled."
+            ],
+            "off": [
+                "Log saving is turned off.",
+                "Log saving has been disabled.",
+                "Log saving is currently disabled."
+            ]
+        }
+    },
+    "unclear-request": [
+        "I don't understand the request.",
+        "I was unable to understand your request.",
+        "Request unclear, please restate.",
+        "Apologies, I don't know what you're asking me.",
+        "Apologies, I don't understand what you're asking me.",
+        "I'm sorry, what would you like me to do?",
+        "I don't know what that means.",
+        "I don't understand.",
+        "Can you restate that?",
+        "Please clarify.",
+        "I don't understand? Try restating your request.",
+        "Could you please clarify?",
+        "Would you mind restating that?",
+        "I don't know what that means.",
+        "I'm afraid I don't understand what you've said.",
+        "Pardon?",
+        "I'm sorry, I didn't understand that."
+    ]
+}

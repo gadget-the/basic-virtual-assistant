@@ -1,0 +1,66 @@
+{
+    "sessionStartTime": "2021-12-17 12:59:44.605070",
+    "sessionEndTime": "2021-12-17 13:00:53.302052",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "what is today's date?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [],
+                "timing": {
+                    "elapsed": false,
+                    "time": "today"
+                }
+            },
+            "time": "2021-12-17 12:59:52.515959"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You want to know what today's date is.",
+            "tts": false,
+            "time": "2021-12-17 12:59:52.515959"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is tomorrow's date?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [],
+                "timing": {
+                    "elapsed": false,
+                    "time": "tomorrow"
+                }
+            },
+            "time": "2021-12-17 13:00:25.824574"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You want to know what tomorrow's date is.",
+            "tts": false,
+            "time": "2021-12-17 13:00:25.825617"
+        },
+        {
+            "speaker": "USER",
+            "text": "what was yesterday's date?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [],
+                "timing": {
+                    "elapsed": false,
+                    "time": "yesterday"
+                }
+            },
+            "time": "2021-12-17 13:00:37.033883"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You want to know what yesterday's date is.",
+            "tts": false,
+            "time": "2021-12-17 13:00:37.033883"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "self": {
+        "type": "self",
+        "firstName": "",
+        "lastname": "",
+        "nicknames": []
+    },
+    "Erica": {
+        "type": "person",
+        "firstName": "Erica",
+        "lastname": "",
+        "nicknames": [
+            "Rikki",
+            "Airhead"
+        ],
+        "age": 26,
+        "likes": [
+            "puppies",
+            "people",
+            "wavy hair"
+        ],
+        "dislikes": [
+            "cats",
+            "asparagus"
+        ],
+        "pets": [
+            {
+                "type": "dog",
+                "age": 2,
+                "breed": "pitbull"
+            },
+            {
+                "type": "dog",
+                "name": "",
+                "nickname": "",
+                "age": 0,
+                "breed": ""
+            }
+        ],
+        "relationships": {
+            "sister": "Jessica",
+            "cousin": "Karl"
+        },
+        "remember": [
+            "take out the trash",
+            "buy eggs, flour, and sugar next time I'm at the grocery store"
+        ]
+    },
+    "Jamie": {
+        "type": "person",
+        "firstname": "Jamie",
+        "nicknames": [
+            "JamJam",
+            "SpaceJamie"
+        ],
+        "pets": [
+            "JonJon",
+            "Mikey"
+        ],
+        "relationships": {
+            "sister": "Edna"
+        }
+    }
+}

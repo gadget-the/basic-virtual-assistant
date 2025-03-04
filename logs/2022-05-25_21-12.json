@@ -1,0 +1,94 @@
+{
+    "session-start-time": "2022-05-25 21:12:56.534333-07:00",
+    "session-end-time": "2022-05-25 21:16:31.550496-07:00",
+    "session-duration": "0:03:35.016163 / 215.016163 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "open calc",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "calc",
+                "program": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 21:13:16.016710"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "\"'NoneType' object is not iterable\" error encountered while attempting to open \"calc\".",
+            "spoken-feedback": false,
+            "time": "2022-05-25 21:13:16.021050"
+        },
+        {
+            "speaker": "USER",
+            "text": "open calculator",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "calculator",
+                "program": "C:\\Windows\\System32\\calc.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 21:13:22.998771"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: calculator.",
+            "spoken-feedback": false,
+            "time": "2022-05-25 21:13:23.006791"
+        },
+        {
+            "speaker": "USER",
+            "text": "open calculator",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "calculator",
+                "program": "C:\\Windows\\System32\\calc.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 21:13:34.839224"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting \"calculator\".",
+            "spoken-feedback": false,
+            "time": "2022-05-25 21:13:34.848931"
+        },
+        {
+            "speaker": "USER",
+            "text": "open Calculator",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "Calculator",
+                "program": "C:\\Windows\\System32\\calc.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 21:13:41.460431"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: Calculator.",
+            "spoken-feedback": false,
+            "time": "2022-05-25 21:13:41.468433"
+        },
+        {
+            "speaker": "USER",
+            "text": "shutdown",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-shutdown",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 21:16:31.550496"
+        }
+    ]
+}

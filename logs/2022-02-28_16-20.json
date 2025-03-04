@@ -1,0 +1,45 @@
+{
+    "session-start-time": "2022-02-28 16:20:50.821106-08:00",
+    "session-end-time": "2022-02-28 16:22:27.035683-08:00",
+    "session-duration": "0:01:36.214577 / 96.214577 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "what is today's date?",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-get-date",
+                "units": [],
+                "timing": {
+                    "elapsed": false,
+                    "time": "today"
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-02-28 16:21:08.411738"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Today is Monday, February 28, 2022, 2022/02/28.",
+            "spoken-feedback": false,
+            "time": "2022-02-28 16:21:08.424745"
+        },
+        {
+            "speaker": "USER",
+            "text": "",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-02-28 16:21:10.328514"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Would you mind restating that?",
+            "spoken-feedback": false,
+            "time": "2022-02-28 16:21:10.343540"
+        }
+    ]
+}

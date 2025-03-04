@@ -1,0 +1,24 @@
+{
+    "session-start-time": "2025-02-16 21:27:42.817383-08:00",
+    "session-end-time": "2025-02-16 21:30:42.925938-08:00",
+    "session-duration": "0:03:00.108555 / 180.108555 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "sdsfgdedadf",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2025-02-16 21:28:28.935259"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I don't know what that means.",
+            "spoken-feedback": false,
+            "time": "2025-02-16 21:28:28.980715"
+        }
+    ]
+}

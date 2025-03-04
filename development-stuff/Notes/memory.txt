@@ -1,0 +1,219 @@
+,
+        "remember": [
+            "remember that I need to get pizza toppings today",
+            "remind me to finish the web scraping project tomorrow",
+            "remind me that I need to prep food tomorrow",
+            "set a reminder for "
+        ]
+
+,
+        "stranger": [
+            ""
+        ],
+        "unknown": [
+            ""
+        ]
+
+
+i could combine the like and dislike categories into one "sentiment" category, then after classification generate a number representation for said sentiment
+each verb(main sentiment word) would have a base value
+    {
+        "love": 2,
+        "like": 1,
+        "dislike": -1,
+        "hate": -2
+    }
+
+    whereas each adverb(secondary sentiment word) would have a multiplier value
+    {
+        "really": 2,
+        "don't": -1,
+        "so much": 2(?)
+    }
+    (I'm not sure if "don't" would be a secondary sentiment word or a "tertiary sentiment word", either way it would flip the sign; -1)
+    
+    the overall sentiment value for a sentence would be the base value times the multipier value
+        "I love cats" --> "love" --> 2
+        "I really hate artichokes." --> "really" and "hate" --> -2 * 2 = -4
+        "I don't like pizza" --> "like" and "don't" --> 1 * -1 = -1
+
+    a problem i can see is with a sentence like "I don't really like pumpkin pie."
+        there are three words of interest here: "don't", "really", and "like"
+            ("don't" = -1, "really" = 2, "like" = 1)
+
+        the sentiment for this sentence would be 1 * 2 * -1 = -2, which is equivalent to "hate"
+            and i'm not too sure if "I don't really like..." means the same thing as "I hate..."
+            maybe "I really don't like..." means about the same as "I hate..."
+
+
+instead of having a single "qualities" category, I might want to have two separate categories for "appearance"(physical appearance) and "nvQuality"(non-visual qualities)("personality"?)
+    this would then lead to two separate lists in the memory json, one for each
+
+                                            
+I might want it to have three core classifications, {'subject': 'speaker', 'relation': 'family', 'type': 'likes'}
+    one for the subject of the input: "self", "speaker", and "extra". For the va itself, the person who is speaking to/using it, and everyone else(maybe have "referenced" for a person that was previously mentioned)
+    one for the relation of the subject to the speaker: "family", "romance", "friend", etc.
+    and one for the type of subject matter of the input: "name", "age", "likes", etc.
+
+    "subject" --> "self", "speaker", "indicated", "referenced"
+    "relation" --> "family", "romance", "friend", "work", "acquaintance", "stranger"
+    "type" --> "name", "age", "likes", "dislikes", "appearance", "qualities", "event"
+
+
+i have noticed that ints are difficult for the lsvc(or quite possibly all of the scikit learn stuff) to learn with when in a string
+    i think it might have to do with the vectorizer
+    perhaps the vectorizer isn't (easily)able to convert numbers into "number representations of themselves"
+    or perhaps it just disregards numbers in the input data altogether
+
+
+for the memory, it would essentially build profiles for each person mentioned
+    itself, the speaker, and everyone the speaker has talked about
+
+    these profiles would have varying degrees of detail, but they'd all use the same template
+    {
+        "self": {
+            "name": "",
+            "nicknames": []
+        },
+        "pers1": {
+            "name": ""
+            "nicknames": [],
+            "age": 19,
+            "likes": [],
+            "dislikes": [],
+            "relationships": {
+                "brother": "pers3"
+            },
+            "events": [],
+            "appearance": [],
+            "qualities": []
+        }
+    }
+
+    unique ids?
+    each person should be able to be referenced to without ambiguity
+    using a persons name would be good but there are two problems: 1 --> people can have the same name, and 2 --> i would have to have placeholder names for each new person before it learns their name
+    could just generate a random alphanumeric code/string?
+    essentially a UUID
+
+
+"Damn, dude, that's outta pocket!" in response to insults - Gavin
+
+
+i need to make it so that it can pick out other people's pets, instead of assuming every pet is the speaker's - eh?
+
+
+memory[0]['UUID']
+
+
+i think i should try a different setup for this
+        originally i was thinking that it should be person-based, link information to a unique person
+        perhaps it would work better if instead of doing on a person-basis, i did it on a type-basis
+        type-based basically means categories
+        i could label things based on type and store them in lists or dictionaries based on categories
+
+    {
+        "name": {
+            "SELF": [],
+            "vd6sMhGh": []
+        },
+        "age": {
+            "SELF": None,
+            "vd6sMhGh": 21
+        },
+        "likes": {},
+        "dislikes": {},
+        "appearance": {},
+        "qualities": {},
+        "events": {}
+    }
+
+    when adding a new bit of info, if given a name, it would check the names dict for that name.
+        if it finds a name, it would then use the matching UUID to add the piece of info to the specified category
+        if it doesn't find one, it would generate a new one, add the name to the "name" dict, and then add the info to the specified category
+        
+        might also add the ability to specify a UUID
+
+
+i need to rethink the way it/I classify and store information
+    {
+        "names": {
+            UUID: []
+        },
+        "relations": {}
+    }
+
+    it would take in the input. if a name was specified, it would check the names dict and then check for that name.
+        if a matching name is found, use the corresponding UUID. if not, generate on and add the name and UUID to the names dict.
+        if a name is not specified, but a relation is indicated(i.e. brother, coworker) then check for that in the relations dict and do the same thing.
+        once a UUID is found(or generated), use said UUID to add the info to the specific category(names, dislikes, appearances, etc.)
+
+    UUID = None
+
+    if type == name:
+        pass
+    else:
+        if name.isIndicated():
+            for i in memory["names"]:
+                if name in memory["names"][i]:
+                    UUID = i
+                    break
+
+            if not UUID:
+                if relation.isIndicated():
+                    for i in memory["relations"]:
+                        if relation in memory["relations"][i]:
+                            UUID = i
+                            break
+            
+            if not UUID:
+                return "unable to find matching UUID"
+        else:
+            if relation.isIndicated():
+                for i in memory["relations"]:
+                    if relation in memory["relations"][i]:
+                        UUID = i
+                        break
+            
+            if not UUID:
+                return "unable to find matching UUID"
+
+    I'm not sure how i want to store the relations
+        i could store them as a triple: ("1BBPbLJd", "sister", "WXH54VPu")
+        this would allow for saving relations that aren't just for the speaker
+        "Person1's sister is Person2" --> ("Person1", "sister", "Person2")
+        "John's boss is Erica" --> ("John", "boss", "Erica")
+
+
+for the filter, i could have to make it so that it has an additional object label
+    John's sister is Mary --> {'subject': 'indicated', 'relation': 'family', 'object': 'indicated', 'type': 'name', 'names': ['John', 'Mary']}
+    
+    this would require another classifier with it's own training data
+    
+    another thing is, this would work for sentences with only one
+
+
+this is a bit more complex than previously thought
+    there are cases like "My sister's boyfriend likes to go hiking." and "My sister's boyfriend's brother went to the Bahamas last month."
+    which might require some method of rolling through the input and picking out relations between people(entities)
+
+    the speaker is always either going to directly talk about someone(or something) or talk about someone in terms of relations, all of such relations stemming from the speaker themself
+        in the example of "My sister's name is Julie." we see that the speaker is talking in terms of relations
+            the speaker is the first entity we find, then Julie/the speaker's sister
+            the relation that links the two entities(people) is a familial one, and more specifically "sister"
+
+    in the case of "My sister's boyfriend's brother went to the Bahamas last month."
+        again we see the speaker speaking in terms of relations
+        
+        the first entity is always the speaker, the second is the speaker's sister, the third is the speaker's sister's boyfriend, and the fourth and final is the speaker's sister's boyfriend's brother
+        the relations between them is [("family", "sister"), ("romance", "boyfriend"), ("family", "brother")]
+        cases like these are impossible to pick out using the current setup(the furthest it would get is sister)
+
+    to tackle more complex cases, it might make sense to go through the input picking out relations
+        if no relation is found, then it can be assumed that the speaker is directly talking about someone/something(themself, or a person by name)
+
+
+for inputs with more complex/chain relations, it might make sense to have an 'indicated' or 'complex' relation label
+    this would indicate that you have to go through and pick out a more complex relation
+    
+    relations: ['indicated', 'family', 'romance', 'friend', 'work', 'acquaintance', 'stranger', 'pet', 'unknown', 'None']

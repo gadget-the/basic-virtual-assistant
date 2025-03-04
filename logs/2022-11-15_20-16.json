@@ -1,0 +1,205 @@
+{
+    "session-start-time": "2022-11-15 20:16:00.283156-08:00",
+    "session-end-time": "2022-11-15 22:56:26.940307-08:00",
+    "session-duration": "2:40:26.657151 / 9626.657151 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "hi",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-15 20:16:41.779758"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hey!",
+            "spoken-feedback": true,
+            "time": "2022-11-15 20:16:41.817452"
+        },
+        {
+            "speaker": "USER",
+            "text": "how are you?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-15 20:16:53.134851"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm good.",
+            "spoken-feedback": true,
+            "time": "2022-11-15 20:16:53.161680"
+        },
+        {
+            "speaker": "USER",
+            "text": "that's good",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-15 20:17:01.588545"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "How are you?",
+            "spoken-feedback": true,
+            "time": "2022-11-15 20:17:01.616659"
+        },
+        {
+            "speaker": "USER",
+            "text": "I'm doing alright",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-15 20:17:11.231137"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Come again?",
+            "spoken-feedback": true,
+            "time": "2022-11-15 20:17:11.254743"
+        },
+        {
+            "speaker": "USER",
+            "text": "I'm doing good",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-15 20:17:17.853092"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "That's good.",
+            "spoken-feedback": true,
+            "time": "2022-11-15 20:17:17.878079"
+        },
+        {
+            "speaker": "USER",
+            "text": "tt off",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": "assistant-tts-off",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-15 21:25:41.529734"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry, what?",
+            "spoken-feedback": true,
+            "time": "2022-11-15 21:25:41.554907"
+        },
+        {
+            "speaker": "USER",
+            "text": "tts off",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-tts-off",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-15 21:25:45.035721"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Disabling TTS.",
+            "spoken-feedback": false,
+            "time": "2022-11-15 21:25:45.040738"
+        },
+        {
+            "speaker": "USER",
+            "text": "alright",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-15 22:56:00.971134"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hey!",
+            "spoken-feedback": false,
+            "time": "2022-11-15 22:56:01.001972"
+        },
+        {
+            "speaker": "USER",
+            "text": "bye bye",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-15 22:56:05.396176"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Have a great day!",
+            "spoken-feedback": false,
+            "time": "2022-11-15 22:56:05.411802"
+        },
+        {
+            "speaker": "USER",
+            "text": "shut down",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-15 22:56:12.246341"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm unsure how to respond to that.",
+            "spoken-feedback": false,
+            "time": "2022-11-15 22:56:12.277593"
+        },
+        {
+            "speaker": "USER",
+            "text": "please shut down",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-15 22:56:19.640884"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Request unclear, please restate.",
+            "spoken-feedback": false,
+            "time": "2022-11-15 22:56:19.640884"
+        },
+        {
+            "speaker": "USER",
+            "text": "turn off",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-shutdown",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-11-15 22:56:26.940307"
+        }
+    ]
+}

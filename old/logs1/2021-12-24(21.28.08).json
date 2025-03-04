@@ -1,0 +1,55 @@
+{
+    "sessionStartTime": "2021-12-24 21:28:08.895114-08:00",
+    "sessionEndTime": "2021-12-24 21:29:09.867372-08:00",
+    "sessionDuration": "0:01:00.972258 / 60.972258 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "what is 3 times 4",
+            "intEnt": {
+                "intent": "math",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-24 21:28:17.729540"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The answer is: 12.",
+            "tts": false,
+            "time": "2021-12-24 21:28:17.732174"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is 3 divided by 4",
+            "intEnt": {
+                "intent": "math",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-24 21:28:28.567305"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The answer is: 0.75.",
+            "tts": false,
+            "time": "2021-12-24 21:28:28.570222"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is 350 divided by 7",
+            "intEnt": {
+                "intent": "math",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-24 21:28:59.315890"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The answer is: 50.0.",
+            "tts": false,
+            "time": "2021-12-24 21:28:59.316910"
+        }
+    ]
+}

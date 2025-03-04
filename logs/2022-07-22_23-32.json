@@ -1,0 +1,59 @@
+{
+    "session-start-time": "2022-07-22 23:32:56.688096-07:00",
+    "session-end-time": "2022-07-22 23:33:49.242593-07:00",
+    "session-duration": "0:00:52.554497 / 52.554497 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "what is an empath?",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "empath",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 23:33:01.314339"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "\"empath\" is a noun that means \"One who has the ability to sense emotions; someone who is empathic or practises empathy.\"",
+            "spoken-feedback": true,
+            "time": "2022-07-22 23:33:02.031737"
+        },
+        {
+            "speaker": "USER",
+            "text": "tts \"empath\"",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-tts-off",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 23:33:14.979339"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Disabling Text-to-Speech.",
+            "spoken-feedback": false,
+            "time": "2022-07-22 23:33:14.987579"
+        },
+        {
+            "speaker": "USER",
+            "text": "reenable tts",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-tts-off",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 23:33:24.956008"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "TTS is already off",
+            "spoken-feedback": false,
+            "time": "2022-07-22 23:33:24.960057"
+        }
+    ]
+}

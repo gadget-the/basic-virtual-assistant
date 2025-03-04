@@ -1,0 +1,25 @@
+{
+    "sessionStartTime": "2021-12-17 11:59:02.424713",
+    "sessionEndTime": "2021-12-17 11:59:12.529853",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "open youtube in google chrome",
+            "intEnt": {
+                "intent": "open_site",
+                "subInt": null,
+                "commonName": "youtube",
+                "website": "https://www.youtube.com/",
+                "browser": "chrome",
+                "timing": null
+            },
+            "time": "2021-12-17 11:59:08.194558"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Unable to open 'https://www.youtube.com/' in 'chrome' due to 'could not locate runnable browser' Error. Opening in default browser.",
+            "tts": false,
+            "time": "2021-12-17 11:59:08.701070"
+        }
+    ]
+}

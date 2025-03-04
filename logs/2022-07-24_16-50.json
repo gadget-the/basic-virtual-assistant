@@ -1,0 +1,104 @@
+{
+    "session-start-time": "2022-07-24 16:50:32.034345-07:00",
+    "session-end-time": "2022-07-24 16:55:40.155940-07:00",
+    "session-duration": "0:05:08.121595 / 308.121595 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "repeat after me \"it ain't got no gas in it\"",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "it ain't got no gas in it",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-24 16:51:39.212909"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "it ain't got no gas in it",
+            "spoken-feedback": false,
+            "time": "2022-07-24 16:51:39.213910"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in 15 minutes to walk the dog",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "to walk the dog",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 15,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-07-24 16:52:14.931051"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 15 minutes. For a total of \"900\" seconds. The ID for it is \"kQaj0x8I\".",
+            "spoken-feedback": false,
+            "time": "2022-07-24 16:52:14.937818"
+        },
+        {
+            "speaker": "USER",
+            "text": "search for pizza recipes on google",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "web-search",
+                "engine": "google",
+                "term": "pizza recipes",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-24 16:52:43.090626"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on google: \"pizza recipes\".",
+            "spoken-feedback": false,
+            "time": "2022-07-24 16:52:44.301082"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in 15 minutes to walk the dog",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "to walk the dog",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 15,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-07-24 16:53:21.854831"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 15 minutes. For a total of \"900\" seconds. The ID for it is \"9gQBrAfS\".",
+            "spoken-feedback": false,
+            "time": "2022-07-24 16:53:21.864996"
+        }
+    ]
+}

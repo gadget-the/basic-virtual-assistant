@@ -1,0 +1,96 @@
+{
+    "session-start-time": "2022-07-21 11:02:39.686839-07:00",
+    "session-end-time": "2022-07-21 11:07:51.959572-07:00",
+    "session-duration": "0:05:12.272733 / 312.272733 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "gavin says hi",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-21 11:03:32.887718"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hey!",
+            "spoken-feedback": true,
+            "time": "2022-07-21 11:03:32.930717"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hello?",
+            "spoken-feedback": true,
+            "time": "2022-07-21 11:04:29.019847"
+        },
+        {
+            "speaker": "USER",
+            "text": "Define contempt",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "contempt",
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-07-21 11:04:33.266612"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Unable to get a definition for \"contempt\".",
+            "spoken-feedback": true,
+            "time": "2022-07-21 11:04:33.786573"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Yes?",
+            "spoken-feedback": true,
+            "time": "2022-07-21 11:04:45.821676"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is empathy",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "empathy",
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-07-21 11:04:49.612695"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Unable to get a definition for \"empathy\".",
+            "spoken-feedback": true,
+            "time": "2022-07-21 11:04:50.195512"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hello?",
+            "spoken-feedback": true,
+            "time": "2022-07-21 11:07:02.076658"
+        },
+        {
+            "speaker": "USER",
+            "text": "Define swallow",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "swallow",
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-07-21 11:07:06.208670"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "\"swallow\" is \"To cause (food, drink etc.) to pass from the mouth into the stomach; to take into the stomach through the throat.\"",
+            "spoken-feedback": true,
+            "time": "2022-07-21 11:07:06.718607"
+        }
+    ]
+}

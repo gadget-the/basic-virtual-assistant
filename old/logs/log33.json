@@ -1,0 +1,63 @@
+{
+    "sessionStartTime": "2021-12-19 17:29:55.912185",
+    "sessionEndTime": "2021-12-19 17:30:28.331752",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the cat food timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "cat food",
+                "timing": null
+            },
+            "time": "2021-12-19 17:29:57.895037"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There are no active timers.",
+            "tts": false,
+            "time": "2021-12-19 17:29:57.909083"
+        },
+        {
+            "speaker": "USER",
+            "text": "start a timer for 5 minutes",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 17:30:10.895362"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of 300 seconds.",
+            "tts": false,
+            "time": "2021-12-19 17:30:10.899296"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "timing": null
+            },
+            "time": "2021-12-19 17:30:23.417189"
+        }
+    ]
+}

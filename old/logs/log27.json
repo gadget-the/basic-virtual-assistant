@@ -1,0 +1,32 @@
+{
+    "sessionStartTime": "2021-12-17 19:08:45.901315",
+    "sessionEndTime": "2021-12-17 19:09:44.780710",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "please open steam",
+            "intEnt": {
+                "intent": "open_app",
+                "subInt": null,
+                "commonName": "steam",
+                "program": "C:\\Program Files (x86)\\Steam\\steam.exe",
+                "timing": {
+                    "elapsed": false
+                }
+            },
+            "time": "2021-12-17 19:09:24.083575"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Attempting to open 'steam' in ",
+            "tts": false,
+            "time": "2021-12-17 19:09:24.085574"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "<Popen: returncode: None args: ['C', ':', '\\\\', 'P', 'r', 'o', 'g', 'r', 'a'...>",
+            "tts": false,
+            "time": "2021-12-17 19:09:24.324653"
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "sessionStartTime": "2021-12-19 18:03:32.334513",
+    "sessionEndTime": "2021-12-19 18:04:29.257671",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "start a timer for five minutes",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 18:03:35.477382"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of 300 seconds. The ID for it is uQRG8Rq5.",
+            "tts": false,
+            "time": "2021-12-19 18:03:35.479383"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in an hour to study",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "to study",
+                "units": [
+                    "hours"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 1,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 18:03:41.800339"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 1 hours. For a total of 3600 seconds. The ID for it is fwsULki1.",
+            "tts": false,
+            "time": "2021-12-19 18:03:41.801340"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with the ID fwsULki1",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": "fwsULki1",
+                "timing": null
+            },
+            "time": "2021-12-19 18:04:04.571507"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The time left on the timer with the ID 'fwsULki1' is 3578 seconds.",
+            "tts": false,
+            "time": "2021-12-19 18:04:04.573509"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the timer with the ID uQRG8Rq5",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "",
+                "ID": "uQRG8Rq5",
+                "timing": null
+            },
+            "time": "2021-12-19 18:04:22.680599"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The time left on the timer with the ID 'uQRG8Rq5' is 254 seconds.",
+            "tts": false,
+            "time": "2021-12-19 18:04:22.680599"
+        }
+    ]
+}

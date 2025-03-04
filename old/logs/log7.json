@@ -1,0 +1,25 @@
+{
+    "sessionStartTime": "2021-12-17 11:14:39.794838",
+    "sessionEndTime": "2021-12-17 11:15:06.275479",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "open youtube in google chrome",
+            "intEnt": {
+                "intent": "open_site",
+                "subInt": null,
+                "commonName": "youtube in google chrome",
+                "website": "https://www.youtube.com/",
+                "browser": "chrome",
+                "timing": null
+            },
+            "time": "2021-12-17 11:14:54.860209"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: https://www.youtube.com/ in chrome.",
+            "tts": false,
+            "time": "2021-12-17 11:14:55.358986"
+        }
+    ]
+}

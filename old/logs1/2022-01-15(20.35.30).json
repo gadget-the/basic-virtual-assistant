@@ -1,0 +1,145 @@
+{
+    "sessionStartTime": "2022-01-15 20:35:30.557605-08:00",
+    "sessionEndTime": "2022-01-15 21:13:10.839169-08:00",
+    "sessionDuration": "0:37:40.281564 / 2260.281564 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "what is the date?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "date",
+                "units": [],
+                "timing": null
+            },
+            "time": "2022-01-15 20:36:45.556017"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Today is Saturday, January 15, 2022, or 2022/01/15.",
+            "tts": false,
+            "time": "2022-01-15 20:36:45.560823"
+        },
+        {
+            "speaker": "USER",
+            "text": "what are you doing?",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2022-01-15 20:38:13.229653"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Watching Law & Order and I popped a burrito in the microwave.",
+            "tts": false,
+            "time": "2022-01-15 20:38:13.281380"
+        },
+        {
+            "speaker": "USER",
+            "text": "how are you?",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2022-01-15 20:39:22.261415"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm good, how are you?",
+            "tts": false,
+            "time": "2022-01-15 20:39:22.310866"
+        },
+        {
+            "speaker": "USER",
+            "text": "kentucky?",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2022-01-15 20:54:06.805802"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Come again?",
+            "tts": false,
+            "time": "2022-01-15 20:54:06.847339"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is an ape?",
+            "intEnt": {
+                "intent": "search",
+                "subInt": null,
+                "engine": null,
+                "term": "what is an ape?",
+                "timing": null
+            },
+            "time": "2022-01-15 20:57:02.241531"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on Google: what is an ape?",
+            "tts": false,
+            "time": "2022-01-15 20:57:08.565695"
+        },
+        {
+            "speaker": "USER",
+            "text": "how does a redox reaction work?",
+            "intEnt": {
+                "intent": "search",
+                "subInt": null,
+                "engine": null,
+                "term": "how does a redox reaction work?",
+                "timing": null
+            },
+            "time": "2022-01-15 20:57:34.895412"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on Google: how does a redox reaction work?",
+            "tts": false,
+            "time": "2022-01-15 20:57:36.951568"
+        },
+        {
+            "speaker": "USER",
+            "text": "who is kruzadar?",
+            "intEnt": {
+                "intent": "search",
+                "subInt": null,
+                "engine": null,
+                "term": "who is kruzadar?",
+                "timing": null
+            },
+            "time": "2022-01-15 20:58:42.148632"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on Google: who is kruzadar?",
+            "tts": false,
+            "time": "2022-01-15 20:58:44.543950"
+        },
+        {
+            "speaker": "USER",
+            "text": "give me another random number but between 2 and ten",
+            "intEnt": {
+                "intent": "random",
+                "subInt": "randomNumber",
+                "low": 2,
+                "high": 10,
+                "rolls": 1,
+                "timing": null
+            },
+            "time": "2022-01-15 21:12:53.978902"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here you go: 6",
+            "tts": false,
+            "time": "2022-01-15 21:12:53.981431"
+        }
+    ]
+}

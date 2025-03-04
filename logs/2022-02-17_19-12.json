@@ -1,0 +1,37 @@
+{
+    "session-start-time": "2022-02-17 19:12:08.715455-08:00",
+    "session-end-time": "2022-02-17 19:53:27.238788-08:00",
+    "session-duration": "0:41:18.523333 / 2478.523333 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "start a five minute timer",
+            "intEnt": {
+                "intent": "time",
+                "secondary-intent": "time-start-timer",
+                "message": "timer",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "spoken-input": false,
+            "time": "2022-02-17 19:12:58.702910"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of \"300\" seconds. The ID for it is \"1Yvp7SLR\".",
+            "spoken-feedback": false,
+            "time": "2022-02-17 19:12:58.706899"
+        }
+    ]
+}

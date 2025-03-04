@@ -1,0 +1,23 @@
+{
+    "sessionStartTime": "2021-12-22 11:08:25.288379-08:00",
+    "sessionEndTime": "2021-12-22 11:09:02.464738-08:00",
+    "sessionDuration": "0:00:37.176359 / 37.176359 seconds",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "help",
+            "intEnt": {
+                "intent": "help",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-22 11:08:40.672508"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "\n            Hello!\n            I am your Virtual Assistant.\n            I have a number of functions.\n                I can conversate(not well),\n                    \"Hello!\"\n                    \"How are you?\"\n                I can tell you about the weather,\n                    \"How's the weather?\",\n                    \"Is it humid in Dallas?\",\n                    \"How does the weather look for the next three days?\"\n                I can help you with things around the house(not actually),\n                    \"Turn on the lights in the kitchen\",\n                    \"Set the oven temp to 450 in 5 minutes\",\n                    \"Turn off all the lights at 6:30\"\n                I can do math for you(like basic arithmetic, sometimes),\n                    \"What is two plus two?\",\n                    \"eight divided by 4\",\n                    \"What is 350 times 29?\"\n                I can make a search on the web for you,\n                    \"Search on Google cake recipes\",\n                    \"Search Yahoo for popular tech companies\",\n                    \"How many satelites are currently in orbit?\"\n                I can open apps on your computer,\n                    \"Open Discord in seven minutes\",\n                    \"Open FireFox\",\n                    \"Please, start up settings\"\n                I can open websites for you,\n                    \"Go to Youtube\",\n                    \"Open Google\",\n                    \"Go to https://www.wired.com/\"\n                I can tell you the time, set timers for you, and tell you long until a certain date,\n                    \"How many days are there until January 19\",\n                    \"What time is it?\",\n                    \"Remind me in an hour to water the plants\"\n                I can tell you a funfact(currently just random, specified topics aren't used),\n                    \"Tell me a funfact\",\n                    \"Do you know any cat facts?\",\n                    \"Tell me a fact about the ISS\"\n                I can generate random numbers,\n                    \"Give me two random numbers between five and fifteen\",\n                    \"Roll a 20 sided die, please\",\n                    \"Flip a coin\"\n                And I can play music or grab lyrics from the web.\n                    \"Play Blinding Lights by The Weeknd\",\n                    \"What are the lyrics to Woman by Doja Cat?\",\n                    \"Put on 505 by Arctic Monkeys\"\n        ",
+            "tts": false,
+            "time": "2021-12-22 11:08:40.693030"
+        }
+    ]
+}

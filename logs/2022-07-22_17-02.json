@@ -1,0 +1,61 @@
+{
+    "session-start-time": "2022-07-22 17:02:22.303407-07:00",
+    "session-end-time": "2022-07-22 17:07:57.640615-07:00",
+    "session-duration": "0:05:35.337208 / 335.337208 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "define stop",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "stop",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 17:03:34.993261"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "\"stop\" means \"A (usually marked) place where buses, trams or trains halt to let passengers get on and off, usually smaller than a station.\"",
+            "spoken-feedback": true,
+            "time": "2022-07-22 17:03:35.669023"
+        },
+        {
+            "speaker": "USER",
+            "text": "what is empathy",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "empathy",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 17:04:14.165177"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "\"empathy\" is a noun, meaning \"Identification with or understanding of the thoughts, feelings, or emotional state of another person.\"",
+            "spoken-feedback": true,
+            "time": "2022-07-22 17:04:14.793101"
+        },
+        {
+            "speaker": "USER",
+            "text": "what does sleight mean?",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "search-definition",
+                "term": "sleight",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-22 17:06:50.914171"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The word \"sleight\" is a noun and means \"Cunning; craft; artful practice.\"",
+            "spoken-feedback": true,
+            "time": "2022-07-22 17:06:51.753684"
+        }
+    ]
+}

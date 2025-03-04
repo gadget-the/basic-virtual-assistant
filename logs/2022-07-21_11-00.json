@@ -1,0 +1,60 @@
+{
+    "session-start-time": "2022-07-21 11:00:09.734447-07:00",
+    "session-end-time": "2022-07-21 11:02:29.768847-07:00",
+    "session-duration": "0:02:20.034400 / 140.0344 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "repeat after me \"it ain't got no gas in it\"",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "it ain't got no gas in it",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-21 11:00:48.410283"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "it ain't got no gas in it",
+            "spoken-feedback": true,
+            "time": "2022-07-21 11:00:48.414284"
+        },
+        {
+            "speaker": "USER",
+            "text": "repeat after me \"uh, dude?\"",
+            "intEnt": {
+                "intent": "simon-says",
+                "secondary-intent": null,
+                "phrase": "uh, dude?",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-21 11:01:00.638996"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "uh, dude?",
+            "spoken-feedback": true,
+            "time": "2022-07-21 11:01:00.643997"
+        },
+        {
+            "speaker": "USER",
+            "text": "gavin says hi",
+            "intEnt": {
+                "intent": null,
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-07-21 11:01:33.444656"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Failed due to: \"local variable 'term' referenced before assignment\" error",
+            "spoken-feedback": true,
+            "time": "2022-07-21 11:01:33.454249"
+        }
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "sessionStartTime": "2021-12-19 17:39:08.529144",
+    "sessionEndTime": "2021-12-19 17:41:15.276906",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my cat timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "cat",
+                "timing": null
+            },
+            "time": "2021-12-19 17:39:14.687858"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "There are no active timers.",
+            "tts": false,
+            "time": "2021-12-19 17:39:14.696877"
+        },
+        {
+            "speaker": "USER",
+            "text": "start a timer for an hour",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "",
+                "units": [
+                    "hours"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 1,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 17:39:36.442432"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 1 hours. For a total of 3600 seconds.",
+            "tts": false,
+            "time": "2021-12-19 17:39:36.454580"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in five hours to study",
+            "intEnt": {
+                "intent": "time",
+                "subInt": null,
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 5,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 17:39:52.614588"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "None",
+            "tts": false,
+            "time": "2021-12-19 17:39:52.616893"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in five hours to take the turkey out of the fridge",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "to take the turkey out of the fridge",
+                "units": [
+                    "hours"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 5,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 17:40:11.706078"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 hours. For a total of 18000 seconds.",
+            "tts": false,
+            "time": "2021-12-19 17:40:11.708841"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on the turkey timer?",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "turkey",
+                "timing": null
+            },
+            "time": "2021-12-19 17:40:39.125834"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The time left on the timer related to: 'turkey' is 17973.",
+            "tts": false,
+            "time": "2021-12-19 17:40:39.140860"
+        }
+    ]
+}

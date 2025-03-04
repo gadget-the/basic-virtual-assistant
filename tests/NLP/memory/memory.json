@@ -1,0 +1,46 @@
+{
+    "names": {
+        "KqpOWJ5d": [
+            "Julie"
+        ],
+        "EGhWlxks": [
+            "Kathy"
+        ],
+        "ZRWtrS1J": [
+            "John"
+        ]
+    },
+    "age": {
+        "KqpOWJ5d": 20,
+        "ZRWtrS1J": 16
+    },
+    "likes": {},
+    "dislikes": {},
+    "appearance": {},
+    "qualities": {},
+    "event": {},
+    "remember": [],
+    "relations": {
+        "vd6sMhGh": [
+            [
+                "KqpOWJ5d",
+                "sister"
+            ],
+            [
+                "EGhWlxks",
+                "sister"
+            ],
+            [
+                "ZRWtrS1J",
+                "brother"
+            ]
+        ]
+    },
+    "type": {
+        "SELF": "ASSISTANT",
+        "vd6sMhGh": "USER",
+        "KqpOWJ5d": "PERSON",
+        "EGhWlxks": "PERSON",
+        "ZRWtrS1J": "PERSON"
+    }
+}

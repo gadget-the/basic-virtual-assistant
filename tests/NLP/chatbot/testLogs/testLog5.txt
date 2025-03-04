@@ -1,0 +1,10 @@
+John: Ayo!
+Eric: Hey! What's up? What's the security issue that you found?
+John: Umm, I don't think it's an issue.
+Eric: Why not?
+John: I don't think there's a real issue.
+Eric: Look, I don't want to start our research on a wrong path. Give me an example of a serious flaw in your product that you need to fix.
+John: I don't think that a whole new feature would fix it.
+Eric: Then, what would?
+John: This is just a bug report. I think that's why they have bounty programs, for this reason.
+Eric: I know, but you shouldn't be

@@ -1,0 +1,94 @@
+{
+    "session-start-time": "2022-03-14 22:21:25.706155-07:00",
+    "session-end-time": "2022-03-14 22:23:09.882782-07:00",
+    "session-duration": "0:01:44.176627 / 104.176627 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "turn text to speech off",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-tts-off",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-14 22:21:36.748339"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You want me to turn tts off.",
+            "spoken-feedback": false,
+            "time": "2022-03-14 22:21:36.752169"
+        },
+        {
+            "speaker": "USER",
+            "text": "turn on tts",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-tts-on",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-14 22:21:42.866259"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You want me to turn tts on.",
+            "spoken-feedback": false,
+            "time": "2022-03-14 22:21:42.870261"
+        },
+        {
+            "speaker": "USER",
+            "text": "is tts on?",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-tts-on",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-14 22:21:50.224139"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You want me to turn tts on.",
+            "spoken-feedback": false,
+            "time": "2022-03-14 22:21:50.227546"
+        },
+        {
+            "speaker": "USER",
+            "text": "is log saving on?",
+            "intEnt": {
+                "intent": "assistant-settings",
+                "secondary-intent": "assistant-save-log-check",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-14 22:22:38.055271"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You want to know if log saving is turned on.",
+            "spoken-feedback": false,
+            "time": "2022-03-14 22:22:38.061016"
+        },
+        {
+            "speaker": "USER",
+            "text": "change themes \"Playplace\"",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": "assistant-theme-change",
+                "engine": null,
+                "term": "change themes \"playplace\"",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-03-14 22:22:57.771614"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on Google: \"change themes \"playplace\"\".",
+            "spoken-feedback": false,
+            "time": "2022-03-14 22:22:58.828944"
+        }
+    ]
+}

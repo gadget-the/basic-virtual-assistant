@@ -1,0 +1,46 @@
+{
+    "session-start-time": "2022-05-25 19:36:42.135666-07:00",
+    "session-end-time": "2022-05-25 19:47:00.662045-07:00",
+    "session-duration": "0:10:18.526379 / 618.526379 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "search on google how to make a scrollbar in tkinter",
+            "intEnt": {
+                "intent": "search",
+                "secondary-intent": null,
+                "engine": "google",
+                "term": "how to make a scrollbar in tkinter",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 19:42:13.152260"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on google: \"how to make a scrollbar in tkinter\".",
+            "spoken-feedback": false,
+            "time": "2022-05-25 19:42:14.054024"
+        },
+        {
+            "speaker": "USER",
+            "text": "go to https://www.instagram.com/shm0ooo/",
+            "intEnt": {
+                "intent": "open_site",
+                "secondary-intent": null,
+                "common-name": "https://www.instagram.com/shm0ooo/",
+                "website": "https://www.instagram.com/",
+                "browser": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 19:46:40.170169"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: \"https://www.instagram.com/shm0ooo/\" using default browser.",
+            "spoken-feedback": false,
+            "time": "2022-05-25 19:46:40.193626"
+        }
+    ]
+}

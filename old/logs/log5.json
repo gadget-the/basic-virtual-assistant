@@ -1,0 +1,108 @@
+{
+    "sessionStartTime": "2021-12-17 10:58:31.022097",
+    "sessionEndTime": "2021-12-17 11:09:15.806814",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "hello!",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:58:35.744111"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Hey! What are you up to?",
+            "tts": false,
+            "time": "2021-12-17 10:58:35.772085"
+        },
+        {
+            "speaker": "USER",
+            "text": "not much",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:58:39.123184"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I'm sorry, what?",
+            "tts": false,
+            "time": "2021-12-17 10:58:39.151199"
+        },
+        {
+            "speaker": "USER",
+            "text": "not much, what about you",
+            "intEnt": {
+                "intent": "conversation",
+                "subInt": null,
+                "timing": null
+            },
+            "time": "2021-12-17 10:58:44.217063"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "About the same.",
+            "tts": false,
+            "time": "2021-12-17 10:58:44.244066"
+        },
+        {
+            "speaker": "USER",
+            "text": "search on google how to make Croque Monsieur",
+            "intEnt": {
+                "intent": "search",
+                "subInt": null,
+                "engine": "google",
+                "term": "how to make croque monsieur",
+                "timing": null
+            },
+            "time": "2021-12-17 10:59:05.622909"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on google: how to make croque monsieur",
+            "tts": false,
+            "time": "2021-12-17 10:59:08.188807"
+        },
+        {
+            "speaker": "USER",
+            "text": "baidu search popular car brands",
+            "intEnt": {
+                "intent": "search",
+                "subInt": null,
+                "engine": "baidu",
+                "term": "popular car brands",
+                "timing": null
+            },
+            "time": "2021-12-17 10:59:41.826944"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on baidu: popular car brands",
+            "tts": false,
+            "time": "2021-12-17 10:59:43.525163"
+        },
+        {
+            "speaker": "USER",
+            "text": "how to display a webpage through tkinter?",
+            "intEnt": {
+                "intent": "search",
+                "subInt": null,
+                "engine": null,
+                "term": "how to display a webpage through tkinter?",
+                "timing": null
+            },
+            "time": "2021-12-17 11:00:33.484202"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Searching on Google: how to display a webpage through tkinter?",
+            "tts": false,
+            "time": "2021-12-17 11:00:35.357918"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "sessionStartTime": "2021-12-17 11:31:08.623811",
+    "sessionEndTime": "2021-12-17 11:32:17.268871",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "what are the lyrics to Pompeii by Bastille",
+            "intEnt": {
+                "intent": "music",
+                "subInt": "lyrics",
+                "term": "Pompeii by Bastille",
+                "timing": null
+            },
+            "time": "2021-12-17 11:31:34.785159"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Here are the lyrics for 'Pompeii by Bastille':\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\n\nI was left to my own devices\nMany days fell away with nothing to show\n\nAnd the walls kept tumbling down\nIn the city that we love\nGrey clouds roll over the hills\nBringing darkness from above\n\nBut if you close your eyes\nDoes it almost feel like nothing changed at all?\nAnd if you close your eyes\nDoes it almost feel like you've been here before?\nHow am I gonna be an optimist about this?\nHow am I gonna be an optimist about this?\n\nWe were caught up and lost in all of our vices\nIn your pose as the dust settled around us\n\nAnd the walls kept tumbling down\nIn the city that we love\nGrey clouds roll over the hills\nBringing darkness from above\n\nBut if you close your eyes\nDoes it almost feel like nothing changed at all?\nAnd if you close your eyes\nDoes it almost feel like you've been here before?\nHow am I gonna be an optimist about this?\nHow am I gonna be an optimist about this?\n\nEh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\n\nOh, where do we begin?\nThe rubble or our sins?\nOh, oh, where do we begin?\nThe rubble or our sins?\n\nAnd the walls kept tumbling down\nIn the city that we love\nGrey clouds roll over the hills\nBringing darkness from above\n\nBut if you close your eyes\nDoes it almost feel like nothing changed at all?\nAnd if you close your eyes\nDoes it almost feel like you've been here before?\nHow am I gonna be an optimist about this?\nHow am I gonna be an optimist about this?\nIf you close your eyes\nDoes it almost feel like nothing changed at all?\n\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh\nEh-eh-oh, eh-oh",
+            "tts": false,
+            "time": "2021-12-17 11:31:36.577661"
+        }
+    ]
+}

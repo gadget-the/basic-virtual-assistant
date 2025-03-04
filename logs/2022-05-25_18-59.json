@@ -1,0 +1,104 @@
+{
+    "session-start-time": "2022-05-25 18:59:57.942782-07:00",
+    "session-end-time": "2022-05-25 19:06:43.004405-07:00",
+    "session-duration": "0:06:45.061623 / 405.061623 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "open banana.com",
+            "intEnt": {
+                "intent": "open_site",
+                "secondary-intent": null,
+                "common-name": "banana.com",
+                "website": "https://www.banana.com",
+                "browser": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 19:00:22.632867"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: \"banana.com\" using default browser.",
+            "spoken-feedback": false,
+            "time": "2022-05-25 19:00:23.107364"
+        },
+        {
+            "speaker": "USER",
+            "text": "open chicago.gov in chrome",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "chicago.gov in chrome",
+                "program": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 19:00:48.635224"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Attempting to open: chicago.gov in chrome.",
+            "spoken-feedback": false,
+            "time": "2022-05-25 19:00:48.650663"
+        },
+        {
+            "speaker": "USER",
+            "text": "open chicago.gov in chrome",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "chicago.gov in chrome",
+                "program": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 19:01:06.157263"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Attempting to open: chicago.gov in chrome.",
+            "spoken-feedback": false,
+            "time": "2022-05-25 19:01:06.167463"
+        },
+        {
+            "speaker": "USER",
+            "text": "open youtube.com in chrome",
+            "intEnt": {
+                "intent": "open_site",
+                "secondary-intent": null,
+                "common-name": "youtube.com",
+                "website": "https://www.youtube.com/",
+                "browser": "chrome",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 19:01:25.136519"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: \"youtube.com\" in \"chrome\".",
+            "spoken-feedback": false,
+            "time": "2022-05-25 19:01:25.180767"
+        },
+        {
+            "speaker": "USER",
+            "text": "open chicago.gov in chrome",
+            "intEnt": {
+                "intent": "run-program",
+                "secondary-intent": null,
+                "common-name": "chicago.gov in chrome",
+                "program": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-05-25 19:01:53.390098"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Attempting to open: chicago.gov in chrome.",
+            "spoken-feedback": false,
+            "time": "2022-05-25 19:01:53.415480"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "sessionStartTime": "2021-12-20 08:24:15.349568",
+    "sessionEndTime": "2021-12-20 08:25:16.784819",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "start a 5 minute timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "timer",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-20 08:24:43.678232"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of 300 seconds. The ID for it is nki2t1Os.",
+            "tts": false,
+            "time": "2021-12-20 08:24:43.683230"
+        },
+        {
+            "speaker": "USER",
+            "text": "create a timer for 5 minutes",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-20 08:25:10.385282"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of 300 seconds. The ID for it is Q2638U00.",
+            "tts": false,
+            "time": "2021-12-20 08:25:10.386545"
+        }
+    ]
+}

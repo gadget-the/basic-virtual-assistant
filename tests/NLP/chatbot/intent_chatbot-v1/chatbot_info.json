@@ -1,0 +1,1315 @@
+{
+    "personal-details": {
+        "name": "Olive",
+        "time-of-creation": "2022-08-23 19:01:35.407382",
+        "nicknames": [],
+        "UUID": "OYXfcheU",
+        "main-user-UUID": "Xg0WGWQF"
+    },
+    "memory": {
+        "OYXfcheU": {
+            "type": "PERSON",
+            "full-name": "",
+            "nicknames": [
+                "Olive"
+            ],
+            "age": 0,
+            "date-of-birth": "2022-08-23 19:01:35.407382",
+            "likes": "",
+            "dislikes": "",
+            "appearance": [],
+            "traits": [],
+            "relationships": {
+                "Xg0WGWQF": [
+                    ""
+                ]
+            },
+            "quotations": []
+        },
+        "Xg0WGWQF": {
+            "type": "PERSON",
+            "full-name": "",
+            "nicknames": [],
+            "age": 0,
+            "date-of-birth": "",
+            "likes": "",
+            "dislikes": "",
+            "appearance": [],
+            "traits": [],
+            "relationships": {
+                "OYXfcheU": [
+                    "assistant"
+                ]
+            },
+            "quotations": []
+        }
+    },
+    "input-response-data": [
+        {
+            "text": "Hi!",
+            "intent": [
+                "greeting"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "Hello! How are you?",
+                    "intent": [
+                        "greeting",
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "well-being"
+                    ],
+                    "inquiry-type": "open"
+                },
+                {
+                    "text": "Oh, Hi!",
+                    "intent": [
+                        "greeting"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Oh, Hi!",
+            "intent": [
+                "greeting"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "Hey!",
+                    "intent": [
+                        "greeting"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Hey!",
+            "intent": [
+                "greeting"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "Oh, hey! What are you doing?",
+                    "intent": [
+                        "greeting",
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "activity"
+                    ],
+                    "inquiry-type": "open"
+                },
+                {
+                    "text": "Hey! What are you up to?",
+                    "intent": [
+                        "greeting",
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "activity"
+                    ],
+                    "inquiry-type": "open"
+                },
+                {
+                    "text": "Hey! How are you?",
+                    "intent": [
+                        "greeting",
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "well-being"
+                    ],
+                    "inquiry-type": "open"
+                },
+                {
+                    "text": "How are you?",
+                    "intent": [
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "well-being"
+                    ],
+                    "inquiry-type": "open"
+                }
+            ]
+        },
+        {
+            "text": "Hello! How are you?",
+            "intent": [
+                "greeting",
+                "inquiry"
+            ],
+            "topic": [
+                "well-being"
+            ],
+            "inquiry-type": "open",
+            "responses": [
+                {
+                    "text": "I'm great! How are you?",
+                    "intent": [
+                        "inform",
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "well-being"
+                    ],
+                    "inquiry-type": "open"
+                },
+                {
+                    "text": "I'm fine.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "well-being"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "I'm great! How are you?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "well-being"
+            ],
+            "inquiry-type": "open",
+            "responses": [
+                {
+                    "text": "About the same.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "well-being"
+                    ]
+                },
+                {
+                    "text": "I'm fine.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "well-being"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "About the same.",
+            "intent": [
+                "inform"
+            ],
+            "topic": [
+                "well-being"
+            ],
+            "responses": [
+                {
+                    "text": "What are you up to?",
+                    "intent": [
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "activity"
+                    ],
+                    "inquiry-type": "open"
+                },
+                {
+                    "text": "You find that thing you were looking for?",
+                    "intent": [
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "activity"
+                    ],
+                    "inquiry-type": "polar"
+                },
+                {
+                    "text": "What've you been up to?",
+                    "intent": [
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "activity"
+                    ],
+                    "inquiry-type": "open"
+                }
+            ]
+        },
+        {
+            "text": "Nice to meet you.",
+            "intent": [
+                "greeting"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "Nice to meet you, too.",
+                    "intent": [
+                        "greeting"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Nice to meet you, too.",
+            "intent": [
+                "greeting"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": []
+        },
+        {
+            "text": "It was nice meeting you.",
+            "intent": [
+                "goodbye"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "It was nice meeting you, too.",
+                    "intent": [
+                        "goodbye"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "It was nice meeting you, too.",
+            "intent": [
+                "goodbye"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": []
+        },
+        {
+            "text": "Have a nice day!",
+            "intent": [
+                "goodbye"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "You too.",
+                    "intent": [
+                        "goodbye"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "You too!",
+                    "intent": [
+                        "goodbye"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "It's good to see you.",
+            "intent": [
+                "greeting"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "It's good to see you, too.",
+                    "intent": [
+                        "greeting"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "It's good to see you, too!",
+                    "intent": [
+                        "greeting"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "I'm sorry,",
+            "intent": [
+                "apology"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "Oh, that's okay.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "It's okay.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "I forgive you.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "All is forgiven.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "No apology needed.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "I apologize.",
+            "intent": [
+                "apology"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "Oh, that's okay.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "It's okay.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "I forgive you.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "All is forgiven.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "No apology needed.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Sorry",
+            "intent": [
+                "apology"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "Oh, that's okay.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "It's okay.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "I forgive you.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "All is forgiven.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "No apology needed.",
+                    "intent": [
+                        "forgive"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Bye!",
+            "intent": [
+                "goodbye"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "Goodbye!",
+                    "intent": [
+                        "goodbye"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "See you later!",
+                    "intent": [
+                        "goodbye"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "Have a great day!",
+                    "intent": [
+                        "goodbye"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "Bye!",
+                    "intent": [
+                        "goodbye"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Thank you!",
+            "intent": [
+                "thanks"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "Anything else I can do for you?",
+                    "intent": [
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ],
+                    "inquiry-type": "open"
+                },
+                {
+                    "text": "How may I further assist you?",
+                    "intent": [
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ],
+                    "inquiry-type": "open"
+                },
+                {
+                    "text": "No problem.",
+                    "intent": [
+                        "accepting-thanks"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "Anytime.",
+                    "intent": [
+                        "accepting-thanks"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "You're welcome.",
+                    "intent": [
+                        "accepting-thanks"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "So, how was your day?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "well-being"
+            ],
+            "inquiry-type": "open",
+            "responses": [
+                {
+                    "text": "My day went well. It was rather uneventful.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "well-being"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Whatcha doing?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "activity"
+            ],
+            "inquiry-type": "open",
+            "responses": [
+                {
+                    "text": "Not much",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "activity"
+                    ]
+                },
+                {
+                    "text": "I'm working on a project",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "activity"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Thanks",
+            "intent": [
+                "thanks"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "Anything else I can do for you?",
+                    "intent": [
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ],
+                    "inquiry-type": "open"
+                },
+                {
+                    "text": "How may I further assist you?",
+                    "intent": [
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ],
+                    "inquiry-type": "open"
+                },
+                {
+                    "text": "No problem.",
+                    "intent": [
+                        "accepting-thanks"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "Anytime.",
+                    "intent": [
+                        "accepting-thanks"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "You're welcome.",
+                    "intent": [
+                        "accepting-thanks"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "I'm so sorry.",
+            "intent": [
+                "apology"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": []
+        },
+        {
+            "text": "You're right.",
+            "intent": [
+                "agreement"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": []
+        },
+        {
+            "text": "I agree.",
+            "intent": [
+                "agreement"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": []
+        },
+        {
+            "text": "Hello!",
+            "intent": [
+                "greeting"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "How are you?",
+                    "intent": [
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "well-being"
+                    ],
+                    "inquiry-type": "open"
+                }
+            ]
+        },
+        {
+            "text": "You lied to me?",
+            "intent": [
+                "accusation"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": []
+        },
+        {
+            "text": "You Liar!",
+            "intent": [
+                "accusation"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": []
+        },
+        {
+            "text": "What were you thinking?!",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "inquiry-type": "open",
+            "responses": [
+                {
+                    "text": "I wasn't",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "I'm sorry.",
+                    "intent": [
+                        "apology"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Hi! I'm doing great.",
+            "intent": [
+                "greeting",
+                "inform"
+            ],
+            "topic": [
+                "well-being"
+            ],
+            "responses": []
+        },
+        {
+            "text": "What've you been up to?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "activity"
+            ],
+            "inquiry-type": "open",
+            "responses": []
+        },
+        {
+            "text": "Oh. What's going on?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "activity"
+            ],
+            "inquiry-type": "open",
+            "responses": []
+        },
+        {
+            "text": "You busy?",
+            "intent": [
+                "inquiry"
+            ],
+            "inquiry-type": "polar",
+            "topic": [
+                "activity"
+            ],
+            "responses": [
+                {
+                    "text": "Hey! Not currently.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "activity"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "How's it going, how have you been?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "well-being"
+            ],
+            "inquiry-type": "open",
+            "responses": [
+                {
+                    "text": "Ok.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "well-being"
+                    ]
+                },
+                {
+                    "text": "I've been okay.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "well-being"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Ayo!",
+            "intent": [
+                "greeting"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "responses": [
+                {
+                    "text": "Hello! How are you?",
+                    "intent": [
+                        "greeting",
+                        "inquiry"
+                    ],
+                    "topic": [
+                        "well-being"
+                    ],
+                    "inquiry-type": "open"
+                },
+                {
+                    "text": "Oh, Hi!",
+                    "intent": [
+                        "greeting"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "Hey!",
+                    "intent": [
+                        "greeting"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Was it red or blue?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "inquiry-type": "closed",
+            "responses": [
+                {
+                    "text": "Red.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "It was red.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "Blue.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "Pretty sure it was blue.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Are you happy or sad?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "mood"
+            ],
+            "inquiry-type": "closed",
+            "responses": [
+                {
+                    "text": "I am happy.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                },
+                {
+                    "text": "I am sad.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Are you happy or not?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "mood"
+            ],
+            "inquiry-type": "closed",
+            "responses": [
+                {
+                    "text": "I am happy.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                },
+                {
+                    "text": "I am not happy.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                },
+                {
+                    "text": "Yes, I am happy.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                },
+                {
+                    "text": "No, I am not happy.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                },
+                {
+                    "text": "Yes.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                },
+                {
+                    "text": "No.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Are you happy?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "mood"
+            ],
+            "inquiry-type": "polar",
+            "responses": [
+                {
+                    "text": "I am happy.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                },
+                {
+                    "text": "I am not happy.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                },
+                {
+                    "text": "Yes, I am happy.",
+                    "intent": [
+                        "yea"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                },
+                {
+                    "text": "No, I am not happy.",
+                    "intent": [
+                        "nay"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                },
+                {
+                    "text": "Yes.",
+                    "intent": [
+                        "yea"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                },
+                {
+                    "text": "No.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "mood"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Is it red or orange?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "inquiry-type": "closed",
+            "responses": [
+                {
+                    "text": "Red.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "Orange.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "It is orange.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "It is red.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                },
+                {
+                    "text": "Neither.",
+                    "intent": [
+                        "inform"
+                    ],
+                    "topic": [
+                        "unknown"
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "What is this?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "inquiry-type": "open",
+            "responses": []
+        },
+        {
+            "text": "What is that?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "unknown"
+            ],
+            "inquiry-type": "open",
+            "responses": []
+        },
+        {
+            "text": "what are you up to?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "activity"
+            ],
+            "inquiry-type": "open",
+            "responses": []
+        },
+        {
+            "text": "what are you doing?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "activity"
+            ],
+            "inquiry-type": "open",
+            "responses": []
+        },
+        {
+            "text": "do you like pears or apples?",
+            "intent": [
+                "inquiry"
+            ],
+            "topic": [
+                "personal-details"
+            ],
+            "inquiry-type": "closed",
+            "responses": []
+        },
+        {
+            "text": "",
+            "intent": [
+                ""
+            ],
+            "topic": [
+                ""
+            ],
+            "responses": []
+        }
+    ]
+}

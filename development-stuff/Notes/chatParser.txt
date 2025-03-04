@@ -1,0 +1,92 @@
+This idea is in regards to chatbots and me trying to figure out how to parse through chat logs in order to supply one with trainning data(sort of built around a hypothetical)
+It also employs what I call a "Statement-Response" type of system, in which everything said within a conversation is can be a statement or a response(or both). If I said something, that would be a statement, if you said something back to me(in response) that would be considered a response
+I pair theses statements and responses together and store them
+The goal is to take a chat log(currently in the form of a text file) and convert it into statement-response pairs and add them to a dictionary/json file
+after saving many responses, one would probably want to order them by most fitting/most common in order to be able to supply the most likely response to a statement
+
+This could be used for a sort of "Crowdsourcing" of data for a chatbot(similar to what they do over at Cleverbot)
+
+
+I made a respond function that outputs a random corresponding response from the json file
+At first it had to match the exact statement(key) but, I changed it so that it finds the key that shares the most letters(if there is one that shares any letters) and returns a random corresponding response
+this seems to work somewhat well
+
+
+idea?
+    generateResponse(inputText = "", emotion = "", emotionVal = 0, context = [])
+    a chatbot that is able to take into account different "streams of context"
+    the user's emotional state as well as prior conversation(context)
+    would probably be pretty difficult to do
+    would probably require chatlogs that also keep record of what emotions each person was feeling at the time of each message
+    so that it could be able to link different emotions to different types of responses(this person said this when they felt like that so I'll say this)
+    could also require emotional analysis of the user's input
+
+http://www.nltk.org/book/ch02.html
+http://faculty.nps.edu/cmartell/NPSChat.htm
+https://github.com/PolyAI-LDN/conversational-datasets
+
+
+i made a word level version of the respond function
+    basically does the same thing but using words instead of characters(letters)
+    if it can't generate a response, it uses the character level respond function as a fallback
+
+
+i made version of the respond thing that uses the LinearSVC from scikit to pick out the responses(chatTest.py)
+    it works about as well as the regular response functions
+
+
+an idea I think is really cool, is a making a chatbot that can answer questions about a text as well as have common conversation
+    this would allow me to make an input text that describes the personality/information I want for the chatbot/assistant
+
+
+for using the user's emotion(or at least the inferred emotion), it could use emotional analysis for the current input as well as to classify training data chatlogs
+
+
+what do I want?
+    a chatbot that can speak coherently and pretty convincingly
+
+    it should
+        be able to take into account what has been said previously as context
+        learn from inputed(external) chatlogs as well as from the conversations it has (directly?)
+        generate appropriate repsonses
+
+    it would be cool if it could be given a "personality script"("personality key"? guide?), essentially a piece of text that describes the way it should present itself and information about it("past" information)
+        it could be 
+
+    being able to remember things like names, relationships, events, etc.(like the memory filter) sounds important
+
+    using machine learning(and deep learning) for part of this would make things easier and at the same time much more complex
+        which is why I think it would be good to try to figure out ways to do most/all of this stuff without it(which creates a different set of problems)
+            this would mean that it would at least lean more toward a rule-based chatbot
+
+    "The Future of AI Is Intent" - https://www.freshworks.com/lp/freshdesk-messaging-chatbots
+        while diving back into chatbot research, i saw an add on google with that text
+
+        i have already tried incorporating the concepts of Intents and Entities into things like the IntEntFilter and memory filter
+            maybe I should try doing the same thing for a chatbot
+
+            this sort of thing could allow it to more simply get/present information about the conversation and inputed text
+
+            it could have information like sentence type(Declarative, interrogative, imperative, exclamatory), emotional/sentiment analysis, entities/entity types, etc.
+                {}
+
+                it could also involve information about the conversation as a whole: people involved, pace, tone, 
+
+    something that could simplify things is being able to distinguish between inputs that can be responded to be looking up a piece of info versus ones that require more in-depth analysis to "generate" a response
+        to simplify:
+            something like "what is your name?" is something you could just look up
+            in contrast, something like "how are you?" or "Been a while since we've seen Jerry, huh?" is more of something that would require a "different method of responding"(for lack of better wording)
+
+    i like the statResp file part of this "chatParser"
+        i like that it's able to store more permanently information about how the bot should respond to a given input
+            of course it's pretty simple: input1 has x amount of possible responses; if the users input is close enough to a known input, we should use a randomly chosen response from its list
+
+        I think i'll almost definitely use something similar going forward
+            i might use it to store the "personality text"
+
+    a big problem with doing this is training data
+        it's more than likely that i would need to gather/find a bunch of training data for this
+            it would also need to be labeled for everything i'm looking for(emotion/sentiment, sentence type, entities, etc.)
+
+
+https://www.artificial-solutions.com/chatbots

@@ -1,0 +1,110 @@
+{
+    "sessionStartTime": "2021-12-19 17:33:15.396429",
+    "sessionEndTime": "2021-12-19 17:34:48.872385",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "start a timer for 5 minutes",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "",
+                "units": [
+                    "minutes"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 0,
+                    "minutes": 5,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 17:33:25.179532"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 5 minutes. For a total of 300 seconds.",
+            "tts": false,
+            "time": "2021-12-19 17:33:25.183856"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in an hour to water my ficu",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "to water my ficu",
+                "units": [
+                    "hours"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 1,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 17:33:33.397558"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 1 hours. For a total of 3600 seconds.",
+            "tts": false,
+            "time": "2021-12-19 17:33:33.405429"
+        },
+        {
+            "speaker": "USER",
+            "text": "remind me in an hour to feed the cats",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "startTimer",
+                "message": "to feed the cats",
+                "units": [
+                    "hours"
+                ],
+                "timing": {
+                    "elapsed": true,
+                    "years": 0,
+                    "months": 0,
+                    "weeks": 0,
+                    "days": 0,
+                    "hours": 1,
+                    "minutes": 0,
+                    "seconds": 0
+                }
+            },
+            "time": "2021-12-19 17:34:23.816664"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Starting a timer for 1 hours. For a total of 3600 seconds.",
+            "tts": false,
+            "time": "2021-12-19 17:34:23.831727"
+        },
+        {
+            "speaker": "USER",
+            "text": "how much time is left on my cat timer",
+            "intEnt": {
+                "intent": "time",
+                "subInt": "checkTimer",
+                "IDTerm": "cat",
+                "timing": null
+            },
+            "time": "2021-12-19 17:34:44.509412"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "You want to check the timer related to: 'cat'.",
+            "tts": false,
+            "time": "2021-12-19 17:34:44.522515"
+        }
+    ]
+}

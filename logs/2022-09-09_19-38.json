@@ -1,0 +1,126 @@
+{
+    "session-start-time": "2022-09-09 19:38:42.909613-07:00",
+    "session-end-time": "2022-09-09 19:41:37.886042-07:00",
+    "session-duration": "0:02:54.976429 / 174.976429 seconds",
+    "session-log": [
+        {
+            "speaker": "USER",
+            "text": "heyo",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-09 19:38:47.958377"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "How are you?",
+            "spoken-feedback": false,
+            "time": "2022-09-09 19:38:47.997912"
+        },
+        {
+            "speaker": "USER",
+            "text": "i'm good",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-09 19:38:54.616759"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "That's good.",
+            "spoken-feedback": false,
+            "time": "2022-09-09 19:38:54.648441"
+        },
+        {
+            "speaker": "USER",
+            "text": "i'm doing fine",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-09 19:38:58.595106"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Is it sunny outside?",
+            "spoken-feedback": false,
+            "time": "2022-09-09 19:38:58.626354"
+        },
+        {
+            "speaker": "USER",
+            "text": "no, it's raining outside",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-09 19:39:29.633711"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Why not?",
+            "spoken-feedback": false,
+            "time": "2022-09-09 19:39:29.702140"
+        },
+        {
+            "speaker": "USER",
+            "text": "like i said, it's raining outside",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-09 19:39:44.543613"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "I really think we're going to be good, yeah.",
+            "spoken-feedback": false,
+            "time": "2022-09-09 19:39:44.601703"
+        },
+        {
+            "speaker": "USER",
+            "text": "what are you doing?",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-09 19:40:08.381702"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Watching Law & Order and I popped a burrito in the microwave.",
+            "spoken-feedback": false,
+            "time": "2022-09-09 19:40:08.444619"
+        },
+        {
+            "speaker": "USER",
+            "text": "bye",
+            "intEnt": {
+                "intent": "conversational",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": false,
+            "time": "2022-09-09 19:41:36.032803"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Goodbye!",
+            "spoken-feedback": false,
+            "time": "2022-09-09 19:41:36.078005"
+        }
+    ]
+}

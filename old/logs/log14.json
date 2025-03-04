@@ -1,0 +1,25 @@
+{
+    "sessionStartTime": "2021-12-17 12:21:56.350902",
+    "sessionEndTime": "2021-12-17 12:23:37.245754",
+    "log": [
+        {
+            "speaker": "USER",
+            "text": "open youtube",
+            "intEnt": {
+                "intent": "open_site",
+                "subInt": null,
+                "commonName": "youtube",
+                "website": "https://www.youtube.com/",
+                "browser": null,
+                "timing": null
+            },
+            "time": "2021-12-17 12:22:00.913803"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Opening: https://www.youtube.com/ using default browser.",
+            "tts": false,
+            "time": "2021-12-17 12:22:01.333410"
+        }
+    ]
+}

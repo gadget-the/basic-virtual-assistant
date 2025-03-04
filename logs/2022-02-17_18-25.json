@@ -1,0 +1,53 @@
+{
+    "session-start-time": "2022-02-17 18:25:37.019459-08:00",
+    "session-end-time": "2022-02-17 18:30:21.126474-08:00",
+    "session-duration": "0:04:44.107015 / 284.107015 seconds",
+    "session-log": [
+        {
+            "speaker": "ASSISTANT",
+            "text": "Heard wake word! What do you want to say!",
+            "spoken-feedback": true,
+            "time": "2022-02-17 18:29:43.752343"
+        },
+        {
+            "speaker": "USER",
+            "text": "what's 2 + 2",
+            "intEnt": {
+                "intent": "math",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-02-17 18:29:50.417922"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The answer is: 4.",
+            "spoken-feedback": true,
+            "time": "2022-02-17 18:29:50.423916"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "Heard wake word! What do you want to say!",
+            "spoken-feedback": true,
+            "time": "2022-02-17 18:30:02.532224"
+        },
+        {
+            "speaker": "USER",
+            "text": "what's 4 * 7",
+            "intEnt": {
+                "intent": "math",
+                "secondary-intent": null,
+                "timing": null
+            },
+            "spoken-input": true,
+            "time": "2022-02-17 18:30:08.952931"
+        },
+        {
+            "speaker": "ASSISTANT",
+            "text": "The answer is: 28.",
+            "spoken-feedback": true,
+            "time": "2022-02-17 18:30:08.958807"
+        }
+    ]
+}
