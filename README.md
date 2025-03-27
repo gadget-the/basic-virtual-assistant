@@ -1,13 +1,3 @@
-     Basic Virtual Assistant
-
-*   [Home](index.html)
-*   [My Projects](projects.html)
-*   [Test Page](test.html)
-*   [About Me](about.html)
-
-*   [Basic Virtual Assistant](BVA_project_page.html)
-*   [Basic Landmass Generator](BLG_project_page.html)
-
 Basic Virtual Assistant
 =======================
 
@@ -54,7 +44,6 @@ Using pyttsx3, a Python Text to Speech library https://pypi.org/project/pyttsx3/
   
 
 Commands
-
 *   Weather: Things like "How hot is it out there?" and "What's the temperature in Atlanta, Georgia"
 *   Smarthouse: Was never actually connected to anything. Just a placeholder for such a system. "turn on the lights in the living room", "open the garage door", "dim the lights to 50%", "Is the garage door open?"
 *   Math: "What's the square root of 49", "divide 52 by 8", "How many times does eight go into sixty-four evenly"
