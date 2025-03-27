@@ -71,33 +71,6 @@ Key Binds
 *   Ctrl + r: Soft Restart
 *   Ctrl + Shift + r: Hard Restart
 
-  
-
-Project Images
---------------
-
-Version 4
----------
-
-*   ![](files\images\Basic Virtual Assistant Project\Screenshot 2025-03-04 141629.png)
-*   ![](files\images\Basic Virtual Assistant Project\v4\textbox-expand.png)
-*   ![](files\images\Basic Virtual Assistant Project\v4\debug-menu-tab.png)
-*   ![](files\images\Basic Virtual Assistant Project\v4\volume-input.png)
-*   ![](files\images\Basic Virtual Assistant Project\v4\timer-alarm-menu.png)
-*   ![](files\images\Basic Virtual Assistant Project\v4\settings-browser-tab.png)
-*   ![](files\images\Basic Virtual Assistant Project\v4\settings-speech-input-tab.png)
-*   ![](files\images\Basic Virtual Assistant Project\v4\settings-theme-tab-2.png)
-
-Version 3
----------
-
-*   ![](files\images\Basic Virtual Assistant Project\v3\ui-version3.png)
-*   ![](files\images\Basic Virtual Assistant Project\v3\ui-version3-debug-menu.png)
-
-Version 2(The First Version with a GUI)
----------------------------------------
-
-![](files\images\Basic Virtual Assistant Project\ui-version2.png)
 
 Links
 -----
