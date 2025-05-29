@@ -37,12 +37,6 @@ Using [pyttsx3](https://pypi.org/project/pyttsx3/), a Python Text to Speech libr
 
   
 
-Text to Speech
-
-Using pyttsx3, a Python Text to Speech library https://pypi.org/project/pyttsx3/
-
-  
-
 Commands
 *   Weather: Things like "How hot is it out there?" and "What's the temperature in Atlanta, Georgia"
 *   Smarthouse: Was never actually connected to anything. Just a placeholder for such a system. "turn on the lights in the living room", "open the garage door", "dim the lights to 50%", "Is the garage door open?"
@@ -77,7 +71,9 @@ Links
 
 ### Libraries/APIs/Websites I used
 
-*   [test](https://example.com)
+* [uselessfacts API for Funfacts](https://uselessfacts.jsph.pl/)
+* [Free Dictionary API](https://dictionaryapi.dev/)
+* [Wikipedia Python Library](https://pypi.org/project/wikipedia/)
 
 ### Smaller Tests from Along the Way
 
